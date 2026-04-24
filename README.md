@@ -23,7 +23,7 @@ class Lucas:
     empresa    = "TrustIT - Confiança e Tecnologia"
     local      = "Brasil 🇧🇷"
     foco       = ["Segurança de Servidores", "SOC", "Resposta a Incidentes", "Automação"]
-    stack      = ["Python", "PowerShell", "JavaScript", "SQL", "Flask", "HTML/CSS"]
+    stack      = ["Python", "PowerShell", "PHP", "JavaScript", "SQL", "Bash", "HTML/CSS"]
     infra      = ["Windows Server", "Active Directory", "Linux", "Zabbix", "Wireshark"]
     atualmente = "Desenvolvendo SIEM dashboard e toolkit de resposta a incidentes"
     contato    = "lucas.santos@confiancaetecnologia.com.br"
@@ -35,10 +35,12 @@ class Lucas:
 
 <div align="center">
 
-[![Skills](https://skillicons.dev/icons?i=python,powershell,js,html,css,flask,git,docker,linux,vscode,github,postgres&perline=6)](https://skillicons.dev)
+[![Skills](https://skillicons.dev/icons?i=python,php,powershell,js,html,css,flask,mysql,git,docker,linux,vscode&perline=6)](https://skillicons.dev)
 
 <br/>
 
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
 ![Windows Server](https://img.shields.io/badge/Windows_Server-00d4ff?style=flat-square&logo=windows&logoColor=0d1117)
 ![Active Directory](https://img.shields.io/badge/Active_Directory-0078D4?style=flat-square&logo=microsoft&logoColor=white)
 ![SQL Server](https://img.shields.io/badge/SQL_Server-CC2927?style=flat-square&logo=microsoftsqlserver&logoColor=white)
