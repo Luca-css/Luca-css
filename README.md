@@ -6,8 +6,9 @@
 
 <br/>
 
+[![Portfolio](https://img.shields.io/badge/🌐_Portfólio-00d4ff?style=for-the-badge&logoColor=0d1117)](https://luca-css.github.io)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/lucas-santos)
-[![GitHub](https://img.shields.io/badge/GitHub-00d4ff?style=for-the-badge&logo=github&logoColor=0d1117)](https://github.com/Luca-css)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Luca-css)
 ![Profile Views](https://komarev.com/ghpvc/?username=Luca-css&style=for-the-badge&color=00d4ff&label=VISITAS)
 
 </div>
