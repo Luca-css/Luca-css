@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=20&duration=2500&pause=800&color=00D4FF&center=true&vCenter=true&width=680&lines=_%20Analista+de+TI+N3+%7C+N%C3%ADvel+S%C3%AAnior;_%20Segurança+de+Servidores+Windows+%26+Linux;_%20SIEM+%7C+SOC+%7C+Resposta+a+Incidentes;_%20Automação+Python+%26+PowerShell;_%20Desenvolvimento+de+Ferramentas+Internas;_%20Active+Directory+%7C+GPO+%7C+Hardening)](https://github.com/Luca-css)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=20&duration=2500&pause=800&color=00D4FF&center=true&vCenter=true&width=680&lines=_%20Analista+de+TI+N3+%7C+N%C3%ADvel+S%C3%AAnior;_%20Ciberseguran%C3%A7a+%7C+Pentest+%7C+SOC+%7C+DFIR;_%20Seguran%C3%A7a+de+Servidores+Windows+%26+Linux;_%20SIEM+%7C+Resposta+a+Incidentes;_%20Automa%C3%A7%C3%A3o+Python+%2C+PHP+%26+PowerShell;_%20Active+Directory+%7C+Hardening+%7C+Vulnerability+Assessment)](https://github.com/Luca-css)
 
 <br/>
 
@@ -22,7 +22,7 @@ class Lucas:
     cargo      = "Analista de TI N3"
     empresa    = "TrustIT - Confiança e Tecnologia"
     local      = "Brasil 🇧🇷"
-    foco       = ["Segurança de Servidores", "SOC", "Resposta a Incidentes", "Automação"]
+    foco       = ["Cibersegurança", "Pentest", "SOC", "Resposta a Incidentes", "Automação"]
     stack      = ["Python", "PowerShell", "PHP", "JavaScript", "SQL", "Bash", "HTML/CSS"]
     infra      = ["Windows Server", "Active Directory", "Linux", "Zabbix", "Wireshark"]
     atualmente = "Desenvolvendo SIEM dashboard e toolkit de resposta a incidentes"
@@ -110,6 +110,8 @@ class Lucas:
 ![AD](https://img.shields.io/badge/Active_Directory-Avançado-00d4ff?style=for-the-badge&logo=microsoft&logoColor=0d1117)
 ![Python](https://img.shields.io/badge/Python_Automation-Sênior-00d4ff?style=for-the-badge&logo=python&logoColor=0d1117)
 ![PowerShell](https://img.shields.io/badge/PowerShell-Sênior-00d4ff?style=for-the-badge&logo=powershell&logoColor=0d1117)
+![Cyber](https://img.shields.io/badge/Cibersegurança-Avançado-00d4ff?style=for-the-badge&logo=hackthebox&logoColor=0d1117)
+![Pentest](https://img.shields.io/badge/Pentest-Intermediário-00d4ff?style=for-the-badge&logo=kalilinux&logoColor=0d1117)
 ![SIEM](https://img.shields.io/badge/SIEM_Operations-Avançado-00d4ff?style=for-the-badge&logo=elastic&logoColor=0d1117)
 ![Windows](https://img.shields.io/badge/Windows_Server-Especialista-00d4ff?style=for-the-badge&logo=windows&logoColor=0d1117)
 
