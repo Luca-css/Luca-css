@@ -95,11 +95,18 @@ class Lucas:
 
 ---
 
-## Troféus
+## Conquistas & Especialidades
 
 <div align="center">
 
-[![Trophies](https://github-profile-trophy.vercel.app/?username=Luca-css&theme=matrix&no-frame=true&no-bg=true&margin-w=6&column=7)](https://github.com/Luca-css)
+![N3](https://img.shields.io/badge/Suporte_N3-Sênior-00d4ff?style=for-the-badge&logo=checkmarx&logoColor=0d1117)
+![Security](https://img.shields.io/badge/Server_Security-Especialista-00d4ff?style=for-the-badge&logo=shield&logoColor=0d1117)
+![AD](https://img.shields.io/badge/Active_Directory-Avançado-00d4ff?style=for-the-badge&logo=microsoft&logoColor=0d1117)
+![Python](https://img.shields.io/badge/Python_Automation-Sênior-00d4ff?style=for-the-badge&logo=python&logoColor=0d1117)
+![PowerShell](https://img.shields.io/badge/PowerShell-Sênior-00d4ff?style=for-the-badge&logo=powershell&logoColor=0d1117)
+![SOC](https://img.shields.io/badge/SOC_Operations-Avançado-00d4ff?style=for-the-badge&logo=opsgenie&logoColor=0d1117)
+![Windows](https://img.shields.io/badge/Windows_Server-Especialista-00d4ff?style=for-the-badge&logo=windows&logoColor=0d1117)
+![SQL](https://img.shields.io/badge/SQL_Server-Intermediário-0a2a4a?style=for-the-badge&logo=microsoftsqlserver&logoColor=00d4ff)
 
 </div>
 
