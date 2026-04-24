@@ -7,7 +7,6 @@
 <br/>
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/lucas-santos)
-[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:lucas.santos@confiancaetecnologia.com.br)
 [![GitHub](https://img.shields.io/badge/GitHub-00d4ff?style=for-the-badge&logo=github&logoColor=0d1117)](https://github.com/Luca-css)
 ![Profile Views](https://komarev.com/ghpvc/?username=Luca-css&style=for-the-badge&color=00d4ff&label=VISITAS)
 
@@ -26,7 +25,6 @@ class Lucas:
     stack      = ["Python", "PowerShell", "PHP", "JavaScript", "SQL", "Bash", "HTML/CSS"]
     infra      = ["Windows Server", "Active Directory", "Linux", "Zabbix", "Wireshark"]
     atualmente = "Desenvolvendo SIEM dashboard e toolkit de resposta a incidentes"
-    contato    = "lucas.santos@confiancaetecnologia.com.br"
 ```
 
 ---
