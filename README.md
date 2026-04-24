@@ -1,4 +1,4 @@
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:020c1b,40:0a2a4a,100:00d4ff&height=220&text=Lucas&fontSize=80&fontColor=00eaff&fontAlignY=58&desc=Analista%20de%20TI%20N3%20%7C%20Segurança%20%7C%20Automação%20%7C%20Dev&descAlignY=80&descColor=7ecfff&animation=blinking" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:020c1b,40:0a2a4a,100:00d4ff&height=220&text=Lucas&fontSize=80&fontColor=00eaff&fontAlignY=58&desc=Analista%20de%20TI%20N3%20%7C%20Segurança%20%7C%20Automação%20%7C%20Dev&descAlignY=80&descColor=7ecfff" width="100%"/>
 
 <div align="center">
 
