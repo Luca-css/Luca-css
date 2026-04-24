@@ -1,15 +1,15 @@
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:020c1b,40:0a2a4a,100:00d4ff&height=200&text=Lucas&fontSize=72&fontColor=00eaff&fontAlignY=55&desc=Analista%20de%20TI%20N3%20%7C%20Segurança%20%7C%20Automação%20%7C%20Dev&descAlignY=78&descColor=7ecfff&animation=blinking" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:020c1b,40:0a2a4a,100:00d4ff&height=220&text=Lucas&fontSize=80&fontColor=00eaff&fontAlignY=58&desc=Analista%20de%20TI%20N3%20%7C%20Segurança%20%7C%20Automação%20%7C%20Dev&descAlignY=80&descColor=7ecfff&animation=blinking" width="100%"/>
 
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=20&pause=1000&color=00D4FF&center=true&vCenter=true&width=650&lines=_%20Analista+de+TI+N3+%7C+Nível+Sênior;_%20Segurança+de+Servidores+Windows+%26+Linux;_%20Automação+com+Python+%26+PowerShell;_%20Desenvolvimento+de+Ferramentas+Internas;_%20Active+Directory+%7C+SOC+%7C+Infraestrutura)](https://github.com/Luca-css)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=20&duration=2500&pause=800&color=00D4FF&center=true&vCenter=true&width=680&lines=_%20Analista+de+TI+N3+%7C+N%C3%ADvel+S%C3%AAnior;_%20Segurança+de+Servidores+Windows+%26+Linux;_%20SIEM+%7C+SOC+%7C+Resposta+a+Incidentes;_%20Automação+Python+%26+PowerShell;_%20Desenvolvimento+de+Ferramentas+Internas;_%20Active+Directory+%7C+GPO+%7C+Hardening)](https://github.com/Luca-css)
 
 <br/>
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/lucas-santos)
 [![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:lucas.santos@confiancaetecnologia.com.br)
 [![GitHub](https://img.shields.io/badge/GitHub-00d4ff?style=for-the-badge&logo=github&logoColor=0d1117)](https://github.com/Luca-css)
-![Visits](https://komarev.com/ghpvc/?username=Luca-css&style=for-the-badge&color=00d4ff&label=VISITAS)
+![Profile Views](https://komarev.com/ghpvc/?username=Luca-css&style=for-the-badge&color=00d4ff&label=VISITAS)
 
 </div>
 
@@ -19,12 +19,14 @@
 
 ```python
 class Lucas:
-    cargo     = "Analista de TI N3"
-    empresa   = "TrustIT - Confiança e Tecnologia"
-    local     = "Brasil 🇧🇷"
-    foco      = ["Segurança de Servidores", "Automação", "Desenvolvimento de Ferramentas"]
-    skills    = ["Python", "PowerShell", "JavaScript", "SQL", "Windows Server", "Active Directory"]
-    atualmente = "Desenvolvendo dashboards de monitoramento e scripts de resposta a incidentes"
+    cargo      = "Analista de TI N3"
+    empresa    = "TrustIT - Confiança e Tecnologia"
+    local      = "Brasil 🇧🇷"
+    foco       = ["Segurança de Servidores", "SOC", "Resposta a Incidentes", "Automação"]
+    stack      = ["Python", "PowerShell", "JavaScript", "SQL", "Flask", "HTML/CSS"]
+    infra      = ["Windows Server", "Active Directory", "Linux", "Zabbix", "Wireshark"]
+    atualmente = "Desenvolvendo SIEM dashboard e toolkit de resposta a incidentes"
+    contato    = "lucas.santos@confiancaetecnologia.com.br"
 ```
 
 ---
@@ -35,11 +37,7 @@ class Lucas:
 
 [![Skills](https://skillicons.dev/icons?i=python,powershell,js,html,css,flask,git,docker,linux,vscode,github,postgres&perline=6)](https://skillicons.dev)
 
-</div>
-
 <br/>
-
-<div align="center">
 
 ![Windows Server](https://img.shields.io/badge/Windows_Server-00d4ff?style=flat-square&logo=windows&logoColor=0d1117)
 ![Active Directory](https://img.shields.io/badge/Active_Directory-0078D4?style=flat-square&logo=microsoft&logoColor=white)
@@ -56,8 +54,11 @@ class Lucas:
 
 <div align="center">
 
-<a href="https://github.com/Luca-css/server-dashboard">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=server-dashboard&theme=github_dark&hide_border=true&bg_color=020c1b&title_color=00d4ff&icon_color=00d4ff&border_color=00d4ff" />
+<a href="https://github.com/Luca-css/siem-dashboard">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=siem-dashboard&theme=github_dark&hide_border=true&bg_color=020c1b&title_color=00d4ff&icon_color=00d4ff" />
+</a>
+<a href="https://github.com/Luca-css/incident-response-toolkit">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=incident-response-toolkit&theme=github_dark&hide_border=true&bg_color=020c1b&title_color=00d4ff&icon_color=00d4ff" />
 </a>
 <a href="https://github.com/Luca-css/windows-security-auditor">
   <img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=windows-security-auditor&theme=github_dark&hide_border=true&bg_color=020c1b&title_color=00d4ff&icon_color=00d4ff" />
@@ -65,11 +66,14 @@ class Lucas:
 <a href="https://github.com/Luca-css/ad-hardening-toolkit">
   <img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=ad-hardening-toolkit&theme=github_dark&hide_border=true&bg_color=020c1b&title_color=00d4ff&icon_color=00d4ff" />
 </a>
+<a href="https://github.com/Luca-css/infra-inventory">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=infra-inventory&theme=github_dark&hide_border=true&bg_color=020c1b&title_color=00d4ff&icon_color=00d4ff" />
+</a>
+<a href="https://github.com/Luca-css/server-dashboard">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=server-dashboard&theme=github_dark&hide_border=true&bg_color=020c1b&title_color=00d4ff&icon_color=00d4ff" />
+</a>
 <a href="https://github.com/Luca-css/network-scanner">
   <img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=network-scanner&theme=github_dark&hide_border=true&bg_color=020c1b&title_color=00d4ff&icon_color=00d4ff" />
-</a>
-<a href="https://github.com/Luca-css/soc-automation-scripts">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=soc-automation-scripts&theme=github_dark&hide_border=true&bg_color=020c1b&title_color=00d4ff&icon_color=00d4ff" />
 </a>
 <a href="https://github.com/Luca-css/sql-report-generator">
   <img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=sql-report-generator&theme=github_dark&hide_border=true&bg_color=020c1b&title_color=00d4ff&icon_color=00d4ff" />
@@ -101,29 +105,37 @@ class Lucas:
 
 ![N3](https://img.shields.io/badge/Suporte_N3-Sênior-00d4ff?style=for-the-badge&logo=checkmarx&logoColor=0d1117)
 ![Security](https://img.shields.io/badge/Server_Security-Especialista-00d4ff?style=for-the-badge&logo=shield&logoColor=0d1117)
+![IR](https://img.shields.io/badge/Incident_Response-Avançado-00d4ff?style=for-the-badge&logo=opsgenie&logoColor=0d1117)
 ![AD](https://img.shields.io/badge/Active_Directory-Avançado-00d4ff?style=for-the-badge&logo=microsoft&logoColor=0d1117)
 ![Python](https://img.shields.io/badge/Python_Automation-Sênior-00d4ff?style=for-the-badge&logo=python&logoColor=0d1117)
 ![PowerShell](https://img.shields.io/badge/PowerShell-Sênior-00d4ff?style=for-the-badge&logo=powershell&logoColor=0d1117)
-![SOC](https://img.shields.io/badge/SOC_Operations-Avançado-00d4ff?style=for-the-badge&logo=opsgenie&logoColor=0d1117)
+![SIEM](https://img.shields.io/badge/SIEM_Operations-Avançado-00d4ff?style=for-the-badge&logo=elastic&logoColor=0d1117)
 ![Windows](https://img.shields.io/badge/Windows_Server-Especialista-00d4ff?style=for-the-badge&logo=windows&logoColor=0d1117)
-![SQL](https://img.shields.io/badge/SQL_Server-Intermediário-0a2a4a?style=for-the-badge&logo=microsoftsqlserver&logoColor=00d4ff)
 
 </div>
 
 ---
 
-## Atividade
+## Atividade de Contribuições
 
 <div align="center">
 
 [![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Luca-css&bg_color=020c1b&color=00d4ff&line=0a2a4a&point=00d4ff&area_color=00d4ff&area=true&hide_border=true)](https://github.com/Luca-css)
 
+<br/>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Luca-css/Luca-css/output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Luca-css/Luca-css/output/github-contribution-grid-snake.svg" />
+  <img alt="Snake animation" src="https://raw.githubusercontent.com/Luca-css/Luca-css/output/github-contribution-grid-snake-dark.svg" />
+</picture>
+
 </div>
 
 ---
 
 <div align="center">
-<sub><code style="color:#00d4ff">// "Automatizar é resolver o mesmo problema apenas uma vez."</code></sub>
+<sub><code>// "Automatizar é resolver o mesmo problema apenas uma vez."</code></sub>
 </div>
 
 <br/>
