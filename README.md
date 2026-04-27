@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=18&duration=2000&pause=600&color=00D4FF&center=true&vCenter=true&width=720&lines=root%40trustit%3A~%23+whoami;_%20Analista+de+TI+N3+%7C+TrustIT+%E2%80%94+Brasil+%F0%9F%87%A7%F0%9F%87%B7;_%20Ciberseguran%C3%A7a+%7C+Pentest+%7C+SOC+%7C+DFIR;_%20Hardening+Windows+Server+%26+Active+Directory;_%20SIEM+%7C+Resposta+a+Incidentes+%7C+Forense+Digital;_%20Python+%E2%80%A2+PowerShell+%E2%80%A2+Go+%E2%80%A2+PHP+%E2%80%A2+Node.js+%E2%80%A2+Bash;_%20Vulnerability+Assessment+%7C+Threat+Hunting)](https://github.com/Luca-css)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=18&duration=2000&pause=600&color=00D4FF&center=true&vCenter=true&width=720&lines=root%40localhost%3A~%23+whoami;_%20Analista+de+TI+N3+%7C+S%C3%AAnior+%7C+Brasil+%F0%9F%87%A7%F0%9F%87%B7;_%20Ciberseguran%C3%A7a+%7C+Pentest+%7C+SOC+%7C+DFIR;_%20Hardening+Windows+Server+%26+Active+Directory;_%20SIEM+%7C+Resposta+a+Incidentes+%7C+Forense+Digital;_%20Python+%E2%80%A2+PowerShell+%E2%80%A2+Go+%E2%80%A2+PHP+%E2%80%A2+Node.js+%E2%80%A2+Bash;_%20Vulnerability+Assessment+%7C+Threat+Hunting)](https://github.com/Luca-css)
 
 <br/>
 
@@ -22,11 +22,11 @@
 <td width="55%">
 
 ```bash
-┌──(lucas㉿trustit)-[~]
+┌──(lucas㉿kali)-[~]
 └─$ cat profile.json
 {
   "cargo"     : "Analista de TI N3 — Sênior",
-  "empresa"   : "TrustIT - Confiança e Tecnologia",
+  "empresa"   : "Confidencial",
   "local"     : "Brasil 🇧🇷",
   "foco"      : [
     "Cibersegurança", "Pentest", "SOC",
