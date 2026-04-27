@@ -94,6 +94,15 @@ class Lucas:
 <a href="https://github.com/Luca-css/sql-report-generator">
   <img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=sql-report-generator&theme=github_dark&hide_border=true&bg_color=020c1b&title_color=00d4ff&icon_color=00d4ff" />
 </a>
+<a href="https://github.com/Luca-css/rack-manager">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=rack-manager&theme=github_dark&hide_border=true&bg_color=020c1b&title_color=00d4ff&icon_color=00d4ff" />
+</a>
+<a href="https://github.com/Luca-css/network-monitor">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=network-monitor&theme=github_dark&hide_border=true&bg_color=020c1b&title_color=00d4ff&icon_color=00d4ff" />
+</a>
+<a href="https://github.com/Luca-css/linux-hardening-toolkit">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=linux-hardening-toolkit&theme=github_dark&hide_border=true&bg_color=020c1b&title_color=00d4ff&icon_color=00d4ff" />
+</a>
 
 </div>
 
