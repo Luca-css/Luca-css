@@ -61,20 +61,35 @@ class Lucas:
 <a href="https://github.com/Luca-css/incident-response-toolkit">
   <img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=incident-response-toolkit&theme=github_dark&hide_border=true&bg_color=020c1b&title_color=00d4ff&icon_color=00d4ff" />
 </a>
+<a href="https://github.com/Luca-css/threat-hunt-toolkit">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=threat-hunt-toolkit&theme=github_dark&hide_border=true&bg_color=020c1b&title_color=00d4ff&icon_color=00d4ff" />
+</a>
+<a href="https://github.com/Luca-css/ransomware-detector">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=ransomware-detector&theme=github_dark&hide_border=true&bg_color=020c1b&title_color=00d4ff&icon_color=00d4ff" />
+</a>
+<a href="https://github.com/Luca-css/log-analyzer">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=log-analyzer&theme=github_dark&hide_border=true&bg_color=020c1b&title_color=00d4ff&icon_color=00d4ff" />
+</a>
 <a href="https://github.com/Luca-css/windows-security-auditor">
   <img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=windows-security-auditor&theme=github_dark&hide_border=true&bg_color=020c1b&title_color=00d4ff&icon_color=00d4ff" />
 </a>
 <a href="https://github.com/Luca-css/ad-hardening-toolkit">
   <img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=ad-hardening-toolkit&theme=github_dark&hide_border=true&bg_color=020c1b&title_color=00d4ff&icon_color=00d4ff" />
 </a>
+<a href="https://github.com/Luca-css/patch-compliance-checker">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=patch-compliance-checker&theme=github_dark&hide_border=true&bg_color=020c1b&title_color=00d4ff&icon_color=00d4ff" />
+</a>
+<a href="https://github.com/Luca-css/firewall-audit">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=firewall-audit&theme=github_dark&hide_border=true&bg_color=020c1b&title_color=00d4ff&icon_color=00d4ff" />
+</a>
 <a href="https://github.com/Luca-css/infra-inventory">
   <img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=infra-inventory&theme=github_dark&hide_border=true&bg_color=020c1b&title_color=00d4ff&icon_color=00d4ff" />
 </a>
-<a href="https://github.com/Luca-css/server-dashboard">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=server-dashboard&theme=github_dark&hide_border=true&bg_color=020c1b&title_color=00d4ff&icon_color=00d4ff" />
-</a>
 <a href="https://github.com/Luca-css/network-scanner">
   <img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=network-scanner&theme=github_dark&hide_border=true&bg_color=020c1b&title_color=00d4ff&icon_color=00d4ff" />
+</a>
+<a href="https://github.com/Luca-css/server-dashboard">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=server-dashboard&theme=github_dark&hide_border=true&bg_color=020c1b&title_color=00d4ff&icon_color=00d4ff" />
 </a>
 <a href="https://github.com/Luca-css/sql-report-generator">
   <img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=sql-report-generator&theme=github_dark&hide_border=true&bg_color=020c1b&title_color=00d4ff&icon_color=00d4ff" />
