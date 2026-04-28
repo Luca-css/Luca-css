@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=18&duration=2000&pause=600&color=00D4FF&center=true&vCenter=true&width=720&lines=root%40localhost%3A~%23+whoami;_%20Analista+de+TI+N3+%7C+S%C3%AAnior+%7C+Brasil+%F0%9F%87%A7%F0%9F%87%B7;_%20Ciberseguran%C3%A7a+%7C+Pentest+%7C+SOC+%7C+DFIR;_%20Hardening+Windows+Server+%26+Active+Directory;_%20SIEM+%7C+Resposta+a+Incidentes+%7C+Forense+Digital;_%20Python+%E2%80%A2+PowerShell+%E2%80%A2+Go+%E2%80%A2+PHP+%E2%80%A2+Node.js+%E2%80%A2+Bash;_%20Vulnerability+Assessment+%7C+Threat+Hunting)](https://github.com/Luca-css)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=18&duration=2000&pause=600&color=00D4FF&center=true&vCenter=true&width=720&lines=root%40localhost%3A~%23+whoami;_%20Analista+de+TI+N3+%7C+S%C3%AAnior+%7C+Brasil+%F0%9F%87%A7%F0%9F%87%B7;_%20Ciberseguran%C3%A7a+%7C+Pentest+%7C+SOC+%7C+DFIR;_%20Hardening+Windows+Server+%26+Active+Directory;_%20SIEM+%7C+Resposta+a+Incidentes+%7C+Forense+Digital;_%20Python+%E2%80%A2+Go+%E2%80%A2+TypeScript+%E2%80%A2+Rust+%E2%80%A2+Kotlin;_%20PowerShell+%E2%80%A2+PHP+%E2%80%A2+Node.js+%E2%80%A2+Bash;_%20Vulnerability+Assessment+%7C+Threat+Hunting)](https://github.com/Luca-css)
 
 <br/>
 
@@ -33,8 +33,8 @@
     "DFIR", "Threat Hunting", "Automação"
   ],
   "stack"     : [
-    "Python", "PowerShell", "Go",
-    "PHP", "Node.js", "Bash", "SQL"
+    "Python", "PowerShell", "Go", "TypeScript",
+    "Rust", "Kotlin", "PHP", "Node.js", "Bash"
   ],
   "infra"     : [
     "Windows Server", "Active Directory",
@@ -61,7 +61,7 @@
 
 <div align="center">
 
-[![Skills](https://skillicons.dev/icons?i=python,powershell,go,php,js,nodejs,bash,html,css,flask,mysql,postgres,git,docker,linux,vscode&perline=8)](https://skillicons.dev)
+[![Skills](https://skillicons.dev/icons?i=python,powershell,go,php,js,nodejs,bash,ts,rust,html,css,flask,mysql,postgres,git,docker&perline=8)](https://skillicons.dev)
 
 <br/>
 
@@ -73,6 +73,9 @@
 ![Zabbix](https://img.shields.io/badge/Zabbix-CC0000?style=flat-square&logo=zabbix&logoColor=white)
 ![Elastic](https://img.shields.io/badge/Elastic_SIEM-005571?style=flat-square&logo=elastic&logoColor=white)
 ![Metasploit](https://img.shields.io/badge/Metasploit-2596CD?style=flat-square&logo=metasploit&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white)
+![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white)
 
 </div>
 
