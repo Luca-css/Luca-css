@@ -26,7 +26,7 @@
 └─$ cat profile.json
 {
   "cargo"     : "Analista de TI N3 — Sênior",
-  "empresa"   : "Confidencial",
+  "empresa"   : "Setor Privado — TI & Segurança",
   "local"     : "Brasil 🇧🇷",
   "foco"      : [
     "Cibersegurança", "Pentest", "SOC",
