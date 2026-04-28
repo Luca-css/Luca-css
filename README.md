@@ -137,6 +137,15 @@
 <a href="https://github.com/Luca-css/network-monitor">
   <img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=network-monitor&theme=github_dark&hide_border=true&bg_color=071222&title_color=00d4ff&icon_color=00d4ff&border_radius=10" />
 </a>
+<a href="https://github.com/Luca-css/security-api">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=security-api&theme=github_dark&hide_border=true&bg_color=071222&title_color=00d4ff&icon_color=00d4ff&border_radius=10" />
+</a>
+<a href="https://github.com/Luca-css/port-scanner-rs">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=port-scanner-rs&theme=github_dark&hide_border=true&bg_color=071222&title_color=00d4ff&icon_color=00d4ff&border_radius=10" />
+</a>
+<a href="https://github.com/Luca-css/infra-monitor-kt">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=infra-monitor-kt&theme=github_dark&hide_border=true&bg_color=071222&title_color=00d4ff&icon_color=00d4ff&border_radius=10" />
+</a>
 
 </div>
 
