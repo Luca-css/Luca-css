@@ -7,7 +7,7 @@
 <br/>
 
 [![Portfolio](https://img.shields.io/badge/🌐%20Portfólio-00d4ff?style=for-the-badge&logoColor=0d1117)](https://luca-css.github.io)&nbsp;
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/lucas-santos)&nbsp;
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lucas-candido-0571b2407/)&nbsp;
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Luca-css)&nbsp;
 ![Profile Views](https://komarev.com/ghpvc/?username=Luca-css&style=for-the-badge&color=00d4ff&label=VISITAS)
 
