@@ -1,455 +1,275 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 890 130" width="890" height="130">
 <defs>
-  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#020816"/><stop offset="48%" stop-color="#030a14"/><stop offset="100%" stop-color="#060508"/></linearGradient>
-  <radialGradient id="magatm" cx="12%" cy="75%" r="28%"><stop offset="0%" stop-color="#0d2a8a" stop-opacity=".35"/><stop offset="100%" stop-color="#020816" stop-opacity="0"/></radialGradient>
-  <radialGradient id="dragatm" cx="85%" cy="70%" r="32%"><stop offset="0%" stop-color="#7a1500" stop-opacity=".28"/><stop offset="100%" stop-color="#020816" stop-opacity="0"/></radialGradient>
-  <linearGradient id="robeG" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#1e44a0"/><stop offset="55%" stop-color="#0d2260"/><stop offset="100%" stop-color="#061040"/></linearGradient>
-  <linearGradient id="robeHL" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#2255bb" stop-opacity="0"/><stop offset="45%" stop-color="#4477dd" stop-opacity=".55"/><stop offset="100%" stop-color="#2255bb" stop-opacity="0"/></linearGradient>
-  <linearGradient id="staffG" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#3a1a08"/><stop offset="50%" stop-color="#6a3010"/><stop offset="100%" stop-color="#3a1a08"/></linearGradient>
-  <radialGradient id="skinG" cx="38%" cy="28%" r="72%"><stop offset="0%" stop-color="#fce8cc"/><stop offset="65%" stop-color="#e8c098"/><stop offset="100%" stop-color="#c89068"/></radialGradient>
-  <radialGradient id="orbG" cx="32%" cy="28%" r="72%"><stop offset="0%" stop-color="#ffffff"/><stop offset="28%" stop-color="#88ddff"/><stop offset="65%" stop-color="#0088ff"/><stop offset="100%" stop-color="#004488" stop-opacity="0"/></radialGradient>
-  <linearGradient id="dragBG" x1="0" y1="0" x2=".5" y2="1"><stop offset="0%" stop-color="#2a2a2a"/><stop offset="55%" stop-color="#181818"/><stop offset="100%" stop-color="#080808"/></linearGradient>
-  <linearGradient id="dragVG" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#353030"/><stop offset="100%" stop-color="#201c1c"/></linearGradient>
-  <linearGradient id="wingG" x1="0" y1="1" x2="1" y2="0"><stop offset="0%" stop-color="#0d0d0d"/><stop offset="70%" stop-color="#1a1a1a"/><stop offset="100%" stop-color="#0a0a0a" stop-opacity=".4"/></linearGradient>
-  <radialGradient id="eyeG" cx="35%" cy="30%" r="72%"><stop offset="0%" stop-color="#ffcc44"/><stop offset="45%" stop-color="#cc7700"/><stop offset="100%" stop-color="#441100"/></radialGradient>
-  <filter id="gw" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-  <filter id="gw2" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="5.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-  <filter id="fg" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-  <clipPath id="clip"><rect width="890" height="130"/></clipPath>
   <style>
-    @keyframes bolt{0%{transform:translateX(0);opacity:0}6%{opacity:1}70%{transform:translateX(460px);opacity:1}71%,100%{transform:translateX(0);opacity:0}}
-    @keyframes fireH{0%{transform:translateX(0);opacity:0}6%{opacity:1}65%{transform:translateX(-385px);opacity:1}66%,100%{transform:translateX(0);opacity:0}}
-    @keyframes orb{0%,100%{opacity:.5}50%{opacity:1}}
-    @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-2px)}}
-    @keyframes shPulse{0%,100%{opacity:.28}50%{opacity:.52}}
-    @keyframes shHit{0%,64%{opacity:.28}65%,73%{opacity:.9}74%,100%{opacity:.28}}
-    @keyframes fl{0%,100%{opacity:.7;transform:scaleX(1)}50%{opacity:.95;transform:scaleX(1.06)}}
-    @keyframes emb{0%{transform:translate(0,0);opacity:.9}100%{transform:translate(-14px,-42px);opacity:0}}
-    @keyframes emb2{0%{transform:translate(0,0);opacity:.9}100%{transform:translate(-8px,-52px);opacity:0}}
-    @keyframes hit{0%,69%{opacity:0}70%,78%{opacity:1}79%,100%{opacity:0}}
-    @keyframes fhit{0%,64%{opacity:0}65%,73%{opacity:1}74%,100%{opacity:0}}
-    @keyframes thr{0%,100%{opacity:.18}45%,55%{opacity:.72}}
-    @keyframes wg{0%,100%{transform:translateY(0)}45%{transform:translateY(-5px)}}
-    .bolt{animation:bolt 2.4s linear infinite}
-    .fireH{animation:fireH 3.4s linear infinite 1.4s}
-    .orb{animation:orb 1.6s ease-in-out infinite}
-    .float{animation:float 3.6s ease-in-out infinite}
-    .shield{animation:shPulse 2.4s ease-in-out infinite}
-    .shHit{animation:shHit 3.4s linear infinite 1.4s}
-    .fl{animation:fl .5s ease-in-out infinite;transform-box:fill-box;transform-origin:right center}
-    .emb{animation:emb 2.2s ease-in infinite}
-    .emb2{animation:emb2 2.9s ease-in infinite .55s}
-    .hit{animation:hit 2.4s linear infinite}
-    .fhit{animation:fhit 3.4s linear infinite 1.4s}
-    .thr{animation:thr 1.5s ease-in-out infinite}
-    .wg{animation:wg 1.3s ease-in-out infinite;transform-box:fill-box;transform-origin:bottom center}
+    @keyframes scroll { from{transform:translateX(0)} to{transform:translateX(-445px)} }
+    @keyframes scrollFast { from{transform:translateX(0)} to{transform:translateX(-890px)} }
+    @keyframes blink { 0%,49%{opacity:1} 50%,100%{opacity:0} }
+    /* robot run: legs alternate */
+    @keyframes legL { 0%,100%{transform:rotate(-30deg)} 50%{transform:rotate(30deg)} }
+    @keyframes legR { 0%,100%{transform:rotate(30deg)}  50%{transform:rotate(-30deg)} }
+    @keyframes armL { 0%,100%{transform:rotate(25deg)}  50%{transform:rotate(-25deg)} }
+    @keyframes armR { 0%,100%{transform:rotate(-25deg)} 50%{transform:rotate(25deg)} }
+    @keyframes bobY { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-3px)} }
+    /* transform sequence: robot visible 0-65%, flash 65-75%, car visible 75-100% */
+    @keyframes showRobot { 0%,64%{opacity:1;transform:translateX(0)} 65%,66%{opacity:0} 67%,68%{opacity:1} 69%,100%{opacity:0} }
+    @keyframes showCar   { 0%,64%{opacity:0} 65%,66%{opacity:1} 67%,68%{opacity:0} 69%,100%{opacity:1} }
+    @keyframes flash     { 0%,63%{opacity:0} 64%,70%{opacity:1} 71%,100%{opacity:0} }
+    .bg-city  { animation: scroll 8s linear infinite; }
+    .bg-far   { animation: scroll 16s linear infinite; }
+    .ground   { animation: scrollFast 3s linear infinite; }
+    .blink    { animation: blink 0.8s step-end infinite; }
+    .robot    { animation: showRobot 6s steps(1,end) infinite; }
+    .car      { animation: showCar   6s steps(1,end) infinite; }
+    .flash    { animation: flash     6s steps(1,end) infinite; }
+    .bobY     { animation: bobY .25s steps(1,end) infinite; transform-box:fill-box; transform-origin:bottom center; }
+    .legL     { animation: legL .25s steps(1,end) infinite; transform-box:fill-box; transform-origin:top center; }
+    .legR     { animation: legR .25s steps(1,end) infinite; transform-box:fill-box; transform-origin:top center; }
+    .armL     { animation: armL .25s steps(1,end) infinite; transform-box:fill-box; transform-origin:top center; }
+    .armR     { animation: armR .25s steps(1,end) infinite; transform-box:fill-box; transform-origin:top center; }
   </style>
 </defs>
-<g clip-path="url(#clip)">
 
-<!-- Background -->
-<rect width="890" height="130" fill="url(#bg)"/>
-<rect width="890" height="130" fill="url(#magatm)"/>
-<rect width="890" height="130" fill="url(#dragatm)"/>
+<!-- Sky -->
+<rect width="890" height="130" fill="#0a0a1a"/>
 
-<!-- Stars -->
-<circle cx="198" cy="11" r=".9" fill="#fff" opacity=".4"/>
-<circle cx="318" cy="7" r=".7" fill="#fff" opacity=".44"/>
-<circle cx="445" cy="17" r="1" fill="#fff" opacity=".3"/>
-<circle cx="564" cy="5" r=".8" fill="#fff" opacity=".42"/>
-<circle cx="682" cy="13" r=".9" fill="#fff" opacity=".38"/>
-<circle cx="800" cy="7" r=".7" fill="#fff" opacity=".35"/>
-<circle cx="258" cy="22" r=".5" fill="#6ec8ff" opacity=".28"/>
-<circle cx="636" cy="21" r=".5" fill="#ffaa44" opacity=".28"/>
-<circle cx="144" cy="18" r=".6" fill="#4488ff" opacity=".22"/>
-<circle cx="750" cy="23" r=".6" fill="#ff8844" opacity=".22"/>
+<!-- Stars (static) -->
+<rect x="40"  y="6"  width="2" height="2" fill="#fff" opacity=".7"/>
+<rect x="120" y="10" width="2" height="2" fill="#fff" opacity=".5"/>
+<rect x="220" y="4"  width="2" height="2" fill="#fff" opacity=".6"/>
+<rect x="350" y="8"  width="2" height="2" fill="#fff" opacity=".5"/>
+<rect x="500" y="5"  width="2" height="2" fill="#fff" opacity=".7"/>
+<rect x="640" y="9"  width="2" height="2" fill="#fff" opacity=".4"/>
+<rect x="780" y="6"  width="2" height="2" fill="#fff" opacity=".6"/>
+<rect x="860" y="12" width="2" height="2" fill="#fff" opacity=".5"/>
 
-<!-- Ground -->
-<rect x="0" y="117" width="890" height="13" fill="#020810"/>
-<rect x="0" y="116" width="890" height="1.2" fill="#00d4ff" opacity=".1"/>
-<ellipse cx="102" cy="118" rx="55" ry="5" fill="#1144bb" opacity=".07"/>
-<ellipse cx="790" cy="118" rx="78" ry="7" fill="#cc3300" opacity=".07"/>
+<!-- Moon -->
+<rect x="30" y="8" width="16" height="16" fill="#ffffcc" rx="2"/>
+<rect x="32" y="8" width="2"  height="2"  fill="#0a0a1a"/>
+<rect x="34" y="8" width="2"  height="2"  fill="#0a0a1a"/>
+<rect x="36" y="8" width="6"  height="2"  fill="#0a0a1a"/>
 
-<!-- HUD frame -->
-<path d="M4 22 L4 4 L22 4" stroke="#00d4ff" stroke-width="1.3" fill="none" opacity=".7"/>
-<path d="M886 22 L886 4 L868 4" stroke="#ef4444" stroke-width="1.3" fill="none" opacity=".7"/>
-<path d="M4 108 L4 126 L22 126" stroke="#00d4ff" stroke-width="1.3" fill="none" opacity=".7"/>
-<path d="M886 108 L886 126 L868 126" stroke="#ef4444" stroke-width="1.3" fill="none" opacity=".7"/>
-<text x="445" y="12" font-family="monospace" font-size="7.5" fill="#00d4ff" text-anchor="middle" letter-spacing="4" opacity=".82">── BATTLE ──</text>
-
-<!-- HP bars -->
-<text x="30" y="8" font-family="monospace" font-size="5" fill="#4ade80">MAGE HP</text>
-<rect x="28" y="10" width="80" height="6" rx="2" fill="#020e1a" stroke="#22c55e" stroke-width=".5"/>
-<rect x="29" y="11" width="78" height="4" rx="1" fill="#15803d"/>
-<rect x="29" y="11" width="54" height="2" rx="1" fill="#4ade80" opacity=".5"/>
-<text x="782" y="8" font-family="monospace" font-size="5" fill="#ef4444">DRAGON HP</text>
-<rect x="782" y="10" width="80" height="6" rx="2" fill="#0e0408" stroke="#dc2626" stroke-width=".5"/>
-<rect x="783" y="11" width="57" height="4" rx="1" fill="#991b1b"/>
-<rect x="783" y="11" width="40" height="2" rx="1" fill="#ef4444" opacity=".5"/>
-
-<!-- ══════════════════════════════════════════ -->
-<!--  MAGE  (center ~x=94, height ~75px)      -->
-<!-- ══════════════════════════════════════════ -->
-<g class="float">
-  <!-- Ground shadow -->
-  <ellipse cx="96" cy="119" rx="28" ry="3" fill="#000" opacity=".38"/>
-
-  <!-- Staff shaft (behind body) -->
-  <rect x="148" y="30" width="3.5" height="82" rx="1.5" fill="url(#staffG)"/>
-  <rect x="147" y="60" width="5.5" height="2.5" rx="1" fill="#7a4018"/>
-  <rect x="147" y="76" width="5.5" height="2.5" rx="1" fill="#7a4018"/>
-  <!-- Staff top fork -->
-  <path d="M146,32 Q150,25 154,32" fill="none" stroke="#5a2a0a" stroke-width="1.5"/>
-  <path d="M147,32 Q150,27 153,32" fill="none" stroke="#9a6028" stroke-width=".7"/>
-  <!-- Staff orb -->
-  <circle cx="150" cy="26" r="7" fill="#0066cc" opacity=".2" filter="url(#gw2)" class="orb"/>
-  <circle cx="150" cy="26" r="5" fill="#00aaff" opacity=".55" filter="url(#gw)" class="orb"/>
-  <circle cx="150" cy="26" r="3.2" fill="url(#orbG)" class="orb"/>
-  <circle cx="148.5" cy="24.5" r="1.2" fill="#fff" opacity=".88"/>
-
-  <!-- Cape (back, darkest layer) -->
-  <path d="M68,56 Q50,82 52,112 L72,112 Q66,88 70,56 Z" fill="#05112a" opacity=".92"/>
-
-  <!-- ROBE lower (legs hidden under robe) -->
-  <path d="M72,88 Q68,100 66,112 L80,112 Q80,104 82,96 Z" fill="#0d2260"/>
-  <path d="M110,88 Q112,100 114,112 L126,112 Q124,104 118,96 Z" fill="#0d2260"/>
-  <!-- Boots -->
-  <path d="M64,110 Q62,114 64,117 Q70,119 78,117 Q80,114 78,110 Z" fill="#040c1e"/>
-  <path d="M114,110 Q112,114 114,117 Q120,119 128,117 Q130,114 128,110 Z" fill="#040c1e"/>
-
-  <!-- ROBE BODY (three layered paths for depth) -->
-  <!-- Outer dark robe -->
-  <path d="M70,56 Q58,74 56,100 Q58,112 80,114 Q94,116 108,114 Q130,112 132,100 Q130,74 120,56 Z" fill="#0a1e58"/>
-  <!-- Mid blue layer -->
-  <path d="M76,56 Q66,74 64,100 Q66,110 84,113 Q94,115 104,113 Q122,110 124,100 Q122,74 112,56 Z" fill="url(#robeG)"/>
-  <!-- Inner highlight -->
-  <path d="M84,58 Q76,76 76,100 Q80,112 94,113 Q108,112 112,100 Q112,76 104,58 Z" fill="url(#robeHL)" opacity=".55"/>
-  <!-- Vertical center highlight -->
-  <path d="M93,60 Q91,82 92,106" stroke="#3a66cc" stroke-width="1.5" fill="none" opacity=".35"/>
-
-  <!-- Robe collar band -->
-  <rect x="70" y="54" width="50" height="4" rx="2" fill="#2a4aaa"/>
-  <!-- Belt -->
-  <path d="M70,82 Q94,86 118,82" stroke="#3a5acc" stroke-width="2" fill="none" opacity=".7"/>
-  <rect x="90" y="80" width="7" height="4.5" rx="1" fill="#5577dd" stroke="#88aaff" stroke-width=".5"/>
-
-  <!-- Chest detail rune -->
-  <text x="94" y="72" font-family="serif" font-size="9" fill="#3a66dd" text-anchor="middle" opacity=".65">✦</text>
-
-  <!-- Shoulder pauldrons -->
-  <path d="M70,57 Q60,53 56,62 Q56,70 64,72 Q70,72 74,65 Z" fill="#1a3a8a" stroke="#2a4aaa" stroke-width=".7"/>
-  <path d="M60,57 Q57,63 59,69" stroke="#3055aa" stroke-width=".6" fill="none" opacity=".65"/>
-  <path d="M118,57 Q128,53 132,62 Q132,70 124,72 Q118,72 114,65 Z" fill="#1a3a8a" stroke="#2a4aaa" stroke-width=".7"/>
-  <path d="M128,57 Q131,63 129,69" stroke="#3055aa" stroke-width=".6" fill="none" opacity=".65"/>
-
-  <!-- Left arm (to staff) -->
-  <path d="M70,64 Q57,74 52,90 Q50,98 53,102" stroke="#0a1e58" stroke-width="7" fill="none" stroke-linecap="round"/>
-  <path d="M70,64 Q57,74 52,90 Q50,98 53,102" stroke="#1a3a8a" stroke-width="4.5" fill="none" stroke-linecap="round"/>
-  <!-- Glove left -->
-  <path d="M51,100 Q46,104 48,109 Q52,112 58,110 Q62,106 60,100 Z" fill="#1c2c6a"/>
-
-  <!-- Right arm (casting, raised) -->
-  <path d="M118,64 Q130,60 142,52 Q150,46 154,42" stroke="#0a1e58" stroke-width="7" fill="none" stroke-linecap="round"/>
-  <path d="M118,64 Q130,60 142,52 Q150,46 154,42" stroke="#1a3a8a" stroke-width="4.5" fill="none" stroke-linecap="round"/>
-  <!-- Casting glow -->
-  <circle cx="155" cy="41" r="5.5" fill="#00aaff" opacity=".22" filter="url(#gw2)" class="orb"/>
-  <circle cx="155" cy="41" r="2.8" fill="#88ccff" opacity=".7" class="orb"/>
-
-  <!-- NECK -->
-  <rect x="89" y="51" width="10" height="6" rx="3" fill="#d0a880"/>
-
-  <!-- HEAD (small, natural proportions) -->
-  <!-- Head shape -->
-  <ellipse cx="94" cy="42" rx="13" ry="15" fill="url(#skinG)"/>
-  <!-- Shadow side of face -->
-  <path d="M104,33 Q110,40 108,52 Q104,55 100,48 Q104,40 104,33 Z" fill="#c09070" opacity=".45"/>
-
-  <!-- Eyebrows (bushy, old) -->
-  <path d="M84,36 Q89,33 94,36" stroke="#807868" stroke-width="2.2" fill="none" stroke-linecap="round"/>
-  <path d="M94,36 Q99,33 104,36" stroke="#807868" stroke-width="2.2" fill="none" stroke-linecap="round"/>
-
-  <!-- Eyes -->
-  <ellipse cx="88" cy="40" rx="3" ry="2.8" fill="#141428"/>
-  <ellipse cx="100" cy="40" rx="3" ry="2.8" fill="#141428"/>
-  <circle cx="88" cy="40" r="1.9" fill="#1a44ff"/>
-  <circle cx="100" cy="40" r="1.9" fill="#1a44ff"/>
-  <circle cx="87" cy="39" r=".8" fill="#fff" opacity=".85"/>
-  <circle cx="99" cy="39" r=".8" fill="#fff" opacity=".85"/>
-  <circle cx="88" cy="40" r="3.5" fill="#00d4ff" opacity=".1" filter="url(#gw)"/>
-  <circle cx="100" cy="40" r="3.5" fill="#00d4ff" opacity=".1" filter="url(#gw)"/>
-
-  <!-- Nose -->
-  <path d="M92,44 Q90,47 88,48 Q92,50 96,48 Q94,47 92,44 Z" fill="#c08868" opacity=".75"/>
-
-  <!-- BEARD (long white, with strands) -->
-  <path d="M81,50 Q77,60 78,72 Q80,82 84,87 Q90,90 94,89 Q100,88 104,84 Q108,78 108,68 Q109,58 107,50 Z" fill="#d5d5cc"/>
-  <path d="M86,52 Q84,62 85,72 Q87,80 92,85 Q97,84 101,80 Q104,74 103,64 Q103,56 101,52 Z" fill="#c2c2b8" opacity=".7"/>
-  <path d="M84,53 Q83,66 84,76" stroke="#b0b0a8" stroke-width=".6" fill="none"/>
-  <path d="M90,53 Q89,68 90,80" stroke="#a8a8a0" stroke-width=".6" fill="none"/>
-  <path d="M96,53 Q95,70 95,84" stroke="#b0b0a8" stroke-width=".6" fill="none"/>
-  <path d="M102,53 Q103,66 102,76" stroke="#a8a8a0" stroke-width=".6" fill="none"/>
-  <!-- Moustache -->
-  <path d="M84,51 Q90,48 94,49 Q98,48 104,51" stroke="#c0c0b0" stroke-width="1.4" fill="none" stroke-linecap="round"/>
-
-  <!-- WIZARD HAT -->
-  <ellipse cx="94" cy="28" rx="20" ry="4.5" fill="#020c1e" opacity=".55"/>
-  <path d="M94,5 Q87,11 76,27 L112,27 Q102,11 94,5 Z" fill="#07163a"/>
-  <path d="M94,5 Q89,13 80,27 L108,27 Q100,13 94,5 Z" fill="#0f2470" opacity=".65"/>
-  <rect x="74" y="24" width="40" height="5" rx="2" fill="#1a3a8a"/>
-  <rect x="74" y="25" width="40" height="2" fill="#2244aa" opacity=".6"/>
-  <text x="94" y="20" font-family="serif" font-size="8.5" fill="#3a66ff" text-anchor="middle" opacity=".88">★</text>
-  <path d="M87,8 Q89,14 89,22" stroke="#2244aa" stroke-width=".8" fill="none" opacity=".42"/>
+<!-- Far buildings (slow scroll, 2 copies side by side) -->
+<g class="bg-far">
+  <!-- copy 1 -->
+  <rect x="0"   y="28" width="28" height="72" fill="#111130"/>
+  <rect x="6"   y="22" width="16" height="6"  fill="#111130"/>
+  <rect x="32"  y="38" width="22" height="62" fill="#0e0e28"/>
+  <rect x="60"  y="18" width="34" height="82" fill="#13133a"/>
+  <rect x="68"  y="10" width="18" height="8"  fill="#13133a"/>
+  <rect x="98"  y="32" width="26" height="68" fill="#111130"/>
+  <rect x="128" y="24" width="32" height="76" fill="#0e0e28"/>
+  <rect x="164" y="36" width="20" height="64" fill="#13133a"/>
+  <rect x="188" y="20" width="30" height="80" fill="#111130"/>
+  <rect x="192" y="14" width="22" height="6"  fill="#111130"/>
+  <rect x="222" y="30" width="24" height="70" fill="#0e0e28"/>
+  <rect x="250" y="42" width="18" height="58" fill="#13133a"/>
+  <rect x="272" y="26" width="28" height="74" fill="#111130"/>
+  <rect x="304" y="16" width="36" height="84" fill="#0e0e28"/>
+  <rect x="310" y="8"  width="24" height="8"  fill="#0e0e28"/>
+  <rect x="344" y="34" width="22" height="66" fill="#13133a"/>
+  <rect x="370" y="22" width="30" height="78" fill="#111130"/>
+  <rect x="404" y="38" width="24" height="62" fill="#0e0e28"/>
+  <rect x="432" y="28" width="16" height="72" fill="#13133a"/>
+  <!-- copy 2 (offset 445) -->
+  <rect x="445" y="28" width="28" height="72" fill="#111130"/>
+  <rect x="451" y="22" width="16" height="6"  fill="#111130"/>
+  <rect x="477" y="38" width="22" height="62" fill="#0e0e28"/>
+  <rect x="505" y="18" width="34" height="82" fill="#13133a"/>
+  <rect x="513" y="10" width="18" height="8"  fill="#13133a"/>
+  <rect x="543" y="32" width="26" height="68" fill="#111130"/>
+  <rect x="573" y="24" width="32" height="76" fill="#0e0e28"/>
+  <rect x="609" y="36" width="20" height="64" fill="#13133a"/>
+  <rect x="633" y="20" width="30" height="80" fill="#111130"/>
+  <rect x="637" y="14" width="22" height="6"  fill="#111130"/>
+  <rect x="667" y="30" width="24" height="70" fill="#0e0e28"/>
+  <rect x="695" y="42" width="18" height="58" fill="#13133a"/>
+  <rect x="717" y="26" width="28" height="74" fill="#111130"/>
+  <rect x="749" y="16" width="36" height="84" fill="#0e0e28"/>
+  <rect x="755" y="8"  width="24" height="8"  fill="#0e0e28"/>
+  <rect x="789" y="34" width="22" height="66" fill="#13133a"/>
+  <rect x="815" y="22" width="30" height="78" fill="#111130"/>
+  <rect x="849" y="38" width="24" height="62" fill="#0e0e28"/>
+  <rect x="877" y="28" width="16" height="72" fill="#13133a"/>
 </g>
 
-<!-- MAGE SHIELD -->
-<circle cx="98" cy="70" r="75" fill="#0044ff" fill-opacity=".018" class="shield"/>
-<circle cx="98" cy="70" r="63" fill="#00aaff" fill-opacity=".035" stroke="#00d4ff" stroke-width="1.1" stroke-opacity=".35" stroke-dasharray="4 3" class="shHit"/>
-<path d="M98,18 L122,32 L122,58 L98,72 L74,58 L74,32 Z" fill="none" stroke="#00d4ff" stroke-width=".65" stroke-opacity=".16"/>
-<path d="M98,28 L116,38 L116,56 L98,66 L80,56 L80,38 Z" fill="none" stroke="#7ecfff" stroke-width=".5" stroke-opacity=".12"/>
-<g opacity=".48">
-  <animateTransform attributeName="transform" type="rotate" from="0 98 70" to="360 98 70" dur="11s" repeatCount="indefinite"/>
-  <circle cx="161" cy="70" r="2.8" fill="#00d4ff" opacity=".7"/>
-  <circle cx="35" cy="70" r="2.8" fill="#00d4ff" opacity=".7"/>
-  <circle cx="98" cy="7" r="2.8" fill="#00d4ff" opacity=".7"/>
-  <text x="153" y="45" font-family="serif" font-size="7" fill="#00d4ff">✦</text>
-  <text x="28" y="96" font-family="serif" font-size="7" fill="#00d4ff">✦</text>
-</g>
-<g opacity=".28">
-  <animateTransform attributeName="transform" type="rotate" from="360 98 70" to="0 98 70" dur="7s" repeatCount="indefinite"/>
-  <circle cx="155" cy="52" r="1.6" fill="#7ecfff"/>
-  <circle cx="41" cy="52" r="1.6" fill="#7ecfff"/>
-  <circle cx="41" cy="88" r="1.6" fill="#7ecfff"/>
-  <circle cx="155" cy="88" r="1.6" fill="#7ecfff"/>
-</g>
+<!-- Neon windows (blinking, far) -->
+<rect x="66"  y="36" width="4" height="4" fill="#00ffff" opacity=".4"/>
+<rect x="74"  y="36" width="4" height="4" fill="#00ffff" opacity=".4"/>
+<rect x="66"  y="46" width="4" height="4" fill="#ff00ff" opacity=".3" class="blink"/>
+<rect x="196" y="28" width="4" height="4" fill="#00ffff" opacity=".3"/>
+<rect x="308" y="24" width="4" height="4" fill="#ffff00" opacity=".35" class="blink"/>
+<rect x="376" y="36" width="4" height="4" fill="#ff00ff" opacity=".3"/>
 
-<!-- ══════════════════════════════════════════ -->
-<!--  MAGIC BOLT                              -->
-<!-- ══════════════════════════════════════════ -->
-<g class="bolt">
-  <ellipse cx="206" cy="51" rx="27" ry="9.5" fill="#0044ff" opacity=".18" filter="url(#gw2)"/>
-  <ellipse cx="206" cy="51" rx="19" ry="6.5" fill="#00aaff" opacity=".62" filter="url(#gw)"/>
-  <ellipse cx="206" cy="51" rx="12" ry="4" fill="#7ecfff" opacity=".9"/>
-  <ellipse cx="206" cy="51" rx="6.5" ry="2.2" fill="#fff" opacity=".95"/>
-  <ellipse cx="188" cy="51" rx="11" ry="3.5" fill="#00aaff" opacity=".42"/>
-  <ellipse cx="174" cy="51" rx="7" ry="2.2" fill="#7ecfff" opacity=".26"/>
-  <path d="M200,44 L208,40 L204,45 L212,41" stroke="#fff" stroke-width="1.1" fill="none" opacity=".7"/>
-  <path d="M200,58 L208,62 L204,57 L212,61" stroke="#00d4ff" stroke-width="1.1" fill="none" opacity=".7"/>
-  <path d="M215,48 L221,45 L218,49" stroke="#7ecfff" stroke-width=".9" fill="none" opacity=".55"/>
-</g>
-
-<!-- BOLT IMPACT -->
-<g class="hit" opacity="0">
-  <circle cx="700" cy="52" r="21" fill="#00aaff" opacity=".24" filter="url(#gw2)"/>
-  <circle cx="700" cy="52" r="12" fill="#00d4ff" opacity=".48" filter="url(#gw)"/>
-  <circle cx="700" cy="52" r="6.5" fill="#fff" opacity=".8"/>
-  <line x1="700" y1="29" x2="700" y2="19" stroke="#00d4ff" stroke-width="2.3"/>
-  <line x1="716" y1="37" x2="727" y2="30" stroke="#00d4ff" stroke-width="2"/>
-  <line x1="684" y1="37" x2="673" y2="30" stroke="#00d4ff" stroke-width="2"/>
-  <line x1="716" y1="67" x2="727" y2="74" stroke="#7ecfff" stroke-width="2"/>
-  <line x1="684" y1="67" x2="673" y2="74" stroke="#7ecfff" stroke-width="2"/>
-</g>
-
-<!-- ══════════════════════════════════════════ -->
-<!--  DRAGON  (facing left, x≈740-875)        -->
-<!-- ══════════════════════════════════════════ -->
-
-<!-- Ground shadow -->
-<ellipse cx="792" cy="119" rx="68" ry="5.5" fill="#000" opacity=".4"/>
-
-<!-- TAIL -->
-<path d="M858,92 Q872,79 878,67 Q882,57 876,50 Q870,44 864,50 Q870,58 866,67 Q856,80 840,94" stroke="#111111" stroke-width="13" fill="none" stroke-linecap="round"/>
-<path d="M858,92 Q872,79 878,67 Q882,57 876,50" stroke="#282828" stroke-width="6.5" fill="none" stroke-linecap="round"/>
-<path d="M858,92 Q872,79 878,67 Q882,57 876,50" stroke="#363636" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-<polygon points="866,48 860,36 875,43" fill="#111111"/>
-<polygon points="875,57 870,45 883,51" fill="#111111"/>
-<polygon points="880,67 876,55 886,62" fill="#0a0a0a"/>
-
-<!-- BACK WING (left side) -->
-<g class="wg">
-  <path d="M752,64 Q724,36 688,12 Q708,24 726,42 Q740,56 752,64 Z" fill="url(#wingG)" opacity=".95"/>
-  <line x1="752" y1="64" x2="688" y2="12" stroke="#191919" stroke-width="1.7"/>
-  <line x1="752" y1="64" x2="700" y2="20" stroke="#191919" stroke-width="1.1"/>
-  <line x1="752" y1="64" x2="716" y2="34" stroke="#191919" stroke-width=".9"/>
-  <path d="M748,60 Q726,40 708,22" stroke="#252525" stroke-width=".7" fill="none" opacity=".5"/>
+<!-- Near buildings (medium scroll, 2 copies) -->
+<g class="bg-city">
+  <!-- copy 1 -->
+  <rect x="0"   y="52" width="36" height="68" fill="#1a1a40"/>
+  <rect x="6"   y="44" width="24" height="8"  fill="#1a1a40"/>
+  <rect x="40"  y="60" width="28" height="60" fill="#141430"/>
+  <rect x="72"  y="46" width="44" height="74" fill="#1e1e4a"/>
+  <rect x="80"  y="38" width="28" height="8"  fill="#1e1e4a"/>
+  <rect x="120" y="56" width="32" height="64" fill="#1a1a40"/>
+  <rect x="156" y="42" width="38" height="78" fill="#141430"/>
+  <rect x="160" y="34" width="30" height="8"  fill="#141430"/>
+  <rect x="198" y="58" width="30" height="62" fill="#1e1e4a"/>
+  <rect x="232" y="48" width="42" height="72" fill="#1a1a40"/>
+  <rect x="238" y="40" width="30" height="8"  fill="#1a1a40"/>
+  <rect x="278" y="54" width="34" height="66" fill="#141430"/>
+  <rect x="316" y="44" width="40" height="76" fill="#1e1e4a"/>
+  <rect x="322" y="36" width="28" height="8"  fill="#1e1e4a"/>
+  <rect x="360" y="60" width="28" height="60" fill="#1a1a40"/>
+  <rect x="392" y="50" width="36" height="70" fill="#141430"/>
+  <rect x="432" y="56" width="16" height="64" fill="#1e1e4a"/>
+  <!-- copy 2 (offset 445) -->
+  <rect x="445" y="52" width="36" height="68" fill="#1a1a40"/>
+  <rect x="451" y="44" width="24" height="8"  fill="#1a1a40"/>
+  <rect x="485" y="60" width="28" height="60" fill="#141430"/>
+  <rect x="517" y="46" width="44" height="74" fill="#1e1e4a"/>
+  <rect x="525" y="38" width="28" height="8"  fill="#1e1e4a"/>
+  <rect x="565" y="56" width="32" height="64" fill="#1a1a40"/>
+  <rect x="601" y="42" width="38" height="78" fill="#141430"/>
+  <rect x="605" y="34" width="30" height="8"  fill="#141430"/>
+  <rect x="643" y="58" width="30" height="62" fill="#1e1e4a"/>
+  <rect x="677" y="48" width="42" height="72" fill="#1a1a40"/>
+  <rect x="683" y="40" width="30" height="8"  fill="#1a1a40"/>
+  <rect x="723" y="54" width="34" height="66" fill="#141430"/>
+  <rect x="761" y="44" width="40" height="76" fill="#1e1e4a"/>
+  <rect x="767" y="36" width="28" height="8"  fill="#1e1e4a"/>
+  <rect x="805" y="60" width="28" height="60" fill="#1a1a40"/>
+  <rect x="837" y="50" width="36" height="70" fill="#141430"/>
+  <rect x="877" y="56" width="16" height="64" fill="#1e1e4a"/>
 </g>
 
-<!-- FRONT WING (right side, gently animated) -->
-<g class="wg">
-  <path d="M768,62 Q800,32 838,10 Q820,24 802,42 Q784,56 768,62 Z" fill="#161616" opacity=".9"/>
-  <line x1="768" y1="62" x2="838" y2="10" stroke="#191919" stroke-width="1.7"/>
-  <line x1="768" y1="62" x2="804" y2="24" stroke="#191919" stroke-width="1.1"/>
-  <line x1="768" y1="62" x2="820" y2="36" stroke="#191919" stroke-width=".9"/>
-  <path d="M762,58 Q794,38 818,22" stroke="#252525" stroke-width=".7" fill="none" opacity=".5"/>
+<!-- Neon windows near buildings -->
+<rect x="8"   y="58" width="6" height="6" fill="#00ffff" opacity=".6"/>
+<rect x="18"  y="58" width="6" height="6" fill="#00ffff" opacity=".6"/>
+<rect x="8"   y="68" width="6" height="6" fill="#ff00ff" opacity=".5" class="blink"/>
+<rect x="18"  y="68" width="6" height="6" fill="#ff00ff" opacity=".5"/>
+<rect x="82"  y="48" width="6" height="6" fill="#ffff00" opacity=".55"/>
+<rect x="92"  y="48" width="6" height="6" fill="#ffff00" opacity=".55" class="blink"/>
+<rect x="82"  y="58" width="6" height="6" fill="#00ffff" opacity=".5"/>
+<rect x="162" y="44" width="6" height="6" fill="#ff00ff" opacity=".5"/>
+<rect x="172" y="44" width="6" height="6" fill="#ff00ff" opacity=".5" class="blink"/>
+<rect x="240" y="50" width="6" height="6" fill="#00ffff" opacity=".55"/>
+<rect x="324" y="46" width="6" height="6" fill="#ffff00" opacity=".5"/>
+<rect x="334" y="46" width="6" height="6" fill="#ffff00" opacity=".5" class="blink"/>
+
+<!-- Road surface -->
+<rect x="0" y="110" width="890" height="20" fill="#1c1c1c"/>
+<rect x="0" y="110" width="890" height="2"  fill="#333"/>
+
+<!-- Road dashes (scrolling) -->
+<g class="ground">
+  <rect x="0"   y="118" width="40" height="4" fill="#ffff00" opacity=".6" rx="1"/>
+  <rect x="80"  y="118" width="40" height="4" fill="#ffff00" opacity=".6" rx="1"/>
+  <rect x="160" y="118" width="40" height="4" fill="#ffff00" opacity=".6" rx="1"/>
+  <rect x="240" y="118" width="40" height="4" fill="#ffff00" opacity=".6" rx="1"/>
+  <rect x="320" y="118" width="40" height="4" fill="#ffff00" opacity=".6" rx="1"/>
+  <rect x="400" y="118" width="40" height="4" fill="#ffff00" opacity=".6" rx="1"/>
+  <rect x="480" y="118" width="40" height="4" fill="#ffff00" opacity=".6" rx="1"/>
+  <rect x="560" y="118" width="40" height="4" fill="#ffff00" opacity=".6" rx="1"/>
+  <rect x="640" y="118" width="40" height="4" fill="#ffff00" opacity=".6" rx="1"/>
+  <rect x="720" y="118" width="40" height="4" fill="#ffff00" opacity=".6" rx="1"/>
+  <rect x="800" y="118" width="40" height="4" fill="#ffff00" opacity=".6" rx="1"/>
+  <rect x="880" y="118" width="40" height="4" fill="#ffff00" opacity=".6" rx="1"/>
 </g>
 
-<!-- MAIN BODY -->
-<path d="M736,64 Q730,74 730,90 Q730,108 750,114 Q770,118 800,118 Q830,118 848,112 Q862,106 862,94 Q862,80 856,70 Q848,62 832,60 Q808,56 780,56 Q752,56 736,64 Z" fill="url(#dragBG)"/>
-<!-- Body top highlight -->
-<path d="M742,66 Q780,60 822,62 Q846,64 856,72" stroke="#363636" stroke-width="1.1" fill="none" opacity=".48"/>
-<!-- Scale rows -->
-<path d="M746,78 Q760,72 774,78 Q788,72 802,78 Q816,72 830,78 Q842,74 852,78" stroke="#0e0e0e" stroke-width="1.4" fill="none" opacity=".7"/>
-<path d="M744,90 Q758,84 772,90 Q786,84 800,90 Q814,84 828,90 Q840,86 850,90" stroke="#0e0e0e" stroke-width="1.4" fill="none" opacity=".62"/>
-<path d="M746,102 Q762,96 778,102 Q794,96 810,102 Q826,96 840,102" stroke="#0e0e0e" stroke-width="1.1" fill="none" opacity=".5"/>
-<!-- Scale chevrons -->
-<path d="M756,82 Q762,77 768,82" stroke="#1c1c1c" stroke-width=".75" fill="none"/>
-<path d="M770,82 Q776,77 782,82" stroke="#1c1c1c" stroke-width=".75" fill="none"/>
-<path d="M784,82 Q790,77 796,82" stroke="#1c1c1c" stroke-width=".75" fill="none"/>
-<path d="M798,82 Q804,77 810,82" stroke="#1c1c1c" stroke-width=".75" fill="none"/>
-<path d="M812,82 Q818,77 824,82" stroke="#1c1c1c" stroke-width=".75" fill="none"/>
-<!-- Dorsal spines -->
-<polygon points="742,66 736,54 752,62" fill="#111111"/>
-<polygon points="764,60 758,48 774,56" fill="#111111"/>
-<polygon points="786,58 780,46 796,54" fill="#111111"/>
-<polygon points="808,58 802,46 818,54" fill="#111111"/>
-<!-- Belly lighter underside -->
-<path d="M748,92 Q762,98 792,102 Q820,102 846,96 Q856,88 856,80 Q844,110 808,116 Q772,118 748,110 Q736,102 748,92 Z" fill="url(#dragVG)" opacity=".65"/>
-<!-- Chest fire glow -->
-<ellipse cx="770" cy="84" rx="26" ry="15" fill="#ff4400" opacity=".06" filter="url(#fg)" class="thr"/>
-<ellipse cx="770" cy="84" rx="15" ry="8" fill="#ff8800" opacity=".09" class="thr"/>
+<!-- Score HUD -->
+<text x="8" y="12" font-family="monospace" font-size="8" fill="#00ffff" letter-spacing="1">SCORE: 9999</text>
+<text x="400" y="12" font-family="monospace" font-size="8" fill="#ffff00" text-anchor="middle" letter-spacing="2">TRANSFORMBOT</text>
+<text x="882" y="12" font-family="monospace" font-size="8" fill="#ff00ff" text-anchor="end">1UP</text>
 
-<!-- HIND LEGS -->
-<path d="M748,108 Q742,116 740,122 L749,122 L755,117 Q757,108 755,104 Z" fill="#1c1c1c" stroke="#111111" stroke-width=".6"/>
-<polygon points="740,120 736,127 742,122" fill="#050505"/>
-<polygon points="746,122 743,128 748,124" fill="#050505"/>
-<polygon points="753,121 751,128 756,123" fill="#050505"/>
-<path d="M800,111 Q795,117 793,123 L801,123 L808,119 Q810,111 808,107 Z" fill="#1c1c1c" stroke="#111111" stroke-width=".6"/>
-<polygon points="793,121 789,128 795,123" fill="#050505"/>
-<polygon points="799,123 797,129 802,125" fill="#050505"/>
-<polygon points="806,123 804,129 809,125" fill="#050505"/>
+<!-- ═══════════════════════════════ -->
+<!--  ROBOT  (pixel art, 8px grid) -->
+<!-- ═══════════════════════════════ -->
+<!-- Robot sits at x=200, feet at y=110 -->
+<g class="robot">
+  <g class="bobY">
+    <!-- HEAD -->
+    <rect x="190" y="42" width="28" height="20" fill="#44aaff" rx="2"/>
+    <!-- Visor -->
+    <rect x="194" y="46" width="20" height="8"  fill="#001830"/>
+    <!-- Visor glow -->
+    <rect x="196" y="48" width="6"  height="4"  fill="#00ffff" opacity=".9"/>
+    <rect x="206" y="48" width="6"  height="4"  fill="#00ffff" opacity=".9"/>
+    <!-- Head antenna -->
+    <rect x="202" y="36" width="4"  height="6"  fill="#44aaff"/>
+    <rect x="200" y="34" width="8"  height="4"  fill="#ff4444"/>
 
-<!-- NECK (connects body to head) -->
-<path d="M728,36 Q718,52 722,78 L762,78 Q766,56 756,36 Z" fill="#1c1c1c"/>
-<path d="M734,40 Q726,54 728,74 L756,74 Q760,56 752,40 Z" fill="#242424"/>
-<!-- Neck ridges -->
-<path d="M730,46 Q742,42 754,46" stroke="#111111" stroke-width="1.1" fill="none" opacity=".7"/>
-<path d="M728,58 Q742,54 756,58" stroke="#111111" stroke-width="1.1" fill="none" opacity=".6"/>
-<path d="M726,70 Q740,66 756,70" stroke="#111111" stroke-width="1.1" fill="none" opacity=".5"/>
-<!-- Neck spines -->
-<polygon points="728,44 720,32 738,40" fill="#111111"/>
-<polygon points="724,56 716,44 734,52" fill="#111111"/>
-<polygon points="720,68 712,56 730,64" fill="#0a0a0a"/>
+    <!-- TORSO -->
+    <rect x="186" y="62" width="36" height="26" fill="#2288dd" rx="1"/>
+    <!-- Chest panel -->
+    <rect x="190" y="65" width="28" height="12" fill="#003366"/>
+    <rect x="192" y="67" width="6"  height="4"  fill="#00ffff" opacity=".7"/>
+    <rect x="200" y="67" width="4"  height="4"  fill="#ff4444" opacity=".8"/>
+    <rect x="206" y="67" width="6"  height="4"  fill="#ffff00" opacity=".7"/>
+    <!-- Shoulder pads -->
+    <rect x="178" y="62" width="10" height="10" fill="#1166bb" rx="1"/>
+    <rect x="220" y="62" width="10" height="10" fill="#1166bb" rx="1"/>
 
-<!-- HEAD (more elongated, dragon-like) -->
-<path d="M678,20 Q668,30 666,46 Q668,60 682,66 Q698,70 720,64 Q742,58 748,46 Q750,32 738,22 Q722,14 700,13 Q685,13 678,20 Z" fill="#1c1c1c"/>
-<!-- Head shading -->
-<path d="M685,22 Q678,32 678,46 Q680,56 690,62" stroke="#2e2e2e" stroke-width="1" fill="none" opacity=".55"/>
-<!-- Top head ridge -->
-<path d="M692,15 Q706,11 720,15 Q728,12 736,16" stroke="#282828" stroke-width="1.3" fill="none" opacity=".65"/>
+    <!-- ARM LEFT (swings) -->
+    <g class="armL">
+      <rect x="173" y="72" width="8" height="18" fill="#2288dd" rx="1"/>
+      <rect x="171" y="88" width="10" height="8"  fill="#1166bb" rx="1"/>
+    </g>
+    <!-- ARM RIGHT -->
+    <g class="armR">
+      <rect x="227" y="72" width="8" height="18" fill="#2288dd" rx="1"/>
+      <rect x="227" y="88" width="10" height="8"  fill="#1166bb" rx="1"/>
+    </g>
 
-<!-- Horns -->
-<polygon points="682,20 676,6 692,15" fill="#111111"/>
-<polygon points="696,14 691,0 706,11" fill="#111111"/>
-<polygon points="710,15 707,2 720,12" fill="#111111"/>
-<polygon points="724,18 722,5 734,14" fill="#0a0a0a"/>
+    <!-- HIPS -->
+    <rect x="189" y="88" width="30" height="8" fill="#1166bb" rx="1"/>
 
-<!-- Eye socket -->
-<circle cx="682" cy="38" r="11" fill="#080808"/>
-<!-- Eye (amber for contrast against gray) -->
-<circle cx="682" cy="38" r="8.5" fill="url(#eyeG)"/>
-<circle cx="682" cy="38" r="5" fill="#884400"/>
-<ellipse cx="682" cy="38" rx="1.8" ry="5.5" fill="#040404"/>
-<circle cx="679" cy="34" r="1.9" fill="#ffcc44" opacity=".65"/>
-<circle cx="682" cy="38" r="12" fill="#ff7700" opacity=".07" filter="url(#fg)" class="thr"/>
-
-<!-- SNOUT (long, proper dragon shape) -->
-<path d="M624,34 Q617,44 620,54 Q624,62 640,64 Q656,64 666,58 Q672,52 670,40 Q666,30 650,28 Q633,28 624,34 Z" fill="#1c1c1c"/>
-<path d="M628,36 Q624,44 626,52 Q630,58 644,60 Q657,58 663,52 Q665,44 661,38 Q655,32 643,32 Q630,32 628,36 Z" fill="#242424"/>
-<!-- Snout top ridge -->
-<path d="M626,36 Q644,30 665,38" stroke="#191919" stroke-width="1.3" fill="none" opacity=".55"/>
-<!-- Nostrils -->
-<ellipse cx="633" cy="46" rx="2.8" ry="3.8" fill="#080808"/>
-<ellipse cx="647" cy="46" rx="2.8" ry="3.8" fill="#080808"/>
-<ellipse cx="633" cy="46" rx="1.8" ry="2.8" fill="#cc3300" opacity=".28" class="thr"/>
-<ellipse cx="647" cy="46" rx="1.8" ry="2.8" fill="#cc3300" opacity=".28" class="thr"/>
-
-<!-- Upper teeth -->
-<polygon points="621,36 627,24 633,36" fill="#d8d8cc"/>
-<polygon points="633,32 639,20 645,32" fill="#d8d8cc"/>
-<polygon points="645,32 651,22 657,32" fill="#d8d8cc"/>
-<polygon points="657,32 662,24 667,32" fill="#d8d8cc"/>
-<!-- Lower teeth -->
-<polygon points="626,62 632,72 638,62" fill="#d0d0c4"/>
-<polygon points="638,62 644,72 650,62" fill="#d0d0c4"/>
-<polygon points="650,63 655,72 661,63" fill="#d0d0c4"/>
-<!-- Throat glow (fire building) -->
-<ellipse cx="667" cy="48" rx="11" ry="7" fill="#ff5500" opacity=".11" filter="url(#gw)" class="thr"/>
-<ellipse cx="667" cy="48" rx="5.5" ry="3.5" fill="#ffbb00" opacity=".14" class="thr"/>
-
-<!-- ══════════════════════════════════════════ -->
-<!--  DRAGON FIRE BREATH                      -->
-<!-- ══════════════════════════════════════════ -->
-<g class="fireH">
-  <ellipse cx="598" cy="46" rx="38" ry="18" fill="#aa2000" opacity=".19" filter="url(#gw2)"/>
-
-  <!-- Upper stream -->
-  <path d="M598,37 Q566,25 526,17 Q492,11 460,13 Q428,15 400,21" stroke="#ff2200" stroke-width="10" fill="none" stroke-linecap="round" opacity=".6"/>
-  <path d="M598,37 Q566,25 526,17 Q492,11 460,13 Q428,15 400,21" stroke="#ff6600" stroke-width="5.5" fill="none" stroke-linecap="round" opacity=".74"/>
-  <path d="M598,37 Q566,25 526,17 Q492,11 460,13 Q428,15 400,21" stroke="#ffcc00" stroke-width="2" fill="none" stroke-linecap="round" opacity=".85"/>
-
-  <!-- Center stream (main) -->
-  <ellipse cx="596" cy="46" rx="33" ry="13" fill="#cc2000" opacity=".88" filter="url(#fg)"/>
-  <ellipse cx="596" cy="46" rx="25" ry="9.5" fill="#ff3300" opacity=".9"/>
-  <ellipse cx="596" cy="46" rx="17" ry="6.5" fill="#ff6600" opacity=".95"/>
-  <ellipse cx="596" cy="46" rx="9.5" ry="4" fill="#ffaa00" opacity=".97"/>
-  <ellipse cx="596" cy="46" rx="4.5" ry="2" fill="#ffee00" opacity=".95"/>
-  <ellipse cx="596" cy="46" rx="2.2" ry="1.1" fill="#fff" opacity=".8"/>
-  <!-- Trail -->
-  <ellipse cx="570" cy="46" rx="23" ry="9" fill="#ff3300" opacity=".78" class="fl"/>
-  <ellipse cx="544" cy="46" rx="19" ry="8" fill="#ee2200" opacity=".65" class="fl"/>
-  <ellipse cx="518" cy="46" rx="15.5" ry="7" fill="#dd1100" opacity=".55"/>
-  <ellipse cx="492" cy="46" rx="12" ry="6" fill="#cc1000" opacity=".44"/>
-  <ellipse cx="466" cy="46" rx="9" ry="5" fill="#aa0e00" opacity=".34"/>
-  <ellipse cx="440" cy="46" rx="6.5" ry="4" fill="#880c00" opacity=".24"/>
-  <ellipse cx="414" cy="46" rx="4.5" ry="3" fill="#660a00" opacity=".17"/>
-
-  <!-- Lower stream -->
-  <path d="M598,56 Q564,63 528,66 Q494,67 460,63 Q428,59 400,53" stroke="#cc2000" stroke-width="9" fill="none" stroke-linecap="round" opacity=".58" class="fl"/>
-  <path d="M598,56 Q564,63 528,66 Q494,67 460,63 Q428,59 400,53" stroke="#ff5500" stroke-width="5" fill="none" stroke-linecap="round" opacity=".7"/>
-  <path d="M598,56 Q564,63 528,66 Q494,67 460,63 Q428,59 400,53" stroke="#ffaa00" stroke-width="1.8" fill="none" stroke-linecap="round" opacity=".8"/>
-
-  <!-- Tall flames (near dragon mouth) -->
-  <path d="M576,39 C570,23 574,11 568,3 C566,-1 564,-3 566,-1 C572,5 580,17 580,29 C582,37 578,39 576,39 Z" fill="#cc2000" opacity=".76"/>
-  <path d="M576,39 C572,25 575,13 571,5 C569,1 570,-1 572,1 C578,9 582,21 580,31 C579,37 577,39 576,39 Z" fill="#ff4400" opacity=".72"/>
-  <path d="M576,39 C574,27 576,15 574,7 C574,3 575,1 576,3 C580,13 582,25 580,33 C578,37 577,39 576,39 Z" fill="#ff8800" opacity=".65"/>
-  <path d="M576,39 C575,29 577,17 575,9 C575,5 576,4 576,6 C579,17 580,29 578,35 C577,37 576,39 576,39 Z" fill="#ffcc00" opacity=".53"/>
-
-  <path d="M558,41 C552,25 556,13 550,5 C548,1 546,-1 548,1 C554,9 560,19 560,31 C562,39 560,41 558,41 Z" fill="#bb2000" opacity=".8"/>
-  <path d="M558,41 C554,27 558,15 554,7 C552,3 552,1 554,3 C560,11 564,23 562,33 C560,39 559,41 558,41 Z" fill="#ff3300" opacity=".73"/>
-  <path d="M558,41 C556,29 558,17 556,9 C556,5 557,4 558,6 C562,17 563,28 560,36 C559,39 558,41 558,41 Z" fill="#ff7700" opacity=".66"/>
-  <path d="M558,41 C557,31 558,19 556,11 C556,7 557,6 557,8 C560,19 562,31 558,37 C558,39 558,41 558,41 Z" fill="#ffcc00" opacity=".53"/>
-
-  <path d="M592,37 C586,17 590,5 584,-3 C582,-7 580,-9 582,-5 C588,3 596,15 596,29 C598,35 594,37 592,37 Z" fill="#dd2800" opacity=".68"/>
-  <path d="M592,37 C588,19 592,7 588,-1 C586,-5 586,-5 588,-3 C594,7 598,19 596,31 C594,35 593,37 592,37 Z" fill="#ff4400" opacity=".63"/>
-  <path d="M592,37 C590,21 592,9 590,1 C590,-3 591,-3 591,-1 C595,11 596,23 594,33 C593,35 592,37 592,37 Z" fill="#ff9900" opacity=".56"/>
-  <path d="M592,37 C591,25 592,13 591,5 C591,1 592,1 592,3 C595,15 595,27 593,33 C593,35 592,37 592,37 Z" fill="#ffee00" opacity=".46"/>
-
-  <!-- Smoke -->
-  <ellipse cx="562" cy="1" rx="17" ry="4.5" fill="#1a1008" opacity=".3"/>
-  <ellipse cx="544" cy="-2" rx="13" ry="4" fill="#141008" opacity=".23"/>
-  <ellipse cx="580" cy="0" rx="12" ry="3.5" fill="#1a1008" opacity=".2"/>
-
-  <!-- Embers -->
-  <circle cx="550" cy="18" r="2" fill="#ff7700" class="emb"/>
-  <circle cx="564" cy="11" r="1.6" fill="#ffbb00" class="emb2"/>
-  <circle cx="574" cy="7" r="1.4" fill="#ffdd00" class="emb"/>
-  <circle cx="540" cy="13" r="1.7" fill="#ff5500" class="emb2"/>
-  <circle cx="534" cy="7" r="1.3" fill="#ff8800" class="emb"/>
-  <circle cx="556" cy="4" r="1.1" fill="#ffff00" class="emb2"/>
-  <circle cx="586" cy="9" r="1.5" fill="#ff6600" class="emb"/>
-  <circle cx="570" cy="21" r="1.3" fill="#ffaa00" class="emb2"/>
+    <!-- LEG LEFT -->
+    <g class="legL">
+      <rect x="189" y="96" width="12" height="16" fill="#2288dd" rx="1"/>
+      <!-- Foot -->
+      <rect x="187" y="108" width="16" height="6"  fill="#1166bb" rx="1"/>
+    </g>
+    <!-- LEG RIGHT -->
+    <g class="legR">
+      <rect x="207" y="96" width="12" height="16" fill="#2288dd" rx="1"/>
+      <rect x="205" y="108" width="16" height="6"  fill="#1166bb" rx="1"/>
+    </g>
+  </g>
 </g>
 
-<!-- FIRE IMPACT on shield -->
-<g class="fhit" opacity="0">
-  <circle cx="180" cy="62" r="25" fill="#ff4400" opacity=".2" filter="url(#gw2)"/>
-  <circle cx="180" cy="62" r="14" fill="#ff6600" opacity=".4" filter="url(#fg)"/>
-  <circle cx="180" cy="62" r="7" fill="#ffcc00" opacity=".68"/>
-  <line x1="180" y1="37" x2="180" y2="27" stroke="#ff5500" stroke-width="2.4"/>
-  <line x1="197" y1="45" x2="209" y2="38" stroke="#ffaa00" stroke-width="1.9"/>
-  <line x1="163" y1="45" x2="151" y2="38" stroke="#ffaa00" stroke-width="1.9"/>
-  <line x1="197" y1="79" x2="209" y2="86" stroke="#ff5500" stroke-width="1.9"/>
-  <line x1="163" y1="79" x2="151" y2="86" stroke="#ff5500" stroke-width="1.9"/>
+<!-- ═══════════════════════════════ -->
+<!--  TRANSFORM FLASH               -->
+<!-- ═══════════════════════════════ -->
+<rect x="150" y="30" width="120" height="90" fill="#ffffff" opacity=".9" class="flash" rx="4"/>
+
+<!-- ═══════════════════════════════ -->
+<!--  CAR (pixel art, same x pos)  -->
+<!-- ═══════════════════════════════ -->
+<g class="car">
+  <!-- Body low -->
+  <rect x="156" y="90"  width="100" height="16" fill="#ff2222" rx="2"/>
+  <!-- Cabin -->
+  <rect x="172" y="76"  width="68"  height="16" fill="#ff4444" rx="2"/>
+  <!-- Windshield front -->
+  <rect x="230" y="78"  width="14"  height="12" fill="#001830" rx="1"/>
+  <rect x="232" y="80"  width="10"  height="8"  fill="#00ccff" opacity=".6"/>
+  <!-- Windshield rear -->
+  <rect x="168" y="78"  width="12"  height="12" fill="#001830" rx="1"/>
+  <rect x="170" y="80"  width="8"   height="8"  fill="#00ccff" opacity=".6"/>
+  <!-- Headlights -->
+  <rect x="250" y="94"  width="10"  height="6"  fill="#ffff88" rx="1"/>
+  <rect x="252" y="95"  width="6"   height="4"  fill="#ffffff"/>
+  <!-- Tail lights -->
+  <rect x="152" y="94"  width="8"   height="6"  fill="#ff0000" rx="1"/>
+  <!-- Wheels -->
+  <rect x="162" y="102" width="20"  height="14" fill="#111" rx="3"/>
+  <rect x="166" y="104" width="12"  height="10" fill="#333" rx="2"/>
+  <rect x="170" y="107" width="4"   height="4"  fill="#888" rx="1"/>
+  <rect x="226" y="102" width="20"  height="14" fill="#111" rx="3"/>
+  <rect x="230" y="104" width="12"  height="10" fill="#333" rx="2"/>
+  <rect x="234" y="107" width="4"   height="4"  fill="#888" rx="1"/>
+  <!-- Exhaust smoke pixel puffs -->
+  <rect x="142" y="96" width="8" height="6" fill="#888" opacity=".5" rx="1"/>
+  <rect x="134" y="94" width="6" height="6" fill="#666" opacity=".35" rx="1"/>
+  <rect x="126" y="92" width="6" height="6" fill="#444" opacity=".2" rx="1"/>
 </g>
 
-</g>
 </svg>
