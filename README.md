@@ -140,7 +140,7 @@
 <td><a href="https://github.com/Luca-css/incident-response-toolkit"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=incident-response-toolkit&theme=github_dark&hide_border=true&bg_color=071222&title_color=00d4ff&icon_color=00d4ff&border_radius=10" /></a></td>
 </tr><tr>
 <td><a href="https://github.com/Luca-css/log-analyzer"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=log-analyzer&theme=github_dark&hide_border=true&bg_color=071222&title_color=00d4ff&icon_color=00d4ff&border_radius=10" /></a></td>
-<td></td>
+<td><img src="https://raw.githubusercontent.com/Luca-css/Luca-css/main/placeholder.svg" width="400" /></td>
 </tr></table>
 
 <br/>
@@ -153,7 +153,7 @@
 <td><a href="https://github.com/Luca-css/port-scanner-rs"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=port-scanner-rs&theme=github_dark&hide_border=true&bg_color=071222&title_color=00d4ff&icon_color=00d4ff&border_radius=10" /></a></td>
 </tr><tr>
 <td><a href="https://github.com/Luca-css/network-monitor"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=network-monitor&theme=github_dark&hide_border=true&bg_color=071222&title_color=00d4ff&icon_color=00d4ff&border_radius=10" /></a></td>
-<td></td>
+<td><img src="https://raw.githubusercontent.com/Luca-css/Luca-css/main/placeholder.svg" width="400" /></td>
 </tr></table>
 
 <br/>
@@ -166,7 +166,7 @@
 <td><a href="https://github.com/Luca-css/security-api"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=security-api&theme=github_dark&hide_border=true&bg_color=071222&title_color=00d4ff&icon_color=00d4ff&border_radius=10" /></a></td>
 </tr><tr>
 <td><a href="https://github.com/Luca-css/rack-manager"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=rack-manager&theme=github_dark&hide_border=true&bg_color=071222&title_color=00d4ff&icon_color=00d4ff&border_radius=10" /></a></td>
-<td></td>
+<td><img src="https://raw.githubusercontent.com/Luca-css/Luca-css/main/placeholder.svg" width="400" /></td>
 </tr></table>
 
 </div>
