@@ -120,14 +120,14 @@
 <sub>🔐 &nbsp;<b>SEGURANÇA OFENSIVA & DEFENSIVA</b></sub>
 
 <table><tr>
-<td><a href="https://github.com/Luca-css/threat-hunt-toolkit"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=threat-hunt-toolkit&theme=github_dark&hide_border=true&bg_color=071222&title_color=00d4ff&icon_color=00d4ff&border_radius=10" /></a></td>
-<td><a href="https://github.com/Luca-css/ransomware-detector"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=ransomware-detector&theme=github_dark&hide_border=true&bg_color=071222&title_color=00d4ff&icon_color=00d4ff&border_radius=10" /></a></td>
+<td align="center"><a href="https://github.com/Luca-css/threat-hunt-toolkit"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=threat-hunt-toolkit&theme=github_dark&hide_border=true&bg_color=071222&title_color=00d4ff&icon_color=00d4ff&border_radius=10" /></a></td>
+<td align="center"><a href="https://github.com/Luca-css/ransomware-detector"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=ransomware-detector&theme=github_dark&hide_border=true&bg_color=071222&title_color=00d4ff&icon_color=00d4ff&border_radius=10" /></a></td>
 </tr><tr>
-<td><a href="https://github.com/Luca-css/windows-security-auditor"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=windows-security-auditor&theme=github_dark&hide_border=true&bg_color=071222&title_color=00d4ff&icon_color=00d4ff&border_radius=10" /></a></td>
-<td><a href="https://github.com/Luca-css/firewall-audit"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=firewall-audit&theme=github_dark&hide_border=true&bg_color=071222&title_color=00d4ff&icon_color=00d4ff&border_radius=10" /></a></td>
+<td align="center"><a href="https://github.com/Luca-css/windows-security-auditor"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=windows-security-auditor&theme=github_dark&hide_border=true&bg_color=071222&title_color=00d4ff&icon_color=00d4ff&border_radius=10" /></a></td>
+<td align="center"><a href="https://github.com/Luca-css/firewall-audit"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=firewall-audit&theme=github_dark&hide_border=true&bg_color=071222&title_color=00d4ff&icon_color=00d4ff&border_radius=10" /></a></td>
 </tr><tr>
-<td><a href="https://github.com/Luca-css/ad-hardening-toolkit"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=ad-hardening-toolkit&theme=github_dark&hide_border=true&bg_color=071222&title_color=00d4ff&icon_color=00d4ff&border_radius=10" /></a></td>
-<td><a href="https://github.com/Luca-css/linux-hardening-toolkit"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=linux-hardening-toolkit&theme=github_dark&hide_border=true&bg_color=071222&title_color=00d4ff&icon_color=00d4ff&border_radius=10" /></a></td>
+<td align="center"><a href="https://github.com/Luca-css/ad-hardening-toolkit"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=ad-hardening-toolkit&theme=github_dark&hide_border=true&bg_color=071222&title_color=00d4ff&icon_color=00d4ff&border_radius=10" /></a></td>
+<td align="center"><a href="https://github.com/Luca-css/linux-hardening-toolkit"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=linux-hardening-toolkit&theme=github_dark&hide_border=true&bg_color=071222&title_color=00d4ff&icon_color=00d4ff&border_radius=10" /></a></td>
 </tr></table>
 
 <br/>
@@ -136,11 +136,10 @@
 <sub>🛡️ &nbsp;<b>SOC · SIEM · INCIDENT RESPONSE</b></sub>
 
 <table><tr>
-<td><a href="https://github.com/Luca-css/siem-dashboard"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=siem-dashboard&theme=github_dark&hide_border=true&bg_color=071222&title_color=00d4ff&icon_color=00d4ff&border_radius=10" /></a></td>
-<td><a href="https://github.com/Luca-css/incident-response-toolkit"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=incident-response-toolkit&theme=github_dark&hide_border=true&bg_color=071222&title_color=00d4ff&icon_color=00d4ff&border_radius=10" /></a></td>
+<td align="center"><a href="https://github.com/Luca-css/siem-dashboard"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=siem-dashboard&theme=github_dark&hide_border=true&bg_color=071222&title_color=00d4ff&icon_color=00d4ff&border_radius=10" /></a></td>
+<td align="center"><a href="https://github.com/Luca-css/incident-response-toolkit"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=incident-response-toolkit&theme=github_dark&hide_border=true&bg_color=071222&title_color=00d4ff&icon_color=00d4ff&border_radius=10" /></a></td>
 </tr><tr>
-<td><a href="https://github.com/Luca-css/log-analyzer"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=log-analyzer&theme=github_dark&hide_border=true&bg_color=071222&title_color=00d4ff&icon_color=00d4ff&border_radius=10" /></a></td>
-<td><img src="https://raw.githubusercontent.com/Luca-css/Luca-css/main/placeholder.svg" width="400" /></td>
+<td align="center" colspan="2"><a href="https://github.com/Luca-css/log-analyzer"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=log-analyzer&theme=github_dark&hide_border=true&bg_color=071222&title_color=00d4ff&icon_color=00d4ff&border_radius=10" /></a></td>
 </tr></table>
 
 <br/>
@@ -149,11 +148,10 @@
 <sub>📡 &nbsp;<b>REDE · SCAN · MONITORAMENTO</b></sub>
 
 <table><tr>
-<td><a href="https://github.com/Luca-css/network-scanner"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=network-scanner&theme=github_dark&hide_border=true&bg_color=071222&title_color=00d4ff&icon_color=00d4ff&border_radius=10" /></a></td>
-<td><a href="https://github.com/Luca-css/port-scanner-rs"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=port-scanner-rs&theme=github_dark&hide_border=true&bg_color=071222&title_color=00d4ff&icon_color=00d4ff&border_radius=10" /></a></td>
+<td align="center"><a href="https://github.com/Luca-css/network-scanner"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=network-scanner&theme=github_dark&hide_border=true&bg_color=071222&title_color=00d4ff&icon_color=00d4ff&border_radius=10" /></a></td>
+<td align="center"><a href="https://github.com/Luca-css/port-scanner-rs"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=port-scanner-rs&theme=github_dark&hide_border=true&bg_color=071222&title_color=00d4ff&icon_color=00d4ff&border_radius=10" /></a></td>
 </tr><tr>
-<td><a href="https://github.com/Luca-css/network-monitor"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=network-monitor&theme=github_dark&hide_border=true&bg_color=071222&title_color=00d4ff&icon_color=00d4ff&border_radius=10" /></a></td>
-<td><img src="https://raw.githubusercontent.com/Luca-css/Luca-css/main/placeholder.svg" width="400" /></td>
+<td align="center" colspan="2"><a href="https://github.com/Luca-css/network-monitor"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=network-monitor&theme=github_dark&hide_border=true&bg_color=071222&title_color=00d4ff&icon_color=00d4ff&border_radius=10" /></a></td>
 </tr></table>
 
 <br/>
@@ -162,11 +160,10 @@
 <sub>🖥️ &nbsp;<b>INFRAESTRUTURA · APIs · DCIM</b></sub>
 
 <table><tr>
-<td><a href="https://github.com/Luca-css/infra-monitor-kt"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=infra-monitor-kt&theme=github_dark&hide_border=true&bg_color=071222&title_color=00d4ff&icon_color=00d4ff&border_radius=10" /></a></td>
-<td><a href="https://github.com/Luca-css/security-api"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=security-api&theme=github_dark&hide_border=true&bg_color=071222&title_color=00d4ff&icon_color=00d4ff&border_radius=10" /></a></td>
+<td align="center"><a href="https://github.com/Luca-css/infra-monitor-kt"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=infra-monitor-kt&theme=github_dark&hide_border=true&bg_color=071222&title_color=00d4ff&icon_color=00d4ff&border_radius=10" /></a></td>
+<td align="center"><a href="https://github.com/Luca-css/security-api"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=security-api&theme=github_dark&hide_border=true&bg_color=071222&title_color=00d4ff&icon_color=00d4ff&border_radius=10" /></a></td>
 </tr><tr>
-<td><a href="https://github.com/Luca-css/rack-manager"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=rack-manager&theme=github_dark&hide_border=true&bg_color=071222&title_color=00d4ff&icon_color=00d4ff&border_radius=10" /></a></td>
-<td><img src="https://raw.githubusercontent.com/Luca-css/Luca-css/main/placeholder.svg" width="400" /></td>
+<td align="center" colspan="2"><a href="https://github.com/Luca-css/rack-manager"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=rack-manager&theme=github_dark&hide_border=true&bg_color=071222&title_color=00d4ff&icon_color=00d4ff&border_radius=10" /></a></td>
 </tr></table>
 
 </div>
