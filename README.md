@@ -114,20 +114,42 @@
 
 ## `> git log --oneline ./projects`
 
-<div align="center">
-
 <!-- ── Segurança Ofensiva & Defensiva ──────────────────────── -->
 <sub>🔐 &nbsp;<b>SEGURANÇA OFENSIVA & DEFENSIVA</b></sub>
 
-<table><tr>
-<td align="center"><a href="https://github.com/Luca-css/threat-hunt-toolkit"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=threat-hunt-toolkit&theme=github_dark&hide_border=true&bg_color=071222&title_color=00d4ff&icon_color=00d4ff&border_radius=10" /></a></td>
-<td align="center"><a href="https://github.com/Luca-css/ransomware-detector"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=ransomware-detector&theme=github_dark&hide_border=true&bg_color=071222&title_color=00d4ff&icon_color=00d4ff&border_radius=10" /></a></td>
+<table width="100%"><tr>
+<td width="50%" valign="top">
+<h4><a href="https://github.com/Luca-css/threat-hunt-toolkit">🎯 threat-hunt-toolkit</a></h4>
+Toolkit para Threat Hunting com análise de IOCs, regras YARA e automação de hunt em ambientes Windows/Linux.<br/><br/>
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
+</td>
+<td width="50%" valign="top">
+<h4><a href="https://github.com/Luca-css/ransomware-detector">🦠 ransomware-detector</a></h4>
+Detector de comportamento ransomware em tempo real — monitora I/O de arquivos, entropia e padrões de criptografia suspeita.<br/><br/>
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
+</td>
 </tr><tr>
-<td align="center"><a href="https://github.com/Luca-css/windows-security-auditor"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=windows-security-auditor&theme=github_dark&hide_border=true&bg_color=071222&title_color=00d4ff&icon_color=00d4ff&border_radius=10" /></a></td>
-<td align="center"><a href="https://github.com/Luca-css/firewall-audit"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=firewall-audit&theme=github_dark&hide_border=true&bg_color=071222&title_color=00d4ff&icon_color=00d4ff&border_radius=10" /></a></td>
+<td width="50%" valign="top">
+<h4><a href="https://github.com/Luca-css/windows-security-auditor">🔎 windows-security-auditor</a></h4>
+Auditoria de segurança Windows com score 0–100: senhas, contas, RDP, Defender, patches e compartilhamentos.<br/><br/>
+<img src="https://img.shields.io/badge/PowerShell-5391FE?style=flat-square&logo=powershell&logoColor=white"/>
+</td>
+<td width="50%" valign="top">
+<h4><a href="https://github.com/Luca-css/firewall-audit">🔥 firewall-audit</a></h4>
+Análise e auditoria de regras de firewall — identifica permissões excessivas, portas críticas expostas e desvios de política.<br/><br/>
+<img src="https://img.shields.io/badge/PowerShell-5391FE?style=flat-square&logo=powershell&logoColor=white"/>
+</td>
 </tr><tr>
-<td align="center"><a href="https://github.com/Luca-css/ad-hardening-toolkit"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=ad-hardening-toolkit&theme=github_dark&hide_border=true&bg_color=071222&title_color=00d4ff&icon_color=00d4ff&border_radius=10" /></a></td>
-<td align="center"><a href="https://github.com/Luca-css/linux-hardening-toolkit"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=linux-hardening-toolkit&theme=github_dark&hide_border=true&bg_color=071222&title_color=00d4ff&icon_color=00d4ff&border_radius=10" /></a></td>
+<td width="50%" valign="top">
+<h4><a href="https://github.com/Luca-css/ad-hardening-toolkit">🏰 ad-hardening-toolkit</a></h4>
+Hardening completo de Active Directory: GPOs de segurança, audit policy, BloodHound e verificação de misconfigurations.<br/><br/>
+<img src="https://img.shields.io/badge/PowerShell-5391FE?style=flat-square&logo=powershell&logoColor=white"/>
+</td>
+<td width="50%" valign="top">
+<h4><a href="https://github.com/Luca-css/linux-hardening-toolkit">🐧 linux-hardening-toolkit</a></h4>
+Hardening automatizado de Linux baseado em CIS Benchmarks — SSH, sysctl, permissões, serviços e logs de auditoria.<br/><br/>
+<img src="https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white"/>
+</td>
 </tr></table>
 
 <br/>
@@ -135,11 +157,24 @@
 <!-- ── SOC / Resposta a Incidentes ────────────────────────── -->
 <sub>🛡️ &nbsp;<b>SOC · SIEM · INCIDENT RESPONSE</b></sub>
 
-<table><tr>
-<td align="center"><a href="https://github.com/Luca-css/siem-dashboard"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=siem-dashboard&theme=github_dark&hide_border=true&bg_color=071222&title_color=00d4ff&icon_color=00d4ff&border_radius=10" /></a></td>
-<td align="center"><a href="https://github.com/Luca-css/incident-response-toolkit"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=incident-response-toolkit&theme=github_dark&hide_border=true&bg_color=071222&title_color=00d4ff&icon_color=00d4ff&border_radius=10" /></a></td>
+<table width="100%"><tr>
+<td width="50%" valign="top">
+<h4><a href="https://github.com/Luca-css/siem-dashboard">📊 siem-dashboard</a></h4>
+Dashboard SIEM em tempo real com WebSocket — detecção de brute force, logins fora de horário e uso de privilégios.<br/><br/>
+<img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white"/>
+</td>
+<td width="50%" valign="top">
+<h4><a href="https://github.com/Luca-css/incident-response-toolkit">🚨 incident-response-toolkit</a></h4>
+Coleta forense automatizada: processos, conexões TCP, autoruns de registro, eventos de segurança e pacote ZIP de evidências.<br/><br/>
+<img src="https://img.shields.io/badge/PowerShell-5391FE?style=flat-square&logo=powershell&logoColor=white"/>
+</td>
 </tr><tr>
-<td align="center" colspan="2"><a href="https://github.com/Luca-css/log-analyzer"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=log-analyzer&theme=github_dark&hide_border=true&bg_color=071222&title_color=00d4ff&icon_color=00d4ff&border_radius=10" /></a></td>
+<td width="50%" valign="top">
+<h4><a href="https://github.com/Luca-css/log-analyzer">📋 log-analyzer</a></h4>
+Analisador de logs de segurança com detecção de padrões anômalos, correlação de eventos e geração de relatórios.<br/><br/>
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
+</td>
+<td width="50%" valign="top">&nbsp;</td>
 </tr></table>
 
 <br/>
@@ -147,11 +182,24 @@
 <!-- ── Rede & Monitoramento ───────────────────────────────── -->
 <sub>📡 &nbsp;<b>REDE · SCAN · MONITORAMENTO</b></sub>
 
-<table><tr>
-<td align="center"><a href="https://github.com/Luca-css/network-scanner"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=network-scanner&theme=github_dark&hide_border=true&bg_color=071222&title_color=00d4ff&icon_color=00d4ff&border_radius=10" /></a></td>
-<td align="center"><a href="https://github.com/Luca-css/port-scanner-rs"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=port-scanner-rs&theme=github_dark&hide_border=true&bg_color=071222&title_color=00d4ff&icon_color=00d4ff&border_radius=10" /></a></td>
+<table width="100%"><tr>
+<td width="50%" valign="top">
+<h4><a href="https://github.com/Luca-css/network-scanner">🌐 network-scanner</a></h4>
+Scanner de rede em Go com 100 workers concorrentes — expansão de CIDR, reverse DNS, detecção de portas críticas e relatório HTML.<br/><br/>
+<img src="https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white"/>
+</td>
+<td width="50%" valign="top">
+<h4><a href="https://github.com/Luca-css/port-scanner-rs">⚡ port-scanner-rs</a></h4>
+Scanner de portas ultra-rápido em Rust sem dependências externas — thread pool manual, banner grabbing e mapeamento de CVEs.<br/><br/>
+<img src="https://img.shields.io/badge/Rust-CE422B?style=flat-square&logo=rust&logoColor=white"/>
+</td>
 </tr><tr>
-<td align="center" colspan="2"><a href="https://github.com/Luca-css/network-monitor"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=network-monitor&theme=github_dark&hide_border=true&bg_color=071222&title_color=00d4ff&icon_color=00d4ff&border_radius=10" /></a></td>
+<td width="50%" valign="top">
+<h4><a href="https://github.com/Luca-css/network-monitor">📡 network-monitor</a></h4>
+Monitor de rede em tempo real com alertas de latência, disponibilidade de hosts e dashboard de métricas via Node.js.<br/><br/>
+<img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white"/>
+</td>
+<td width="50%" valign="top">&nbsp;</td>
 </tr></table>
 
 <br/>
@@ -159,14 +207,25 @@
 <!-- ── Infraestrutura & Dev ───────────────────────────────── -->
 <sub>🖥️ &nbsp;<b>INFRAESTRUTURA · APIs · DCIM</b></sub>
 
-<table><tr>
-<td align="center"><a href="https://github.com/Luca-css/infra-monitor-kt"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=infra-monitor-kt&theme=github_dark&hide_border=true&bg_color=071222&title_color=00d4ff&icon_color=00d4ff&border_radius=10" /></a></td>
-<td align="center"><a href="https://github.com/Luca-css/security-api"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=security-api&theme=github_dark&hide_border=true&bg_color=071222&title_color=00d4ff&icon_color=00d4ff&border_radius=10" /></a></td>
+<table width="100%"><tr>
+<td width="50%" valign="top">
+<h4><a href="https://github.com/Luca-css/infra-monitor-kt">🖥️ infra-monitor-kt</a></h4>
+Dashboard de monitoramento de infraestrutura em Kotlin + Ktor — métricas reais via WMIC, alertas automáticos e coroutines assíncronas.<br/><br/>
+<img src="https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white"/>
+</td>
+<td width="50%" valign="top">
+<h4><a href="https://github.com/Luca-css/security-api">🔐 security-api</a></h4>
+API REST de segurança em TypeScript com tipagem forte — gerenciamento de ameaças, alertas, blocklist de IPs e rate limiting.<br/><br/>
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"/>
+</td>
 </tr><tr>
-<td align="center" colspan="2"><a href="https://github.com/Luca-css/rack-manager"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Luca-css&repo=rack-manager&theme=github_dark&hide_border=true&bg_color=071222&title_color=00d4ff&icon_color=00d4ff&border_radius=10" /></a></td>
+<td width="50%" valign="top">
+<h4><a href="https://github.com/Luca-css/rack-manager">🗄️ rack-manager</a></h4>
+Sistema de gerenciamento de rack e DCIM em PHP — controle de ativos, capacidade, energia e mapa visual do datacenter.<br/><br/>
+<img src="https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white"/>
+</td>
+<td width="50%" valign="top">&nbsp;</td>
 </tr></table>
-
-</div>
 
 ---
 
