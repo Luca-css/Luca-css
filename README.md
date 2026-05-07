@@ -268,11 +268,7 @@ Sistema de gerenciamento de rack e DCIM em PHP — controle de ativos, capacidad
 
 <br/>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Luca-css/Luca-css/output/github-contribution-grid-snake-dark.svg"/>
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Luca-css/Luca-css/output/github-contribution-grid-snake.svg"/>
-  <img alt="Snake animation" src="https://raw.githubusercontent.com/Luca-css/Luca-css/output/github-contribution-grid-snake-dark.svg"/>
-</picture>
+<img src="https://raw.githubusercontent.com/Luca-css/Luca-css/main/battle.svg" alt="Mage vs Dragon Battle" width="100%"/>
 
 </div>
 
