@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="120" viewBox="0 0 400 120">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#071222"/>
+      <stop offset="100%" stop-color="#0a1a2e"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="120" rx="10" fill="url(#g)" stroke="#00d4ff18" stroke-width="1"/>
+
+  <!-- Corner brackets -->
+  <path d="M14 30 L14 14 L30 14" stroke="#00d4ff" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <path d="M370 30 L370 14 L354 14" stroke="#00d4ff" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <path d="M14 90 L14 106 L30 106" stroke="#00d4ff" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <path d="M370 90 L370 106 L354 106" stroke="#00d4ff" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Plus icon circle -->
+  <circle cx="200" cy="52" r="18" fill="none" stroke="#00d4ff" stroke-width="1" opacity="0.4"/>
+  <line x1="200" y1="44" x2="200" y2="60" stroke="#00d4ff" stroke-width="2" stroke-linecap="round" filter="url(#glow)"/>
+  <line x1="192" y1="52" x2="208" y2="52" stroke="#00d4ff" stroke-width="2" stroke-linecap="round" filter="url(#glow)"/>
+
+  <!-- Text -->
+  <text x="200" y="88" text-anchor="middle" fill="#00d4ff" font-family="monospace" font-size="11" opacity="0.6" letter-spacing="3">EM BREVE</text>
+</svg>
