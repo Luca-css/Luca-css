@@ -1,7 +1,7 @@
 ﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 890 130" width="890" height="130">
 <defs>
   <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#010810"/><stop offset="100%" stop-color="#060f1e"/></linearGradient>
-  <radialGradient id="magatm" cx="15%" cy="80%" r="30%"><stop offset="0%" stop-color="#3b0d8a" stop-opacity=".3"/><stop offset="100%" stop-color="#010810" stop-opacity="0"/></radialGradient>
+  <radialGradient id="magatm" cx="15%" cy="80%" r="30%"><stop offset="0%" stop-color="#0d2a8a" stop-opacity=".3"/><stop offset="100%" stop-color="#010810" stop-opacity="0"/></radialGradient>
   <radialGradient id="dragatm" cx="80%" cy="70%" r="35%"><stop offset="0%" stop-color="#7a1500" stop-opacity=".25"/><stop offset="100%" stop-color="#010810" stop-opacity="0"/></radialGradient>
   <filter id="mg"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
   <filter id="mg2"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
@@ -60,9 +60,9 @@
 <!-- Ground -->
 <rect x="0" y="116" width="890" height="14" fill="#030b16"/>
 <rect x="0" y="115" width="890" height="1.5" fill="#00d4ff" opacity=".15"/>
-<ellipse cx="105" cy="117" rx="65" ry="7" fill="#5b21b6" opacity=".1"/>
+<ellipse cx="105" cy="117" rx="65" ry="7" fill="#1144bb" opacity=".15"/>
 <ellipse cx="768" cy="117" rx="88" ry="9" fill="#cc3300" opacity=".1"/>
-<path d="M60,116 L76,112 L88,116 L100,111 L116,116" stroke="#7b2fff" stroke-width=".8" fill="none" opacity=".35"/>
+<path d="M60,116 L76,112 L88,116 L100,111 L116,116" stroke="#2255ff" stroke-width=".8" fill="none" opacity=".35"/>
 <path d="M690,116 L712,111 L732,116 L756,110 L780,116 L806,111 L830,116" stroke="#ff5500" stroke-width=".8" fill="none" opacity=".32"/>
 <rect x="240" y="115" width="260" height="3" fill="#1a0800" opacity=".6" rx="2"/>
 
@@ -92,32 +92,32 @@
   <!-- Shadow -->
   <ellipse cx="100" cy="120" rx="52" ry="5" fill="#000" opacity=".35"/>
   <!-- Cape back -->
-  <path d="M62,52 Q42,86 46,116 L74,116 Q66,92 68,52 Z" fill="#160b3e"/>
+  <path d="M62,52 Q42,86 46,116 L74,116 Q66,92 68,52 Z" fill="#0b1840"/>
   <!-- Outer robe -->
-  <path d="M48,54 Q34,90 38,116 L142,116 Q146,92 132,54 Z" fill="#2a1264"/>
+  <path d="M48,54 Q34,90 38,116 L142,116 Q146,92 132,54 Z" fill="#0d2260"/>
   <!-- Mid robe layer -->
-  <path d="M58,54 Q48,88 50,116 L130,116 Q132,88 122,54 Z" fill="#3b1a8a"/>
+  <path d="M58,54 Q48,88 50,116 L130,116 Q132,88 122,54 Z" fill="#1a3a8a"/>
   <!-- Inner robe highlight -->
-  <path d="M74,54 Q68,86 70,116 L110,116 Q112,86 106,54 Z" fill="#4c22ac"/>
+  <path d="M74,54 Q68,86 70,116 L110,116 Q112,86 106,54 Z" fill="#2255bb"/>
   <!-- Robe top trim -->
-  <rect x="48" y="52" width="84" height="5" rx="2" fill="#6d35d9"/>
+  <rect x="48" y="52" width="84" height="5" rx="2" fill="#3060c0"/>
   <path d="M48,57 Q90,63 132,57" stroke="#c8a030" stroke-width="1.2" fill="none" opacity=".65"/>
   <!-- Gold rune on chest -->
   <text x="90" y="84" font-family="serif" font-size="14" fill="#c8a030" text-anchor="middle" opacity=".55">✦</text>
   <!-- Left wide sleeve -->
-  <path d="M48,54 Q28,66 24,84 Q28,92 38,90 Q42,82 48,72 L58,54 Z" fill="#2a1264"/>
+  <path d="M48,54 Q28,66 24,84 Q28,92 38,90 Q42,82 48,72 L58,54 Z" fill="#0d2260"/>
   <path d="M22,84 Q20,90 26,92 Q36,94 38,90" fill="#fcd5a0"/>
   <!-- Right arm extended cast -->
-  <path d="M132,56 Q150,60 166,54 L168,64 Q150,70 132,66 Z" fill="#2a1264"/>
+  <path d="M132,56 Q150,60 166,54 L168,64 Q150,70 132,66 Z" fill="#0d2260"/>
   <path d="M158,52 Q170,46 176,52 L174,62 Q166,68 158,64 Z" fill="#fcd5a0"/>
   <!-- Boots -->
-  <path d="M38,108 Q34,116 36,122 Q46,125 54,122 Q56,118 54,108 Z" fill="#180830"/>
-  <rect x="34" y="119" width="22" height="4" rx="1" fill="#200a40"/>
-  <path d="M100,108 Q96,116 98,122 Q108,125 116,122 Q118,118 116,108 Z" fill="#180830"/>
-  <rect x="96" y="119" width="22" height="4" rx="1" fill="#200a40"/>
+  <path d="M38,108 Q34,116 36,122 Q46,125 54,122 Q56,118 54,108 Z" fill="#080c30"/>
+  <rect x="34" y="119" width="22" height="4" rx="1" fill="#0a1040"/>
+  <path d="M100,108 Q96,116 98,122 Q108,125 116,122 Q118,118 116,108 Z" fill="#080c30"/>
+  <rect x="96" y="119" width="22" height="4" rx="1" fill="#0a1040"/>
   <!-- Robe lower split -->
-  <rect x="48" y="94" width="24" height="22" rx="3" fill="#2a1264"/>
-  <rect x="76" y="94" width="24" height="22" rx="3" fill="#2a1264"/>
+  <rect x="48" y="94" width="24" height="22" rx="3" fill="#0d2260"/>
+  <rect x="76" y="94" width="24" height="22" rx="3" fill="#0d2260"/>
   <!-- Beard (long flowing) -->
   <path d="M68,48 Q62,62 64,76 Q68,84 78,82 Q88,80 86,68 L82,56 Q76,62 72,58 Q70,54 72,48 Z" fill="#dcdccc"/>
   <path d="M82,56 Q88,68 84,78 Q90,80 96,76 Q100,70 96,60 Q90,54 86,50 Z" fill="#ccccc0"/>
@@ -143,13 +143,13 @@
   <path d="M70,34 Q76,31 80,34" stroke="#cc8855" stroke-width=".6" fill="none" opacity=".45"/>
   <path d="M100,34 Q104,31 108,34" stroke="#cc8855" stroke-width=".6" fill="none" opacity=".45"/>
   <!-- Wizard hat -->
-  <polygon points="90,2 72,26 108,26" fill="#1a0848"/>
-  <polygon points="90,2 75,22 105,22" fill="#28107a"/>
-  <rect x="68" y="22" width="44" height="7" rx="1" fill="#3b1a8a"/>
-  <rect x="68" y="23" width="44" height="2.5" fill="#5b28c0" opacity=".65"/>
+  <polygon points="90,2 72,26 108,26" fill="#081840"/>
+  <polygon points="90,2 75,22 105,22" fill="#102278"/>
+  <rect x="68" y="22" width="44" height="7" rx="1" fill="#1a3a8a"/>
+  <rect x="68" y="23" width="44" height="2.5" fill="#2244aa" opacity=".65"/>
   <text x="90" y="18" font-family="serif" font-size="11" fill="#e8c040" text-anchor="middle" opacity=".95">★</text>
   <!-- Hat shine -->
-  <path d="M80,6 Q84,10 84,18" stroke="#5b28c0" stroke-width="1.2" fill="none" opacity=".5"/>
+  <path d="M80,6 Q84,10 84,18" stroke="#2244aa" stroke-width="1.2" fill="none" opacity=".5"/>
   <!-- Staff -->
   <rect x="176" y="20" width="6" height="94" rx="2.5" fill="#5c2c0e"/>
   <path d="M173,20 Q176,16 179,20 Q182,16 185,20" stroke="#b88820" stroke-width="1.8" fill="none"/>
@@ -223,75 +223,75 @@
 <!-- ========== DRAGON ========== -->
 <!-- Back wing -->
 <g class="wg">
-  <path d="M726,62 Q698,32 660,8 Q680,18 698,36 Q714,52 726,62 Z" fill="#0c2c10" opacity=".92"/>
-  <line x1="726" y1="62" x2="660" y2="8" stroke="#081e0c" stroke-width="2.2"/>
-  <line x1="726" y1="62" x2="674" y2="16" stroke="#081e0c" stroke-width="1.5"/>
-  <line x1="726" y1="62" x2="690" y2="26" stroke="#081e0c" stroke-width="1.2"/>
-  <line x1="726" y1="62" x2="706" y2="38" stroke="#081e0c" stroke-width="1"/>
+  <path d="M726,62 Q698,32 660,8 Q680,18 698,36 Q714,52 726,62 Z" fill="#111111" opacity=".92"/>
+  <line x1="726" y1="62" x2="660" y2="8" stroke="#0a0a0a" stroke-width="2.2"/>
+  <line x1="726" y1="62" x2="674" y2="16" stroke="#0a0a0a" stroke-width="1.5"/>
+  <line x1="726" y1="62" x2="690" y2="26" stroke="#0a0a0a" stroke-width="1.2"/>
+  <line x1="726" y1="62" x2="706" y2="38" stroke="#0a0a0a" stroke-width="1"/>
   <!-- Wing membrane texture -->
-  <path d="M720,58 Q700,38 675,16" stroke="#103614" stroke-width=".8" fill="none" opacity=".4"/>
+  <path d="M720,58 Q700,38 675,16" stroke="#191919" stroke-width=".8" fill="none" opacity=".4"/>
 </g>
 <!-- Front wing -->
 <g class="wg">
-  <path d="M740,62 Q772,30 814,8 Q796,20 778,38 Q760,52 740,62 Z" fill="#124018" opacity=".82"/>
-  <line x1="740" y1="62" x2="814" y2="8" stroke="#081e0c" stroke-width="2.2"/>
-  <line x1="740" y1="62" x2="792" y2="20" stroke="#081e0c" stroke-width="1.5"/>
-  <line x1="740" y1="62" x2="776" y2="36" stroke="#081e0c" stroke-width="1.2"/>
+  <path d="M740,62 Q772,30 814,8 Q796,20 778,38 Q760,52 740,62 Z" fill="#161616" opacity=".82"/>
+  <line x1="740" y1="62" x2="814" y2="8" stroke="#0a0a0a" stroke-width="2.2"/>
+  <line x1="740" y1="62" x2="792" y2="20" stroke="#0a0a0a" stroke-width="1.5"/>
+  <line x1="740" y1="62" x2="776" y2="36" stroke="#0a0a0a" stroke-width="1.2"/>
 </g>
 <!-- Tail -->
-<path d="M846,94 Q868,78 876,66 Q882,56 876,48 Q870,42 864,48 Q870,56 866,66 Q856,78 838,96" stroke="#0c2c10" stroke-width="17" fill="none" stroke-linecap="round"/>
-<path d="M846,94 Q868,78 876,66 Q882,56 876,48" stroke="#186020" stroke-width="9" fill="none" stroke-linecap="round"/>
-<path d="M846,94 Q868,78 876,66 Q882,56 876,48" stroke="#22803a" stroke-width="4" fill="none" stroke-linecap="round"/>
-<polygon points="862,55 854,44 870,48" fill="#0c2c10"/>
-<polygon points="870,46 863,35 878,40" fill="#0c2c10"/>
-<polygon points="878,38 872,26 884,34" fill="#081e0c"/>
+<path d="M846,94 Q868,78 876,66 Q882,56 876,48 Q870,42 864,48 Q870,56 866,66 Q856,78 838,96" stroke="#111111" stroke-width="17" fill="none" stroke-linecap="round"/>
+<path d="M846,94 Q868,78 876,66 Q882,56 876,48" stroke="#282828" stroke-width="9" fill="none" stroke-linecap="round"/>
+<path d="M846,94 Q868,78 876,66 Q882,56 876,48" stroke="#363636" stroke-width="4" fill="none" stroke-linecap="round"/>
+<polygon points="862,55 854,44 870,48" fill="#111111"/>
+<polygon points="870,46 863,35 878,40" fill="#111111"/>
+<polygon points="878,38 872,26 884,34" fill="#0a0a0a"/>
 <!-- Body -->
-<rect x="720" y="58" width="130" height="56" rx="14" fill="#16481e"/>
-<rect x="728" y="62" width="114" height="26" rx="9" fill="#1e6228"/>
+<rect x="720" y="58" width="130" height="56" rx="14" fill="#1c1c1c"/>
+<rect x="728" y="62" width="114" height="26" rx="9" fill="#242424"/>
 <!-- Belly -->
-<ellipse cx="784" cy="92" rx="50" ry="16" fill="#257830" opacity=".7"/>
+<ellipse cx="784" cy="92" rx="50" ry="16" fill="#2e2e2e" opacity=".7"/>
 <!-- Scale rows -->
-<path d="M736,82 Q746,76 756,82 Q766,76 776,82 Q786,76 796,82 Q806,76 816,82 Q826,76 836,82" stroke="#0e3414" stroke-width="1.6" fill="none" opacity=".6"/>
-<path d="M738,90 Q748,84 758,90 Q768,84 778,90 Q788,84 798,90 Q808,84 818,90 Q828,84 836,90" stroke="#0e3414" stroke-width="1.6" fill="none" opacity=".6"/>
-<path d="M738,100 Q750,94 762,100 Q774,94 786,100 Q798,94 810,100 Q820,96 828,100" stroke="#0e3414" stroke-width="1.2" fill="none" opacity=".5"/>
+<path d="M736,82 Q746,76 756,82 Q766,76 776,82 Q786,76 796,82 Q806,76 816,82 Q826,76 836,82" stroke="#0e0e0e" stroke-width="1.6" fill="none" opacity=".6"/>
+<path d="M738,90 Q748,84 758,90 Q768,84 778,90 Q788,84 798,90 Q808,84 818,90 Q828,84 836,90" stroke="#0e0e0e" stroke-width="1.6" fill="none" opacity=".6"/>
+<path d="M738,100 Q750,94 762,100 Q774,94 786,100 Q798,94 810,100 Q820,96 828,100" stroke="#0e0e0e" stroke-width="1.2" fill="none" opacity=".5"/>
 <!-- Body spikes -->
-<polygon points="726,62 720,50 734,58" fill="#0c2c10"/>
-<polygon points="748,60 742,46 756,56" fill="#0c2c10"/>
-<polygon points="770,58 764,44 778,54" fill="#0c2c10"/>
-<polygon points="792,58 786,44 800,54" fill="#0c2c10"/>
+<polygon points="726,62 720,50 734,58" fill="#111111"/>
+<polygon points="748,60 742,46 756,56" fill="#111111"/>
+<polygon points="770,58 764,44 778,54" fill="#111111"/>
+<polygon points="792,58 786,44 800,54" fill="#111111"/>
 <!-- Chest fire glow -->
 <ellipse cx="758" cy="78" rx="30" ry="17" fill="#ff5500" opacity=".07" filter="url(#fg)" class="throat"/>
 <ellipse cx="758" cy="78" rx="18" ry="10" fill="#ffaa00" opacity=".1" class="throat"/>
 <!-- Neck -->
-<path d="M698,30 Q692,50 698,76 L740,76 Q746,52 740,30 Z" fill="#16481e"/>
-<path d="M704,34 Q698,52 704,72 L734,72 Q740,52 734,34 Z" fill="#1e6228"/>
-<polygon points="698,38 690,27 710,34" fill="#0c2c10"/>
-<polygon points="698,50 690,39 710,46" fill="#0c2c10"/>
-<polygon points="698,62 690,51 710,58" fill="#0c2c10"/>
+<path d="M698,30 Q692,50 698,76 L740,76 Q746,52 740,30 Z" fill="#1c1c1c"/>
+<path d="M704,34 Q698,52 704,72 L734,72 Q740,52 734,34 Z" fill="#242424"/>
+<polygon points="698,38 690,27 710,34" fill="#111111"/>
+<polygon points="698,50 690,39 710,46" fill="#111111"/>
+<polygon points="698,62 690,51 710,58" fill="#111111"/>
 <!-- Head -->
-<path d="M658,20 Q652,32 654,48 Q658,60 676,62 Q694,64 714,58 Q736,52 740,40 Q742,26 730,18 Q716,12 694,12 Q672,12 658,20 Z" fill="#1e6228"/>
-<path d="M664,22 Q660,32 662,46 Q666,56 682,58 Q698,60 716,54 Q732,48 736,38 Q736,26 724,18 Q710,14 690,14 Q672,14 664,22 Z" fill="#257830" opacity=".55"/>
+<path d="M658,20 Q652,32 654,48 Q658,60 676,62 Q694,64 714,58 Q736,52 740,40 Q742,26 730,18 Q716,12 694,12 Q672,12 658,20 Z" fill="#242424"/>
+<path d="M664,22 Q660,32 662,46 Q666,56 682,58 Q698,60 716,54 Q732,48 736,38 Q736,26 724,18 Q710,14 690,14 Q672,14 664,22 Z" fill="#2e2e2e" opacity=".55"/>
 <!-- Head crests -->
-<polygon points="666,20 658,7 676,16" fill="#0c2c10"/>
-<polygon points="681,17 676,3 692,13" fill="#0c2c10"/>
-<polygon points="696,15 693,1 708,11" fill="#0c2c10"/>
-<polygon points="710,17 709,3 722,14" fill="#0c2c10"/>
+<polygon points="666,20 658,7 676,16" fill="#111111"/>
+<polygon points="681,17 676,3 692,13" fill="#111111"/>
+<polygon points="696,15 693,1 708,11" fill="#111111"/>
+<polygon points="710,17 709,3 722,14" fill="#111111"/>
 <!-- Eye socket -->
-<circle cx="671" cy="34" r="14" fill="#091e0c"/>
+<circle cx="671" cy="34" r="14" fill="#080808"/>
 <!-- Eye -->
 <circle cx="671" cy="34" r="10.5" fill="#dc2626"/>
 <circle cx="671" cy="34" r="6.5" fill="#991b1b"/>
 <!-- Vertical slit pupil -->
-<ellipse cx="671" cy="34" rx="2.2" ry="6" fill="#040a04"/>
+<ellipse cx="671" cy="34" rx="2.2" ry="6" fill="#040404"/>
 <!-- Eye highlight -->
 <circle cx="668" cy="30" r="2.2" fill="#fca5a5" opacity=".75"/>
 <circle cx="671" cy="34" r="15" fill="#ef4444" opacity=".1" filter="url(#fg)" class="eg"/>
 <!-- Snout -->
-<path d="M618,36 Q614,44 616,52 Q620,58 636,60 Q650,60 660,54 Q666,48 662,36 Q658,28 642,26 Q626,26 618,36 Z" fill="#16481e"/>
-<path d="M622,37 Q619,44 620,50 Q624,54 638,56 Q650,54 656,48 Q658,40 654,34 Q648,28 636,28 Q622,28 622,37 Z" fill="#1e6228"/>
+<path d="M618,36 Q614,44 616,52 Q620,58 636,60 Q650,60 660,54 Q666,48 662,36 Q658,28 642,26 Q626,26 618,36 Z" fill="#1c1c1c"/>
+<path d="M622,37 Q619,44 620,50 Q624,54 638,56 Q650,54 656,48 Q658,40 654,34 Q648,28 636,28 Q622,28 622,37 Z" fill="#242424"/>
 <!-- Nostrils (glowing) -->
-<ellipse cx="628" cy="41" rx="3.5" ry="4.5" fill="#091e0c"/>
-<ellipse cx="643" cy="41" rx="3.5" ry="4.5" fill="#091e0c"/>
+<ellipse cx="628" cy="41" rx="3.5" ry="4.5" fill="#080808"/>
+<ellipse cx="643" cy="41" rx="3.5" ry="4.5" fill="#080808"/>
 <ellipse cx="628" cy="41" rx="2.5" ry="3.5" fill="#ff4400" opacity=".35" class="throat"/>
 <ellipse cx="643" cy="41" rx="2.5" ry="3.5" fill="#ff4400" opacity=".35" class="throat"/>
 <!-- Teeth top -->
@@ -307,14 +307,14 @@
 <ellipse cx="660" cy="47" rx="14" ry="9" fill="#ff5500" opacity=".14" filter="url(#mg)" class="throat"/>
 <ellipse cx="660" cy="47" rx="7" ry="4.5" fill="#ffcc00" opacity=".18" class="throat"/>
 <!-- Legs -->
-<rect x="730" y="106" width="28" height="17" rx="5" fill="#0c2c10"/>
-<rect x="798" y="106" width="28" height="17" rx="5" fill="#0c2c10"/>
-<polygon points="730,114 720,127 730,120" fill="#061206"/>
-<polygon points="737,116 728,128 738,123" fill="#061206"/>
-<polygon points="744,116 736,128 746,122" fill="#061206"/>
-<polygon points="798,114 788,127 798,120" fill="#061206"/>
-<polygon points="805,116 796,128 806,123" fill="#061206"/>
-<polygon points="812,116 804,128 814,122" fill="#061206"/>
+<rect x="730" y="106" width="28" height="17" rx="5" fill="#111111"/>
+<rect x="798" y="106" width="28" height="17" rx="5" fill="#111111"/>
+<polygon points="730,114 720,127 730,120" fill="#050505"/>
+<polygon points="737,116 728,128 738,123" fill="#050505"/>
+<polygon points="744,116 736,128 746,122" fill="#050505"/>
+<polygon points="798,114 788,127 798,120" fill="#050505"/>
+<polygon points="805,116 796,128 806,123" fill="#050505"/>
+<polygon points="812,116 804,128 814,122" fill="#050505"/>
 
 <!-- ========== DRAGON FIRE BREATH ========== -->
 <g class="fireH">
