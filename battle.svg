@@ -1,165 +1,405 @@
 ﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 890 130" width="890" height="130">
 <defs>
-  <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0%" stop-color="#020c1b"/>
-    <stop offset="100%" stop-color="#071628"/>
-  </linearGradient>
+  <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#010810"/><stop offset="100%" stop-color="#060f1e"/></linearGradient>
+  <radialGradient id="magatm" cx="15%" cy="80%" r="30%"><stop offset="0%" stop-color="#3b0d8a" stop-opacity=".3"/><stop offset="100%" stop-color="#010810" stop-opacity="0"/></radialGradient>
+  <radialGradient id="dragatm" cx="80%" cy="70%" r="35%"><stop offset="0%" stop-color="#7a1500" stop-opacity=".25"/><stop offset="100%" stop-color="#010810" stop-opacity="0"/></radialGradient>
   <filter id="mg"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <filter id="mg2"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
   <filter id="fg"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <filter id="fg2"><feGaussianBlur stdDeviation="9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
   <style>
-    @keyframes bolt{0%{transform:translateX(0);opacity:1}75%{transform:translateX(530px);opacity:1}76%{transform:translateX(530px);opacity:0}100%{transform:translateX(0);opacity:0}}
-    @keyframes fire{0%{transform:translateX(0);opacity:1}70%{transform:translateX(-480px);opacity:1}71%{transform:translateX(-480px);opacity:0}100%{transform:translateX(0);opacity:0}}
-    @keyframes orb{0%,100%{opacity:.5}50%{opacity:1}}
-    @keyframes flt{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
-    @keyframes wing{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
-    @keyframes hit{0%,74%{opacity:0}75%,83%{opacity:1}84%,100%{opacity:0}}
-    @keyframes fhit{0%,69%{opacity:0}70%,79%{opacity:1}80%,100%{opacity:0}}
-    @keyframes eyeglow{0%,100%{opacity:.15}50%{opacity:.55}}
-    .bolt{animation:bolt 2.2s linear infinite}
-    .fire{animation:fire 3s linear infinite 1.1s}
+    @keyframes bolt{0%{transform:translateX(0);opacity:1}74%{transform:translateX(500px);opacity:1}75%,100%{transform:translateX(0);opacity:0}}
+    @keyframes fireH{0%{transform:translateX(0);opacity:1}69%{transform:translateX(-468px);opacity:1}70%,100%{transform:translateX(0);opacity:0}}
+    @keyframes orb{0%,100%{opacity:.45}50%{opacity:1}}
+    @keyframes shield{0%,100%{opacity:.3}50%{opacity:.62}}
+    @keyframes shieldHit{0%,68%{opacity:.32}69%,77%{opacity:.95}78%,100%{opacity:.32}}
+    @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
+    @keyframes wing{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+    @keyframes throat{0%,100%{opacity:.25}45%,55%{opacity:.85}}
+    @keyframes hit{0%,73%{opacity:0}74%,83%{opacity:1}84%,100%{opacity:0}}
+    @keyframes fhit{0%,68%{opacity:0}69%,78%{opacity:1}79%,100%{opacity:0}}
+    @keyframes eg{0%,100%{opacity:.18}50%{opacity:.7}}
+    @keyframes flame1{0%,100%{transform:scaleX(1) skewX(0deg)}50%{transform:scaleX(1.06) skewX(3deg)}}
+    @keyframes flame2{0%,100%{transform:scaleX(1) skewX(0deg)}50%{transform:scaleX(1.04) skewX(-2deg)}}
+    @keyframes emb{0%{transform:translate(0,0);opacity:1}100%{transform:translate(-18px,-44px);opacity:0}}
+    @keyframes emb2{0%{transform:translate(0,0);opacity:1}100%{transform:translate(-10px,-52px);opacity:0}}
+    .bolt{animation:bolt 2.4s linear infinite}
+    .fireH{animation:fireH 3.4s linear infinite 1.4s}
     .orb{animation:orb 1.4s ease-in-out infinite}
-    .mage{animation:flt 3s ease-in-out infinite}
-    .wg{animation:wing 1.1s ease-in-out infinite;transform-box:fill-box;transform-origin:bottom center}
-    .hit{animation:hit 2.2s linear infinite}
-    .fhit{animation:fhit 3s linear infinite 1.1s}
-    .eg{animation:eyeglow 1.5s ease-in-out infinite}
+    .shield{animation:shield 2.2s ease-in-out infinite}
+    .shHit{animation:shieldHit 3.4s linear infinite 1.4s}
+    .float{animation:float 3.8s ease-in-out infinite}
+    .wg{animation:wing 1.2s ease-in-out infinite;transform-box:fill-box;transform-origin:bottom center}
+    .throat{animation:throat 1.6s ease-in-out infinite}
+    .hit{animation:hit 2.4s linear infinite}
+    .fhit{animation:fhit 3.4s linear infinite 1.4s}
+    .eg{animation:eg 2.2s ease-in-out infinite}
+    .fl1{animation:flame1 .45s ease-in-out infinite;transform-box:fill-box;transform-origin:right center}
+    .fl2{animation:flame2 .38s ease-in-out infinite;transform-box:fill-box;transform-origin:right center}
+    .emb{animation:emb 2.2s ease-in infinite}
+    .emb2{animation:emb2 2.8s ease-in infinite .6s}
   </style>
 </defs>
+
+<!-- BG layers -->
 <rect width="890" height="130" fill="url(#bg)"/>
-<circle cx="190" cy="16" r="1" fill="#fff" opacity=".4"/>
-<circle cx="320" cy="9" r=".8" fill="#fff" opacity=".5"/>
-<circle cx="445" cy="20" r="1" fill="#fff" opacity=".3"/>
-<circle cx="570" cy="7" r=".8" fill="#fff" opacity=".45"/>
-<circle cx="690" cy="17" r="1" fill="#fff" opacity=".4"/>
-<circle cx="810" cy="11" r=".9" fill="#fff" opacity=".35"/>
-<circle cx="250" cy="25" r=".7" fill="#7ecfff" opacity=".3"/>
-<circle cx="640" cy="28" r=".7" fill="#ff9900" opacity=".3"/>
-<rect x="0" y="116" width="890" height="14" fill="#050e1e"/>
-<rect x="0" y="114" width="890" height="2" fill="#00d4ff" opacity=".2"/>
-<path d="M4 22 L4 4 L22 4" stroke="#00d4ff" stroke-width="1.2" fill="none" opacity=".6"/>
-<path d="M886 22 L886 4 L868 4" stroke="#ef4444" stroke-width="1.2" fill="none" opacity=".6"/>
-<path d="M4 108 L4 126 L22 126" stroke="#00d4ff" stroke-width="1.2" fill="none" opacity=".6"/>
-<path d="M886 108 L886 126 L868 126" stroke="#ef4444" stroke-width="1.2" fill="none" opacity=".6"/>
-<text x="445" y="13" font-family="monospace" font-size="7" fill="#00d4ff" text-anchor="middle" letter-spacing="4" opacity=".85">-- BATTLE --</text>
+<rect width="890" height="130" fill="url(#magatm)"/>
+<rect width="890" height="130" fill="url(#dragatm)"/>
+
+<!-- Stars -->
+<circle cx="195" cy="14" r="1" fill="#fff" opacity=".45"/>
+<circle cx="316" cy="8" r=".8" fill="#fff" opacity=".5"/>
+<circle cx="445" cy="18" r="1.1" fill="#fff" opacity=".3"/>
+<circle cx="560" cy="6" r=".8" fill="#fff" opacity=".5"/>
+<circle cx="682" cy="15" r="1" fill="#fff" opacity=".4"/>
+<circle cx="798" cy="9" r=".9" fill="#fff" opacity=".38"/>
+<circle cx="258" cy="24" r=".6" fill="#7ecfff" opacity=".35"/>
+<circle cx="630" cy="22" r=".6" fill="#ffaa00" opacity=".35"/>
+<circle cx="380" cy="11" r=".7" fill="#fff" opacity=".28"/>
+
+<!-- Ground -->
+<rect x="0" y="116" width="890" height="14" fill="#030b16"/>
+<rect x="0" y="115" width="890" height="1.5" fill="#00d4ff" opacity=".15"/>
+<ellipse cx="105" cy="117" rx="65" ry="7" fill="#5b21b6" opacity=".1"/>
+<ellipse cx="768" cy="117" rx="88" ry="9" fill="#cc3300" opacity=".1"/>
+<path d="M60,116 L76,112 L88,116 L100,111 L116,116" stroke="#7b2fff" stroke-width=".8" fill="none" opacity=".35"/>
+<path d="M690,116 L712,111 L732,116 L756,110 L780,116 L806,111 L830,116" stroke="#ff5500" stroke-width=".8" fill="none" opacity=".32"/>
+<rect x="240" y="115" width="260" height="3" fill="#1a0800" opacity=".6" rx="2"/>
+
+<!-- HUD corners -->
+<path d="M4 24 L4 4 L24 4" stroke="#00d4ff" stroke-width="1.4" fill="none" opacity=".75"/>
+<path d="M886 24 L886 4 L866 4" stroke="#ef4444" stroke-width="1.4" fill="none" opacity=".75"/>
+<path d="M4 106 L4 126 L24 126" stroke="#00d4ff" stroke-width="1.4" fill="none" opacity=".75"/>
+<path d="M886 106 L886 126 L866 126" stroke="#ef4444" stroke-width="1.4" fill="none" opacity=".75"/>
+
+<!-- HUD title -->
+<text x="445" y="13" font-family="monospace" font-size="8" fill="#00d4ff" text-anchor="middle" letter-spacing="5" font-weight="bold" opacity=".9">-- BATTLE --</text>
+
+<!-- HP Mage -->
 <text x="30" y="8" font-family="monospace" font-size="5" fill="#4ade80">MAGE HP</text>
-<rect x="28" y="10" width="80" height="6" rx="2" fill="#071222" stroke="#4ade80" stroke-width=".5"/>
-<rect x="29" y="11" width="78" height="4" rx="1" fill="#4ade80" opacity=".9"/>
-<text x="782" y="8" font-family="monospace" font-size="5" fill="#ef4444">DRAGON HP</text>
-<rect x="780" y="10" width="80" height="6" rx="2" fill="#071222" stroke="#ef4444" stroke-width=".5"/>
-<rect x="781" y="11" width="58" height="4" rx="1" fill="#ef4444" opacity=".9"/>
-<g class="mage">
-  <polygon points="70,10 65,22 75,22" fill="#6d28d9"/>
-  <rect x="56" y="22" width="28" height="10" rx="1" fill="#6d28d9"/>
-  <rect x="48" y="30" width="44" height="6" rx="1" fill="#7c3aed"/>
-  <text x="70" y="29" font-family="serif" font-size="9" fill="#00d4ff" text-anchor="middle" opacity=".9">*</text>
-  <rect x="56" y="36" width="28" height="18" rx="3" fill="#fcd5a0"/>
-  <circle cx="63" cy="44" r="3" fill="#0f0a2a"/>
-  <circle cx="77" cy="44" r="3" fill="#0f0a2a"/>
-  <circle cx="62" cy="43" r="1.2" fill="#00d4ff"/>
-  <circle cx="76" cy="43" r="1.2" fill="#00d4ff"/>
-  <rect x="44" y="54" width="52" height="38" rx="4" fill="#5b21b6"/>
-  <rect x="64" y="54" width="12" height="38" fill="#6d28d9" opacity=".8"/>
-  <rect x="44" y="54" width="52" height="5" fill="#7c3aed"/>
-  <rect x="30" y="54" width="16" height="22" rx="3" fill="#5b21b6"/>
-  <rect x="30" y="72" width="14" height="8" rx="2" fill="#fcd5a0"/>
-  <rect x="94" y="60" width="28" height="10" rx="3" fill="#fcd5a0"/>
-  <rect x="120" y="18" width="5" height="84" rx="2" fill="#92400e"/>
-  <rect x="115" y="18" width="15" height="5" rx="1" fill="#78350f"/>
-  <circle cx="122" cy="16" r="11" fill="#00d4ff" opacity=".15" filter="url(#mg)" class="orb"/>
-  <circle cx="122" cy="16" r="7" fill="#00d4ff" opacity=".7" class="orb"/>
-  <circle cx="122" cy="16" r="3" fill="#fff" opacity=".95"/>
-  <rect x="44" y="90" width="22" height="26" rx="3" fill="#4c1d95"/>
-  <rect x="70" y="90" width="22" height="26" rx="3" fill="#4c1d95"/>
-  <rect x="42" y="112" width="26" height="7" rx="2" fill="#1e1035"/>
-  <rect x="68" y="112" width="26" height="7" rx="2" fill="#1e1035"/>
+<rect x="28" y="10" width="86" height="7" rx="2" fill="#020e1a" stroke="#22c55e" stroke-width=".6"/>
+<rect x="29" y="11" width="84" height="5" rx="1" fill="#16a34a" opacity=".9"/>
+<rect x="29" y="11" width="60" height="2" rx="1" fill="#4ade80" opacity=".55"/>
+
+<!-- HP Dragon -->
+<text x="776" y="8" font-family="monospace" font-size="5" fill="#ef4444">DRAGON HP</text>
+<rect x="776" y="10" width="86" height="7" rx="2" fill="#020e1a" stroke="#dc2626" stroke-width=".6"/>
+<rect x="777" y="11" width="62" height="5" rx="1" fill="#b91c1c" opacity=".9"/>
+<rect x="777" y="11" width="44" height="2" rx="1" fill="#ef4444" opacity=".55"/>
+
+<!-- ========== MAGE ========== -->
+<g class="float">
+  <!-- Shadow -->
+  <ellipse cx="100" cy="120" rx="52" ry="5" fill="#000" opacity=".35"/>
+  <!-- Cape back -->
+  <path d="M62,52 Q42,86 46,116 L74,116 Q66,92 68,52 Z" fill="#160b3e"/>
+  <!-- Outer robe -->
+  <path d="M48,54 Q34,90 38,116 L142,116 Q146,92 132,54 Z" fill="#2a1264"/>
+  <!-- Mid robe layer -->
+  <path d="M58,54 Q48,88 50,116 L130,116 Q132,88 122,54 Z" fill="#3b1a8a"/>
+  <!-- Inner robe highlight -->
+  <path d="M74,54 Q68,86 70,116 L110,116 Q112,86 106,54 Z" fill="#4c22ac"/>
+  <!-- Robe top trim -->
+  <rect x="48" y="52" width="84" height="5" rx="2" fill="#6d35d9"/>
+  <path d="M48,57 Q90,63 132,57" stroke="#c8a030" stroke-width="1.2" fill="none" opacity=".65"/>
+  <!-- Gold rune on chest -->
+  <text x="90" y="84" font-family="serif" font-size="14" fill="#c8a030" text-anchor="middle" opacity=".55">✦</text>
+  <!-- Left wide sleeve -->
+  <path d="M48,54 Q28,66 24,84 Q28,92 38,90 Q42,82 48,72 L58,54 Z" fill="#2a1264"/>
+  <path d="M22,84 Q20,90 26,92 Q36,94 38,90" fill="#fcd5a0"/>
+  <!-- Right arm extended cast -->
+  <path d="M132,56 Q150,60 166,54 L168,64 Q150,70 132,66 Z" fill="#2a1264"/>
+  <path d="M158,52 Q170,46 176,52 L174,62 Q166,68 158,64 Z" fill="#fcd5a0"/>
+  <!-- Boots -->
+  <path d="M38,108 Q34,116 36,122 Q46,125 54,122 Q56,118 54,108 Z" fill="#180830"/>
+  <rect x="34" y="119" width="22" height="4" rx="1" fill="#200a40"/>
+  <path d="M100,108 Q96,116 98,122 Q108,125 116,122 Q118,118 116,108 Z" fill="#180830"/>
+  <rect x="96" y="119" width="22" height="4" rx="1" fill="#200a40"/>
+  <!-- Robe lower split -->
+  <rect x="48" y="94" width="24" height="22" rx="3" fill="#2a1264"/>
+  <rect x="76" y="94" width="24" height="22" rx="3" fill="#2a1264"/>
+  <!-- Beard (long flowing) -->
+  <path d="M68,48 Q62,62 64,76 Q68,84 78,82 Q88,80 86,68 L82,56 Q76,62 72,58 Q70,54 72,48 Z" fill="#dcdccc"/>
+  <path d="M82,56 Q88,68 84,78 Q90,80 96,76 Q100,70 96,60 Q90,54 86,50 Z" fill="#ccccc0"/>
+  <path d="M68,74 Q70,84 72,90 Q78,94 84,90 Q88,84 86,76" fill="#dcdccc" opacity=".7"/>
+  <!-- Head -->
+  <ellipse cx="90" cy="38" rx="24" ry="18" fill="#fcd5a0"/>
+  <!-- Eyebrows -->
+  <path d="M72,32 Q77,29 84,32" stroke="#888" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+  <path d="M90,32 Q97,29 104,32" stroke="#888" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+  <!-- Eyes -->
+  <ellipse cx="78" cy="38" rx="4" ry="3.5" fill="#001020"/>
+  <ellipse cx="102" cy="38" rx="4" ry="3.5" fill="#001020"/>
+  <circle cx="78" cy="38" r="2.5" fill="#00d4ff" opacity=".95"/>
+  <circle cx="102" cy="38" r="2.5" fill="#00d4ff" opacity=".95"/>
+  <circle cx="77" cy="37" r="1" fill="#fff"/>
+  <circle cx="101" cy="37" r="1" fill="#fff"/>
+  <!-- Eye glow -->
+  <circle cx="78" cy="38" r="5" fill="#00d4ff" opacity=".12" filter="url(#mg)"/>
+  <circle cx="102" cy="38" r="5" fill="#00d4ff" opacity=".12" filter="url(#mg)"/>
+  <!-- Nose -->
+  <path d="M88,42 Q86,46 84,46 Q88,48 92,46 Q90,46 88,42 Z" fill="#e0a070" opacity=".8"/>
+  <!-- Cheek wrinkles -->
+  <path d="M70,34 Q76,31 80,34" stroke="#cc8855" stroke-width=".6" fill="none" opacity=".45"/>
+  <path d="M100,34 Q104,31 108,34" stroke="#cc8855" stroke-width=".6" fill="none" opacity=".45"/>
+  <!-- Wizard hat -->
+  <polygon points="90,2 72,26 108,26" fill="#1a0848"/>
+  <polygon points="90,2 75,22 105,22" fill="#28107a"/>
+  <rect x="68" y="22" width="44" height="7" rx="1" fill="#3b1a8a"/>
+  <rect x="68" y="23" width="44" height="2.5" fill="#5b28c0" opacity=".65"/>
+  <text x="90" y="18" font-family="serif" font-size="11" fill="#e8c040" text-anchor="middle" opacity=".95">★</text>
+  <!-- Hat shine -->
+  <path d="M80,6 Q84,10 84,18" stroke="#5b28c0" stroke-width="1.2" fill="none" opacity=".5"/>
+  <!-- Staff -->
+  <rect x="176" y="20" width="6" height="94" rx="2.5" fill="#5c2c0e"/>
+  <path d="M173,20 Q176,16 179,20 Q182,16 185,20" stroke="#b88820" stroke-width="1.8" fill="none"/>
+  <rect x="173" y="60" width="12" height="4" rx="1" fill="#7a3c10" opacity=".7"/>
+  <!-- Staff orb -->
+  <circle cx="179" cy="14" r="16" fill="#00d4ff" opacity=".08" filter="url(#mg2)" class="orb"/>
+  <circle cx="179" cy="14" r="10" fill="#00d4ff" opacity=".55" filter="url(#mg)" class="orb"/>
+  <circle cx="179" cy="14" r="6" fill="#7ecfff" class="orb"/>
+  <circle cx="179" cy="14" r="3.5" fill="#fff" opacity=".97"/>
+  <line x1="179" y1="5" x2="179" y2="9" stroke="#fff" stroke-width="1.2" opacity=".55"/>
+  <line x1="172" y1="10" x2="175" y2="12" stroke="#fff" stroke-width="1.2" opacity=".55"/>
+  <line x1="186" y1="10" x2="183" y2="12" stroke="#fff" stroke-width="1.2" opacity=".55"/>
 </g>
+
+<!-- ========== MAGE SHIELD ========== -->
+<!-- Outer soft aura -->
+<circle cx="105" cy="72" r="90" fill="#00d4ff" fill-opacity=".015" class="shield"/>
+<!-- Bubble shield main -->
+<circle cx="105" cy="72" r="76" fill="#00d4ff" fill-opacity=".04" stroke="#00d4ff" stroke-width="1.4" stroke-opacity=".42" stroke-dasharray="4 3" class="shHit"/>
+<!-- Inner hex pattern -->
+<path d="M105,22 L131,37 L131,67 L105,82 L79,67 L79,37 Z" fill="none" stroke="#00d4ff" stroke-width=".8" stroke-opacity=".22"/>
+<path d="M105,32 L124,43 L124,65 L105,76 L86,65 L86,43 Z" fill="none" stroke="#7ecfff" stroke-width=".6" stroke-opacity=".18"/>
+<!-- Shield ring rotating (using animateTransform) -->
+<g opacity=".55">
+  <animateTransform attributeName="transform" type="rotate" from="0 105 72" to="360 105 72" dur="11s" repeatCount="indefinite"/>
+  <circle cx="181" cy="72" r="3.5" fill="#00d4ff" opacity=".7"/>
+  <circle cx="29" cy="72" r="3.5" fill="#00d4ff" opacity=".7"/>
+  <circle cx="105" cy="-4" r="3.5" fill="#00d4ff" opacity=".7"/>
+  <circle cx="105" cy="148" r="3.5" fill="#00d4ff" opacity=".7"/>
+  <text x="173" y="44" font-family="serif" font-size="8" fill="#00d4ff">✦</text>
+  <text x="24" y="100" font-family="serif" font-size="8" fill="#00d4ff">✦</text>
+  <text x="80" y="-2" font-family="serif" font-size="8" fill="#00d4ff">✦</text>
+</g>
+<!-- Counter-rotating inner ring -->
+<g opacity=".35">
+  <animateTransform attributeName="transform" type="rotate" from="360 105 72" to="0 105 72" dur="7s" repeatCount="indefinite"/>
+  <circle cx="172" cy="54" r="2" fill="#7ecfff"/>
+  <circle cx="38" cy="54" r="2" fill="#7ecfff"/>
+  <circle cx="38" cy="90" r="2" fill="#7ecfff"/>
+  <circle cx="172" cy="90" r="2" fill="#7ecfff"/>
+</g>
+
+<!-- ========== MAGIC BOLT ========== -->
 <g class="bolt">
-  <ellipse cx="142" cy="54" rx="20" ry="7" fill="#00d4ff" opacity=".85" filter="url(#mg)"/>
-  <ellipse cx="142" cy="54" rx="12" ry="4" fill="#fff" opacity=".8"/>
-  <ellipse cx="124" cy="54" rx="11" ry="3.5" fill="#7ecfff" opacity=".5"/>
-  <ellipse cx="108" cy="54" rx="7" ry="2.5" fill="#b3e8ff" opacity=".3"/>
-  <line x1="150" y1="48" x2="158" y2="43" stroke="#00d4ff" stroke-width="1.5" opacity=".7"/>
-  <line x1="150" y1="60" x2="158" y2="65" stroke="#00d4ff" stroke-width="1.5" opacity=".7"/>
+  <ellipse cx="200" cy="54" rx="30" ry="11" fill="#00d4ff" opacity=".22" filter="url(#mg2)"/>
+  <ellipse cx="200" cy="54" rx="23" ry="7.5" fill="#00d4ff" opacity=".65" filter="url(#mg)"/>
+  <ellipse cx="200" cy="54" rx="15" ry="5" fill="#7ecfff" opacity=".88"/>
+  <ellipse cx="200" cy="54" rx="9" ry="2.8" fill="#fff" opacity=".95"/>
+  <ellipse cx="180" cy="54" rx="14" ry="4.5" fill="#00d4ff" opacity=".5"/>
+  <ellipse cx="163" cy="54" rx="9" ry="3" fill="#7ecfff" opacity=".32"/>
+  <!-- Lightning edge -->
+  <path d="M194,47 L202,43 L198,48 L206,44" stroke="#fff" stroke-width="1.3" fill="none" opacity=".75"/>
+  <path d="M194,61 L202,65 L198,60 L206,64" stroke="#00d4ff" stroke-width="1.3" fill="none" opacity=".75"/>
+  <path d="M210,50 L216,46 L213,51" stroke="#7ecfff" stroke-width="1" fill="none" opacity=".6"/>
 </g>
+
+<!-- ========== BOLT IMPACT ========== -->
 <g class="hit" opacity="0">
-  <circle cx="718" cy="58" r="20" fill="#00d4ff" opacity=".35" filter="url(#mg)"/>
-  <circle cx="718" cy="58" r="11" fill="#fff" opacity=".7"/>
-  <line x1="718" y1="38" x2="718" y2="28" stroke="#00d4ff" stroke-width="2.5"/>
-  <line x1="732" y1="46" x2="742" y2="39" stroke="#00d4ff" stroke-width="2.5"/>
-  <line x1="704" y1="46" x2="694" y2="39" stroke="#00d4ff" stroke-width="2.5"/>
-  <line x1="732" y1="70" x2="742" y2="77" stroke="#00d4ff" stroke-width="2.5"/>
-  <line x1="704" y1="70" x2="694" y2="77" stroke="#00d4ff" stroke-width="2.5"/>
+  <circle cx="714" cy="56" r="26" fill="#00d4ff" opacity=".28" filter="url(#mg2)"/>
+  <circle cx="714" cy="56" r="15" fill="#00d4ff" opacity=".5" filter="url(#mg)"/>
+  <circle cx="714" cy="56" r="8" fill="#fff" opacity=".82"/>
+  <line x1="714" y1="30" x2="714" y2="20" stroke="#00d4ff" stroke-width="2.8"/>
+  <line x1="732" y1="40" x2="744" y2="32" stroke="#00d4ff" stroke-width="2.5"/>
+  <line x1="696" y1="40" x2="684" y2="32" stroke="#00d4ff" stroke-width="2.5"/>
+  <line x1="732" y1="72" x2="744" y2="80" stroke="#7ecfff" stroke-width="2.5"/>
+  <line x1="696" y1="72" x2="684" y2="80" stroke="#7ecfff" stroke-width="2.5"/>
+  <line x1="740" y1="56" x2="754" y2="56" stroke="#fff" stroke-width="2"/>
+  <line x1="688" y1="56" x2="674" y2="56" stroke="#fff" stroke-width="2"/>
 </g>
+
+<!-- ========== DRAGON ========== -->
+<!-- Back wing -->
 <g class="wg">
-  <polygon points="732,60 668,8 710,60" fill="#14401a" opacity=".88"/>
-  <line x1="732" y1="60" x2="668" y2="8" stroke="#0a2b10" stroke-width="1.5"/>
-  <line x1="732" y1="60" x2="680" y2="14" stroke="#0a2b10" stroke-width="1"/>
-  <line x1="732" y1="60" x2="694" y2="22" stroke="#0a2b10" stroke-width="1"/>
-  <line x1="732" y1="60" x2="708" y2="32" stroke="#0a2b10" stroke-width="1"/>
+  <path d="M726,62 Q698,32 660,8 Q680,18 698,36 Q714,52 726,62 Z" fill="#0c2c10" opacity=".92"/>
+  <line x1="726" y1="62" x2="660" y2="8" stroke="#081e0c" stroke-width="2.2"/>
+  <line x1="726" y1="62" x2="674" y2="16" stroke="#081e0c" stroke-width="1.5"/>
+  <line x1="726" y1="62" x2="690" y2="26" stroke="#081e0c" stroke-width="1.2"/>
+  <line x1="726" y1="62" x2="706" y2="38" stroke="#081e0c" stroke-width="1"/>
+  <!-- Wing membrane texture -->
+  <path d="M720,58 Q700,38 675,16" stroke="#103614" stroke-width=".8" fill="none" opacity=".4"/>
 </g>
+<!-- Front wing -->
 <g class="wg">
-  <polygon points="744,60 778,12 808,60" fill="#1a5221" opacity=".75"/>
-  <line x1="744" y1="60" x2="778" y2="12" stroke="#0a2b10" stroke-width="1.5"/>
-  <line x1="744" y1="60" x2="786" y2="22" stroke="#0a2b10" stroke-width="1"/>
-  <line x1="744" y1="60" x2="796" y2="36" stroke="#0a2b10" stroke-width="1"/>
+  <path d="M740,62 Q772,30 814,8 Q796,20 778,38 Q760,52 740,62 Z" fill="#124018" opacity=".82"/>
+  <line x1="740" y1="62" x2="814" y2="8" stroke="#081e0c" stroke-width="2.2"/>
+  <line x1="740" y1="62" x2="792" y2="20" stroke="#081e0c" stroke-width="1.5"/>
+  <line x1="740" y1="62" x2="776" y2="36" stroke="#081e0c" stroke-width="1.2"/>
 </g>
-<path d="M852,97 Q872,82 877,70 Q880,58 870,54" stroke="#163c1a" stroke-width="14" fill="none" stroke-linecap="round"/>
-<path d="M852,97 Q872,82 877,70 Q880,58 870,54" stroke="#1f5226" stroke-width="7" fill="none" stroke-linecap="round"/>
-<polygon points="870,47 862,55 878,53" fill="#12361a"/>
-<polygon points="874,43 866,51 882,49" fill="#0a2b10"/>
-<rect x="722" y="60" width="128" height="52" rx="12" fill="#1a5221"/>
-<rect x="730" y="64" width="112" height="24" rx="8" fill="#206628"/>
-<rect x="737" y="76" width="98" height="28" rx="6" fill="#2d7a3a" opacity=".65"/>
-<path d="M740,82 Q750,76 760,82 Q770,76 780,82 Q790,76 800,82 Q810,76 820,82" stroke="#163c1a" stroke-width="1.5" fill="none" opacity=".6"/>
-<path d="M740,90 Q750,84 760,90 Q770,84 780,90 Q790,84 800,90 Q810,84 820,90" stroke="#163c1a" stroke-width="1.5" fill="none" opacity=".6"/>
-<polygon points="730,62 724,50 736,60" fill="#12361a"/>
-<polygon points="754,60 748,47 760,58" fill="#12361a"/>
-<polygon points="778,60 772,47 784,58" fill="#12361a"/>
-<rect x="700" y="34" width="38" height="42" rx="10" fill="#1a5221"/>
-<rect x="706" y="38" width="26" height="34" rx="6" fill="#206628"/>
-<polygon points="700,40 692,28 708,38" fill="#12361a"/>
-<polygon points="700,52 692,40 708,50" fill="#12361a"/>
-<polygon points="700,63 692,51 708,61" fill="#12361a"/>
-<rect x="658" y="24" width="62" height="36" rx="8" fill="#206628"/>
-<polygon points="660,24 652,12 668,22" fill="#12361a"/>
-<polygon points="674,23 668,8 682,21" fill="#12361a"/>
-<polygon points="686,24 682,10 694,22" fill="#12361a"/>
-<rect x="622" y="32" width="48" height="22" rx="5" fill="#1a5221"/>
-<ellipse cx="632" cy="38" rx="3" ry="4" fill="#0a2b10"/>
-<ellipse cx="645" cy="38" rx="3" ry="4" fill="#0a2b10"/>
-<polygon points="622,32 628,22 634,32" fill="#ddddc8"/>
-<polygon points="634,32 640,23 646,32" fill="#ddddc8"/>
-<polygon points="646,32 651,25 656,32" fill="#ddddc8"/>
-<polygon points="626,54 631,63 636,54" fill="#ddddc8"/>
-<polygon points="639,54 644,63 649,54" fill="#ddddc8"/>
-<circle cx="676" cy="34" r="9" fill="#ef4444"/>
-<circle cx="676" cy="34" r="5.5" fill="#7f0000"/>
-<ellipse cx="676" cy="34" rx="2" ry="4.5" fill="#1a0000"/>
-<circle cx="673" cy="31" r="1.5" fill="#ff9999" opacity=".8"/>
-<circle cx="676" cy="34" r="12" fill="#ef4444" opacity=".15" filter="url(#fg)" class="eg"/>
-<rect x="732" y="108" width="22" height="14" rx="4" fill="#12361a"/>
-<rect x="802" y="108" width="22" height="14" rx="4" fill="#12361a"/>
-<polygon points="732,116 726,128 734,123" fill="#0a2010"/>
-<polygon points="738,118 732,128 740,125" fill="#0a2010"/>
-<polygon points="802,116 796,128 804,123" fill="#0a2010"/>
-<polygon points="808,118 802,128 810,125" fill="#0a2010"/>
-<g class="fire">
-  <ellipse cx="614" cy="43" rx="24" ry="9" fill="#ff6600" opacity=".85" filter="url(#fg)"/>
-  <ellipse cx="614" cy="43" rx="15" ry="5.5" fill="#ff8800" opacity=".9"/>
-  <ellipse cx="614" cy="43" rx="8" ry="3" fill="#ffcc00" opacity=".9"/>
-  <ellipse cx="594" cy="43" rx="15" ry="5" fill="#ff4400" opacity=".7"/>
-  <ellipse cx="574" cy="43" rx="11" ry="4" fill="#ff2200" opacity=".5"/>
-  <ellipse cx="554" cy="43" rx="8" ry="3" fill="#cc1100" opacity=".35"/>
-  <line x1="606" y1="34" x2="599" y2="27" stroke="#ffaa00" stroke-width="1.5" opacity=".7"/>
-  <line x1="606" y1="52" x2="599" y2="59" stroke="#ff6600" stroke-width="1.5" opacity=".7"/>
+<!-- Tail -->
+<path d="M846,94 Q868,78 876,66 Q882,56 876,48 Q870,42 864,48 Q870,56 866,66 Q856,78 838,96" stroke="#0c2c10" stroke-width="17" fill="none" stroke-linecap="round"/>
+<path d="M846,94 Q868,78 876,66 Q882,56 876,48" stroke="#186020" stroke-width="9" fill="none" stroke-linecap="round"/>
+<path d="M846,94 Q868,78 876,66 Q882,56 876,48" stroke="#22803a" stroke-width="4" fill="none" stroke-linecap="round"/>
+<polygon points="862,55 854,44 870,48" fill="#0c2c10"/>
+<polygon points="870,46 863,35 878,40" fill="#0c2c10"/>
+<polygon points="878,38 872,26 884,34" fill="#081e0c"/>
+<!-- Body -->
+<rect x="720" y="58" width="130" height="56" rx="14" fill="#16481e"/>
+<rect x="728" y="62" width="114" height="26" rx="9" fill="#1e6228"/>
+<!-- Belly -->
+<ellipse cx="784" cy="92" rx="50" ry="16" fill="#257830" opacity=".7"/>
+<!-- Scale rows -->
+<path d="M736,82 Q746,76 756,82 Q766,76 776,82 Q786,76 796,82 Q806,76 816,82 Q826,76 836,82" stroke="#0e3414" stroke-width="1.6" fill="none" opacity=".6"/>
+<path d="M738,90 Q748,84 758,90 Q768,84 778,90 Q788,84 798,90 Q808,84 818,90 Q828,84 836,90" stroke="#0e3414" stroke-width="1.6" fill="none" opacity=".6"/>
+<path d="M738,100 Q750,94 762,100 Q774,94 786,100 Q798,94 810,100 Q820,96 828,100" stroke="#0e3414" stroke-width="1.2" fill="none" opacity=".5"/>
+<!-- Body spikes -->
+<polygon points="726,62 720,50 734,58" fill="#0c2c10"/>
+<polygon points="748,60 742,46 756,56" fill="#0c2c10"/>
+<polygon points="770,58 764,44 778,54" fill="#0c2c10"/>
+<polygon points="792,58 786,44 800,54" fill="#0c2c10"/>
+<!-- Chest fire glow -->
+<ellipse cx="758" cy="78" rx="30" ry="17" fill="#ff5500" opacity=".07" filter="url(#fg)" class="throat"/>
+<ellipse cx="758" cy="78" rx="18" ry="10" fill="#ffaa00" opacity=".1" class="throat"/>
+<!-- Neck -->
+<path d="M698,30 Q692,50 698,76 L740,76 Q746,52 740,30 Z" fill="#16481e"/>
+<path d="M704,34 Q698,52 704,72 L734,72 Q740,52 734,34 Z" fill="#1e6228"/>
+<polygon points="698,38 690,27 710,34" fill="#0c2c10"/>
+<polygon points="698,50 690,39 710,46" fill="#0c2c10"/>
+<polygon points="698,62 690,51 710,58" fill="#0c2c10"/>
+<!-- Head -->
+<path d="M658,20 Q652,32 654,48 Q658,60 676,62 Q694,64 714,58 Q736,52 740,40 Q742,26 730,18 Q716,12 694,12 Q672,12 658,20 Z" fill="#1e6228"/>
+<path d="M664,22 Q660,32 662,46 Q666,56 682,58 Q698,60 716,54 Q732,48 736,38 Q736,26 724,18 Q710,14 690,14 Q672,14 664,22 Z" fill="#257830" opacity=".55"/>
+<!-- Head crests -->
+<polygon points="666,20 658,7 676,16" fill="#0c2c10"/>
+<polygon points="681,17 676,3 692,13" fill="#0c2c10"/>
+<polygon points="696,15 693,1 708,11" fill="#0c2c10"/>
+<polygon points="710,17 709,3 722,14" fill="#0c2c10"/>
+<!-- Eye socket -->
+<circle cx="671" cy="34" r="14" fill="#091e0c"/>
+<!-- Eye -->
+<circle cx="671" cy="34" r="10.5" fill="#dc2626"/>
+<circle cx="671" cy="34" r="6.5" fill="#991b1b"/>
+<!-- Vertical slit pupil -->
+<ellipse cx="671" cy="34" rx="2.2" ry="6" fill="#040a04"/>
+<!-- Eye highlight -->
+<circle cx="668" cy="30" r="2.2" fill="#fca5a5" opacity=".75"/>
+<circle cx="671" cy="34" r="15" fill="#ef4444" opacity=".1" filter="url(#fg)" class="eg"/>
+<!-- Snout -->
+<path d="M618,36 Q614,44 616,52 Q620,58 636,60 Q650,60 660,54 Q666,48 662,36 Q658,28 642,26 Q626,26 618,36 Z" fill="#16481e"/>
+<path d="M622,37 Q619,44 620,50 Q624,54 638,56 Q650,54 656,48 Q658,40 654,34 Q648,28 636,28 Q622,28 622,37 Z" fill="#1e6228"/>
+<!-- Nostrils (glowing) -->
+<ellipse cx="628" cy="41" rx="3.5" ry="4.5" fill="#091e0c"/>
+<ellipse cx="643" cy="41" rx="3.5" ry="4.5" fill="#091e0c"/>
+<ellipse cx="628" cy="41" rx="2.5" ry="3.5" fill="#ff4400" opacity=".35" class="throat"/>
+<ellipse cx="643" cy="41" rx="2.5" ry="3.5" fill="#ff4400" opacity=".35" class="throat"/>
+<!-- Teeth top -->
+<polygon points="618,36 624,24 630,36" fill="#e0e0ce"/>
+<polygon points="630,34 637,22 644,34" fill="#e0e0ce"/>
+<polygon points="644,34 650,24 657,34" fill="#e0e0ce"/>
+<polygon points="656,34 660,26 664,34" fill="#e0e0ce"/>
+<!-- Teeth bottom -->
+<polygon points="622,58 628,68 634,58" fill="#e0e0ce"/>
+<polygon points="636,58 642,68 648,58" fill="#e0e0ce"/>
+<polygon points="648,59 653,69 659,59" fill="#e0e0ce"/>
+<!-- Throat fire -->
+<ellipse cx="660" cy="47" rx="14" ry="9" fill="#ff5500" opacity=".14" filter="url(#mg)" class="throat"/>
+<ellipse cx="660" cy="47" rx="7" ry="4.5" fill="#ffcc00" opacity=".18" class="throat"/>
+<!-- Legs -->
+<rect x="730" y="106" width="28" height="17" rx="5" fill="#0c2c10"/>
+<rect x="798" y="106" width="28" height="17" rx="5" fill="#0c2c10"/>
+<polygon points="730,114 720,127 730,120" fill="#061206"/>
+<polygon points="737,116 728,128 738,123" fill="#061206"/>
+<polygon points="744,116 736,128 746,122" fill="#061206"/>
+<polygon points="798,114 788,127 798,120" fill="#061206"/>
+<polygon points="805,116 796,128 806,123" fill="#061206"/>
+<polygon points="812,116 804,128 814,122" fill="#061206"/>
+
+<!-- ========== DRAGON FIRE BREATH ========== -->
+<g class="fireH">
+  <!-- Outer ambient glow -->
+  <ellipse cx="606" cy="46" rx="44" ry="20" fill="#aa2200" opacity=".22" filter="url(#fg2)"/>
+  
+  <!-- Stream upper (angled up-left) -->
+  <path d="M606,38 Q574,26 534,18 Q500,12 468,14 Q436,16 406,22" stroke="#ff3300" stroke-width="13" fill="none" stroke-linecap="round" opacity=".65" class="fl2"/>
+  <path d="M606,38 Q574,26 534,18 Q500,12 468,14 Q436,16 406,22" stroke="#ff7700" stroke-width="7" fill="none" stroke-linecap="round" opacity=".78"/>
+  <path d="M606,38 Q574,26 534,18 Q500,12 468,14 Q436,16 406,22" stroke="#ffcc00" stroke-width="3" fill="none" stroke-linecap="round" opacity=".88"/>
+  
+  <!-- Stream center main (straight left) -->
+  <ellipse cx="604" cy="46" rx="36" ry="14" fill="#cc2200" opacity=".88" filter="url(#fg)"/>
+  <ellipse cx="604" cy="46" rx="28" ry="10" fill="#ff3300" opacity=".9"/>
+  <ellipse cx="604" cy="46" rx="20" ry="7" fill="#ff6600" opacity=".95"/>
+  <ellipse cx="604" cy="46" rx="12" ry="4.5" fill="#ffaa00" opacity=".97"/>
+  <ellipse cx="604" cy="46" rx="6" ry="2.5" fill="#ffee00" opacity=".96"/>
+  <ellipse cx="604" cy="46" rx="3" ry="1.5" fill="#fff" opacity=".8"/>
+  <!-- Fire stream trail -->
+  <ellipse cx="578" cy="46" rx="26" ry="9.5" fill="#ff3300" opacity=".8" class="fl1"/>
+  <ellipse cx="552" cy="46" rx="22" ry="8.5" fill="#ee2200" opacity=".68" class="fl1"/>
+  <ellipse cx="526" cy="46" rx="18" ry="7.5" fill="#dd1100" opacity=".58" class="fl2"/>
+  <ellipse cx="500" cy="46" rx="14" ry="6.5" fill="#cc1000" opacity=".47"/>
+  <ellipse cx="474" cy="46" rx="11" ry="5.5" fill="#aa0e00" opacity=".38"/>
+  <ellipse cx="448" cy="46" rx="8" ry="4.5" fill="#880c00" opacity=".28"/>
+  <ellipse cx="422" cy="46" rx="6" ry="3.5" fill="#660a00" opacity=".2"/>
+  
+  <!-- Stream lower (angled down-left) -->
+  <path d="M606,55 Q572,62 536,65 Q502,66 468,62 Q436,58 406,52" stroke="#cc2200" stroke-width="10" fill="none" stroke-linecap="round" opacity=".62" class="fl2"/>
+  <path d="M606,55 Q572,62 536,65 Q502,66 468,62 Q436,58 406,52" stroke="#ff5500" stroke-width="5.5" fill="none" stroke-linecap="round" opacity=".72"/>
+  <path d="M606,55 Q572,62 536,65 Q502,66 468,62 Q436,58 406,52" stroke="#ffaa00" stroke-width="2" fill="none" stroke-linecap="round" opacity=".82"/>
+
+  <!-- === TALL FLAMES rising up (near dragon mouth) === -->
+  <!-- Flame A - tallest, leftmost -->
+  <path d="M582,40 C576,24 580,12 574,4 C572,0 570,-2 572,0 C578,6 586,16 586,28 C590,38 584,40 582,40 Z" fill="#cc2200" opacity=".78"/>
+  <path d="M582,40 C578,26 581,14 577,6 C575,2 576,0 578,2 C584,10 588,22 586,32 C586,38 584,40 582,40 Z" fill="#ff4400" opacity=".75"/>
+  <path d="M582,40 C580,28 582,16 580,8 C580,4 581,2 582,4 C586,12 588,24 586,34 C585,38 583,40 582,40 Z" fill="#ff8800" opacity=".7"/>
+  <path d="M582,40 C581,30 583,18 582,10 C582,6 583,6 583,8 C585,18 586,28 585,36 C584,38 583,40 582,40 Z" fill="#ffcc00" opacity=".6"/>
+  
+  <!-- Flame B -->
+  <path d="M564,42 C558,26 562,14 556,5 C554,1 553,-1 555,1 C561,8 568,18 568,30 C570,40 566,42 564,42 Z" fill="#bb2000" opacity=".82"/>
+  <path d="M564,42 C560,28 563,16 559,8 C557,3 558,1 560,3 C566,12 570,24 568,34 C566,40 566,42 564,42 Z" fill="#ff3300" opacity=".78"/>
+  <path d="M564,42 C562,30 564,18 562,10 C562,5 563,4 564,6 C568,16 570,27 568,36 C566,40 565,42 564,42 Z" fill="#ff7700" opacity=".72"/>
+  <path d="M564,42 C563,32 565,20 563,12 C563,7 564,7 564,9 C567,20 568,30 566,37 C565,40 564,42 564,42 Z" fill="#ffcc00" opacity=".6"/>
+
+  <!-- Flame C - near mouth, very tall -->
+  <path d="M594,38 C588,18 592,6 586,-2 C584,-6 583,-8 585,-4 C591,4 598,16 598,28 C600,36 596,38 594,38 Z" fill="#dd2800" opacity=".72"/>
+  <path d="M594,38 C590,20 593,8 589,0 C587,-4 588,-4 590,-2 C596,8 600,20 598,30 C596,36 595,38 594,38 Z" fill="#ff4400" opacity=".68"/>
+  <path d="M594,38 C592,22 594,10 592,2 C592,-2 593,-2 593,0 C597,12 598,24 596,32 C595,36 594,38 594,38 Z" fill="#ff9900" opacity=".62"/>
+  <path d="M594,38 C593,26 594,14 593,6 C593,2 594,2 594,4 C597,16 597,26 596,34 C595,36 594,38 594,38 Z" fill="#ffee00" opacity=".52"/>
+
+  <!-- Flame D - short wide base -->
+  <path d="M546,44 C540,30 543,18 538,9 C536,5 536,3 538,5 C544,13 550,24 550,36 C550,42 548,44 546,44 Z" fill="#cc1e00" opacity=".75"/>
+  <path d="M546,44 C542,32 545,20 541,11 C539,6 540,5 542,7 C547,16 551,28 548,38 C547,42 547,44 546,44 Z" fill="#ff4400" opacity=".7"/>
+  <path d="M546,44 C544,34 546,22 544,14 C544,9 545,8 546,10 C549,20 551,31 548,39 C547,42 547,44 546,44 Z" fill="#ff9900" opacity=".62"/>
+
+  <!-- Smoke wisps -->
+  <ellipse cx="568" cy="3" rx="20" ry="5.5" fill="#1a1008" opacity=".35"/>
+  <ellipse cx="548" cy="0" rx="15" ry="4.5" fill="#141008" opacity=".28"/>
+  <ellipse cx="585" cy="1" rx="14" ry="4" fill="#1a1008" opacity=".25"/>
+  <ellipse cx="528" cy="6" rx="11" ry="3.5" fill="#141008" opacity=".22"/>
+  <ellipse cx="604" cy="2" rx="10" ry="3" fill="#1a1008" opacity=".2"/>
+
+  <!-- Embers floating up -->
+  <circle cx="554" cy="18" r="2.2" fill="#ff7700" class="emb"/>
+  <circle cx="568" cy="12" r="1.8" fill="#ffbb00" class="emb2"/>
+  <circle cx="578" cy="8" r="1.6" fill="#ffdd00" class="emb"/>
+  <circle cx="542" cy="14" r="2" fill="#ff5500" class="emb2"/>
+  <circle cx="536" cy="8" r="1.5" fill="#ff8800" class="emb"/>
+  <circle cx="560" cy="5" r="1.2" fill="#ffff00" class="emb2"/>
+  <circle cx="590" cy="10" r="1.8" fill="#ff6600" class="emb"/>
+  <circle cx="574" cy="22" r="1.5" fill="#ffaa00" class="emb2"/>
 </g>
+
+<!-- ========== FIRE IMPACT on mage ========== -->
 <g class="fhit" opacity="0">
-  <circle cx="164" cy="58" r="18" fill="#ff6600" opacity=".35" filter="url(#fg)"/>
-  <circle cx="164" cy="58" r="10" fill="#ffaa00" opacity=".7"/>
-  <line x1="164" y1="40" x2="164" y2="30" stroke="#ff6600" stroke-width="2.5"/>
-  <line x1="178" y1="48" x2="187" y2="42" stroke="#ffaa00" stroke-width="2"/>
-  <line x1="150" y1="48" x2="141" y2="42" stroke="#ffaa00" stroke-width="2"/>
-  <line x1="178" y1="68" x2="187" y2="74" stroke="#ff6600" stroke-width="2"/>
-  <line x1="150" y1="68" x2="141" y2="74" stroke="#ff6600" stroke-width="2"/>
+  <circle cx="188" cy="62" r="28" fill="#ff4400" opacity=".25" filter="url(#fg2)"/>
+  <circle cx="188" cy="62" r="16" fill="#ff6600" opacity=".45" filter="url(#fg)"/>
+  <circle cx="188" cy="62" r="8" fill="#ffcc00" opacity=".72"/>
+  <line x1="188" y1="34" x2="188" y2="24" stroke="#ff5500" stroke-width="3"/>
+  <line x1="207" y1="44" x2="220" y2="37" stroke="#ffaa00" stroke-width="2.2"/>
+  <line x1="169" y1="44" x2="156" y2="37" stroke="#ffaa00" stroke-width="2.2"/>
+  <line x1="207" y1="80" x2="220" y2="87" stroke="#ff5500" stroke-width="2.2"/>
+  <line x1="169" y1="80" x2="156" y2="87" stroke="#ff5500" stroke-width="2.2"/>
+  <line x1="216" y1="62" x2="230" y2="62" stroke="#ffdd00" stroke-width="2"/>
+  <line x1="160" y1="62" x2="146" y2="62" stroke="#ffdd00" stroke-width="2"/>
 </g>
 </svg>
