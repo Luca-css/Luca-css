@@ -310,13 +310,13 @@
         <stop offset="1" stop-color="#030c18"/>
       </linearGradient>
       <linearGradient id="mLining" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0" stop-color="#3b2a8f"/>
-        <stop offset="1" stop-color="#140c3a"/>
+        <stop offset="0" stop-color="#0f3a55"/>
+        <stop offset="1" stop-color="#03101c"/>
       </linearGradient>
       <linearGradient id="mHoodIn" x1="0" y1="0" x2="1" y2="0">
-        <stop offset="0" stop-color="#1a1250"/>
-        <stop offset="0.8" stop-color="#2d2378"/>
-        <stop offset="1" stop-color="#6a5ad8"/>
+        <stop offset="0" stop-color="#03101c"/>
+        <stop offset="0.75" stop-color="#0b2c47"/>
+        <stop offset="1" stop-color="#2f86b8"/>
       </linearGradient>
       <linearGradient id="mMetal" x1="0" y1="0" x2="1" y2="1">
         <stop offset="0" stop-color="#d6f6ff"/>
@@ -342,6 +342,16 @@
         <stop offset="0.5" stop-color="#00d4ff" stop-opacity="0.35"/>
         <stop offset="1" stop-color="#00d4ff" stop-opacity="0"/>
       </radialGradient>
+      <filter id="fabric" filterUnits="userSpaceOnUse" x="40" y="10" width="240" height="285">
+        <feTurbulence type="fractalNoise" baseFrequency="0.9 0.025" numOctaves="2" seed="7" result="noise"/>
+        <feDiffuseLighting in="noise" surfaceScale="0.9" lighting-color="#ffffff" result="light">
+          <feDistantLight azimuth="-35" elevation="58"/>
+        </feDiffuseLighting>
+        <feComposite in="SourceGraphic" in2="light" operator="arithmetic" k1="0.75" k2="0.4" k3="0" k4="0" result="lit"/>
+        <feComposite in="lit" in2="SourceGraphic" operator="in"/>
+      </filter>
+      <filter id="mBlur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4"/></filter>
+      <filter id="mSoft" filterUnits="userSpaceOnUse" x="30" y="0" width="260" height="300"><feGaussianBlur stdDeviation="0.35"/></filter>
     </defs>
 
     <!-- ground contact -->
@@ -349,10 +359,10 @@
     <ellipse cx="208" cy="272" rx="52" ry="6" fill="#00d4ff" opacity="0.2"/>
 
     <!-- cape (behind), gently swaying -->
-    <path fill="url(#cape)" d="M140,120 C112,162 88,216 66,268 Q118,282 176,274 L206,120 Z">
+    <path fill="url(#cape)" filter="url(#fabric)" d="M140,120 C112,162 88,216 66,268 Q118,282 176,274 L206,120 Z">
       <animate attributeName="d" dur="5s" repeatCount="indefinite" values="M140,120 C112,162 88,216 66,268 Q118,282 176,274 L206,120 Z;M140,120 C108,164 80,220 54,266 Q112,284 176,274 L206,120 Z;M140,120 C112,162 88,216 66,268 Q118,282 176,274 L206,120 Z"/>
     </path>
-    <path fill="url(#mLining)" opacity="0.85" d="M140,120 C114,162 92,214 72,266 Q80,270 90,270 C104,220 124,168 146,124 Z">
+    <path fill="url(#mLining)" opacity="0.85" filter="url(#fabric)" d="M140,120 C114,162 92,214 72,266 Q80,270 90,270 C104,220 124,168 146,124 Z">
       <animate attributeName="d" dur="5s" repeatCount="indefinite" values="M140,120 C114,162 92,214 72,266 Q80,270 90,270 C104,220 124,168 146,124 Z;M140,120 C110,164 84,218 60,264 Q70,270 80,270 C98,222 120,168 146,124 Z;M140,120 C114,162 92,214 72,266 Q80,270 90,270 C104,220 124,168 146,124 Z"/>
     </path>
 
@@ -362,9 +372,9 @@
     <path d="M150,266 Q156,264 162,266 M188,267 Q194,266 202,268" stroke="#b08458" stroke-width="1" fill="none" opacity="0.7"/>
 
     <!-- robe outer shell -->
-    <path d="M146,124 C134,162 116,214 98,264 Q172,280 246,264 C230,214 212,162 200,124 Q173,136 146,124 Z" fill="url(#robe)"/>
+    <path d="M146,124 C134,162 116,214 98,264 Q172,280 246,264 C230,214 212,162 200,124 Q173,136 146,124 Z" fill="url(#robe)" filter="url(#fabric)"/>
     <!-- inner tunic seen through the open front -->
-    <path d="M163,134 Q173,140 183,134 L198,268 Q173,276 148,268 Z" fill="url(#mTunic)"/>
+    <path d="M163,134 Q173,140 183,134 L198,268 Q173,276 148,268 Z" fill="url(#mTunic)" filter="url(#fabric)"/>
     <g fill="none" stroke="#00d4ff" stroke-width="1.2" filter="url(#glow)">
       <path d="M173,196 V262 M173,214 L163,224 V250 M173,214 L183,224 V250 M173,236 H181"/>
       <animate attributeName="opacity" values="0.3;1;0.3" dur="3s" repeatCount="indefinite"/>
@@ -381,7 +391,7 @@
       <path d="M210,150 C216,190 226,228 238,264" stroke="#6fd0f5" stroke-width="1.5" opacity="0.4"/>
     </g>
     <!-- trimmed front edges -->
-    <path d="M163,134 L148,268 M183,134 L198,268" fill="none" stroke="url(#mGold)" stroke-width="2.2"/>
+    <path d="M163,134 L148,268 M183,134 L198,268" fill="none" stroke="url(#mGold)" stroke-width="1.1" opacity="0.55"/>
     <!-- hem embroidery -->
     <path d="M104,256 Q126,262 146,264 M200,264 Q222,262 240,256 M116,258 V250 H128 M228,258 V250 H216" fill="none" stroke="#00d4ff" stroke-width="1.2" filter="url(#glow)">
       <animate attributeName="opacity" values="0.35;1;0.35" dur="3s" repeatCount="indefinite"/>
@@ -390,6 +400,8 @@
     <path d="M146,124 C134,162 116,214 98,264 Q172,280 246,264 C230,214 212,162 200,124 Q173,136 146,124 Z" fill="url(#robeShade)"/>
     <path d="M200,124 C212,162 230,214 246,264" fill="none" stroke="url(#rim)" stroke-width="3"/>
 
+    <path d="M136,150 Q173,136 210,150 L208,170 Q173,156 138,170 Z" fill="#000" opacity="0.5" filter="url(#mBlur)"/>
+    <path d="M150,180 Q173,200 198,180 L198,196 Q173,212 150,196 Z" fill="#000" opacity="0.35" filter="url(#mBlur)"/>
     <!-- belt, buckle, pouch, talisman -->
     <path d="M144,180 Q173,193 202,180 L203,191 Q173,204 143,191 Z" fill="url(#mLeather)"/>
     <path d="M144,182 Q173,195 202,182" fill="none" stroke="#b08458" stroke-width="0.8" opacity="0.7"/>
@@ -410,11 +422,11 @@
       <animateTransform attributeName="transform" type="translate" values="0 0;0 -1.4;0 0" dur="4s" repeatCount="indefinite"/>
 
       <!-- left arm: bell sleeve raised, palm up -->
-      <path d="M152,128 C136,142 122,164 114,186 L142,196 C146,176 152,156 162,140 Z" fill="url(#sleeve)" stroke="#3a8cc4" stroke-width="1.2"/>
+      <path d="M152,128 C136,142 122,164 114,186 L142,196 C146,176 152,156 162,140 Z" fill="url(#sleeve)" filter="url(#fabric)"/>
       <path d="M156,140 C148,158 142,176 140,194" fill="none" stroke="#6fd0f5" stroke-width="1.4" opacity="0.55"/>
       <path d="M150,134 C138,150 128,168 122,186" fill="none" stroke="#020a14" stroke-width="3" opacity="0.45"/>
       <path d="M152,128 C136,142 122,164 114,186 L118,188 C126,166 140,146 156,132 Z" fill="url(#mLining)" opacity="0.8"/>
-      <path d="M114,186 L142,196" stroke="url(#mGold)" stroke-width="3.2" stroke-linecap="round"/>
+      <path d="M114,186 L142,196" stroke="#0a2a44" stroke-width="3" stroke-linecap="round"/>
       <path d="M117,194 Q122,186 134,190 Q142,192 144,198 Q138,203 128,202 Q120,201 117,194 Z" fill="url(#skin)"/>
       <path d="M140,195 Q146,190 148,193 Q146,197 142,198" fill="url(#skin)"/>
       <path d="M124,198 Q130,200 138,199" fill="none" stroke="#5a3a28" stroke-width="0.8"/>
@@ -436,8 +448,8 @@
       </g>
 
       <!-- mantle -->
-      <path d="M132,130 Q173,106 214,130 L210,154 Q173,138 136,154 Z" fill="url(#mantle)"/>
-      <path d="M136,154 Q173,138 210,154" fill="none" stroke="url(#mGold)" stroke-width="1.6"/>
+      <path d="M132,130 Q173,106 214,130 L210,154 Q173,138 136,154 Z" fill="url(#mantle)" filter="url(#fabric)"/>
+      <path d="M136,154 Q173,138 210,154" fill="none" stroke="url(#mGold)" stroke-width="0.8" opacity="0.5"/>
       <!-- pauldrons -->
       <path d="M128,134 Q134,120 152,122 L156,140 Q142,144 128,142 Z" fill="url(#mMetalDark)" stroke="#2a5a80" stroke-width="0.8"/>
       <path d="M131,138 Q140,134 153,135" fill="none" stroke="#00d4ff" stroke-width="0.9" opacity="0.7"/>
@@ -445,15 +457,14 @@
       <path d="M193,135 Q206,134 217,138" fill="none" stroke="#00d4ff" stroke-width="1" filter="url(#glow)"/>
       <circle cx="207" cy="128" r="1.6" fill="#ffffff"/>
 
+      <ellipse cx="173" cy="134" rx="40" ry="9" fill="#000" opacity="0.55" filter="url(#mBlur)"/>
       <!-- hood -->
-      <path d="M134,132 C128,100 136,74 150,60 C156,52 150,40 138,32 C164,30 192,48 204,76 C212,96 214,114 212,132 Q173,112 134,132 Z" fill="url(#hood)"/>
-      <path d="M138,32 C164,30 192,48 204,76 C212,96 214,114 212,132" fill="none" stroke="url(#rim)" stroke-width="2.4"/>
-      <path d="M150,60 C160,66 170,70 182,70" fill="none" stroke="#06162a" stroke-width="1.2" stroke-dasharray="2 3" opacity="0.8"/>
+      <path d="M134,132 C128,104 132,80 146,64 C154,54 162,48 170,46 C190,48 206,70 211,96 C214,110 213,122 212,132 Q173,112 134,132 Z" fill="url(#hood)" filter="url(#fabric)"/>
+      <path d="M170,46 C190,48 206,70 211,96 C214,110 213,122 212,132" fill="none" stroke="url(#rim)" stroke-width="2" opacity="0.8"/>
       <!-- hood opening with violet lining -->
       <path d="M148,128 C146,104 156,88 173,86 C190,88 200,104 198,128 Q173,116 148,128 Z" fill="url(#mHoodIn)"/>
       <path d="M152,126 C151,108 160,94 173,92 C186,94 195,108 194,126 Q173,116 152,126 Z" fill="url(#faceVoid)"/>
-      <path d="M148,128 C146,104 156,88 173,86 C190,88 200,104 198,128" fill="none" stroke="url(#mGold)" stroke-width="1.4"/>
-      <text x="173" y="84" text-anchor="middle" font-family="Consolas, monospace" font-size="7" fill="#8af0ff" filter="url(#glow)">✦</text>
+      <path d="M148,128 C146,104 156,88 173,86 C190,88 200,104 198,128" fill="none" stroke="#000" stroke-width="3" opacity="0.35" filter="url(#mBlur)"/>
       <!-- eyes and faint face light -->
       <g fill="#bff6ff" filter="url(#glow)">
         <ellipse cx="165" cy="110" rx="3.6" ry="1.6"><animate attributeName="ry" values="1.6;1.6;0.2;1.6;1.6" keyTimes="0;0.9;0.93;0.96;1" dur="5s" repeatCount="indefinite"/></ellipse>
@@ -482,9 +493,9 @@
     <!-- right arm gripping the staff -->
     <g>
       <animateTransform attributeName="transform" type="translate" values="0 0;0 -1.4;0 0" dur="4s" repeatCount="indefinite"/>
-      <path d="M200,130 C214,138 222,146 226,154 L212,170 C206,160 198,150 190,144 Z" fill="url(#sleeve)"/>
+      <path d="M200,130 C214,138 222,146 226,154 L212,170 C206,160 198,150 190,144 Z" fill="url(#sleeve)" filter="url(#fabric)"/>
       <path d="M200,130 C214,138 222,146 226,154 L222,158 C216,150 208,142 198,136 Z" fill="#5cc2f0" opacity="0.35"/>
-      <path d="M226,154 L212,170" stroke="url(#mGold)" stroke-width="2.4" stroke-linecap="round"/>
+      <path d="M226,154 L212,170" stroke="#0a2a44" stroke-width="3" stroke-linecap="round"/>
       <path d="M214,160 Q220,154 228,155 L230,170 Q222,172 216,168 Z" fill="url(#skin)"/>
     </g>
     <!-- fingers wrapped over the staff -->
