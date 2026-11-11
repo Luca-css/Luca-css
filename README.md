@@ -37,9 +37,9 @@ status: 🟢 aberto a projetos e oportunidades
 </td>
 <td width="45%" align="center" valign="top">
 
-<img src="https://github-readme-stats.vercel.app/api?username=Luca-css&show_icons=true&theme=github_dark&hide_border=true&bg_color=020c1b&title_color=00d4ff&icon_color=00d4ff&text_color=7ecfff&include_all_commits=true&count_private=true&rank_icon=github" width="100%"/>
+<img src="./assets/stats.svg" alt="Estatísticas do GitHub" width="100%"/>
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Luca-css&layout=compact&theme=github_dark&hide_border=true&bg_color=020c1b&title_color=00d4ff&text_color=7ecfff&langs_count=8" width="100%"/>
+<img src="./assets/langs.svg" alt="Linguagens mais usadas" width="100%"/>
 
 </td>
 </tr>
@@ -71,20 +71,20 @@ status: 🟢 aberto a projetos e oportunidades
 <tr>
 <td width="50%" valign="top">
 
-### [`logpipe`](https://github.com/Luca-css/logpipe)
+### `logpipe`
 Pipeline de logs de alta vazão: **sources → processors → sinks** com backpressure, *graceful shutdown*, redação de dados sensíveis (LGPD) e métricas Prometheus.
 
 ![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white) ![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)<br/>
-[![CI](https://github.com/Luca-css/logpipe/actions/workflows/ci.yml/badge.svg)](https://github.com/Luca-css/logpipe/actions)
+![status](https://img.shields.io/badge/status-em_publica%C3%A7%C3%A3o-00d4ff?style=flat-square)
 
 </td>
 <td width="50%" valign="top">
 
-### [`opsflow`](https://github.com/Luca-css/opsflow)
+### `opsflow`
 Motor de automação de operações de TI: runbooks em YAML executados como **DAG** assíncrono, com retries, timeouts, plugins e histórico de execuções.
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![asyncio](https://img.shields.io/badge/asyncio-3776AB?style=flat-square&logo=python&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)<br/>
-[![CI](https://github.com/Luca-css/opsflow/actions/workflows/ci.yml/badge.svg)](https://github.com/Luca-css/opsflow/actions)
+![status](https://img.shields.io/badge/status-em_publica%C3%A7%C3%A3o-00d4ff?style=flat-square)
 
 </td>
 </tr>
@@ -185,9 +185,9 @@ Scanner de portas em Rust sem crates externas — thread pool manual, banner gra
 
 <img src="https://streak-stats.demolab.com?user=Luca-css&theme=github-dark-blue&hide_border=true&background=020c1b&ring=00d4ff&fire=00d4ff&currStreakLabel=00d4ff&sideLabels=7ecfff&dates=7ecfff" width="49%"/>
 
-[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Luca-css&bg_color=020c1b&color=00d4ff&line=0a4a6a&point=00d4ff&area_color=00d4ff22&area=true&hide_border=true&radius=6)](https://github.com/Luca-css)
+<img src="./assets/activity.svg" alt="Atividade dos últimos 31 dias" width="100%"/>
 
-<img src="./arcane-terminal.svg" alt="Mago-hacker canaliza energia por um círculo mágico com um chip no centro até um servidor, enquanto um terminal executa o feitiço" width="100%"/>
+<img src="./arcane-terminal.svg" alt="Mago-hacker encapuzado ergue um cajado de cristal e um orbe holográfico; a energia passa por um portal mágico e um cubo de dados até um rack de servidores, enquanto um terminal executa o deploy" width="100%"/>
 
 </div>
 

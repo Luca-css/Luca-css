@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="70%">
+      <stop offset="0" stop-color="#0b3556"/>
+      <stop offset=".45" stop-color="#05182c"/>
+      <stop offset="1" stop-color="#01070f"/>
+    </radialGradient>
+    <radialGradient id="halo" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#00d4ff" stop-opacity=".55"/>
+      <stop offset=".5" stop-color="#00a6d6" stop-opacity=".15"/>
+      <stop offset="1" stop-color="#00d4ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cloak" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1d5578"/>
+      <stop offset=".4" stop-color="#0d3150"/>
+      <stop offset="1" stop-color="#03111f"/>
+    </linearGradient>
+    <linearGradient id="hoodIn" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#010509"/>
+      <stop offset=".75" stop-color="#03101c"/>
+      <stop offset="1" stop-color="#0b2c47"/>
+    </linearGradient>
+    <linearGradient id="rim" x1="1" y1="0" x2="0" y2="0">
+      <stop offset="0" stop-color="#7fe9ff"/>
+      <stop offset="1" stop-color="#7fe9ff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f6dc8a"/>
+      <stop offset=".5" stop-color="#c39a3c"/>
+      <stop offset="1" stop-color="#6b4f17"/>
+    </linearGradient>
+    <linearGradient id="crystal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e8fdff"/>
+      <stop offset=".4" stop-color="#5fe6ff"/>
+      <stop offset="1" stop-color="#0077a8"/>
+    </linearGradient>
+    <filter id="fabric" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency=".5 .018" numOctaves="2" seed="7" result="n"/>
+      <feDiffuseLighting in="n" surfaceScale="1.1" lighting-color="#ffffff" result="l">
+        <feDistantLight azimuth="-35" elevation="58"/>
+      </feDiffuseLighting>
+      <feComposite in="SourceGraphic" in2="l" operator="arithmetic" k1=".8" k2=".35" result="t"/>
+      <feComposite in="t" in2="SourceGraphic" operator="in"/>
+    </filter>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="soft"><feGaussianBlur stdDeviation="14"/></filter>
+    <path id="runeRing" d="M400,400 m-300,0 a300,300 0 1,1 600,0 a300,300 0 1,1 -600,0"/>
+  </defs>
+
+  <rect width="800" height="800" fill="url(#bg)"/>
+
+  <!-- grade cyber ao fundo -->
+  <g stroke="#0e3a5c" stroke-width="1" opacity=".55">
+    <path d="M0,560 L800,560 M0,620 L800,620 M0,690 L800,690 M0,770 L800,770"/>
+    <path d="M400,520 L-200,800 M400,520 L100,800 M400,520 L250,800 M400,520 L550,800 M400,520 L700,800 M400,520 L1000,800"/>
+  </g>
+
+  <!-- anel de runas / circuito -->
+  <g opacity=".9">
+    <circle cx="400" cy="400" r="330" fill="none" stroke="#00d4ff" stroke-opacity=".18" stroke-width="2"/>
+    <circle cx="400" cy="400" r="316" fill="none" stroke="#00d4ff" stroke-opacity=".5" stroke-width="1.5" stroke-dasharray="2 10"/>
+    <text font-family="Consolas,monospace" font-size="20" fill="#3fdcff" fill-opacity=".55" letter-spacing="9">
+      <textPath href="#runeRing">ᚠᚢᚦᚨᚱᚲ 0x4C53 ᛉᛊᛏᛒᛖᛗ sudo cast ᛚᛜᛞᛟ 01001100 ᚹᚺᚾᛁ root@arcane ᛃᛇᛈ</textPath>
+    </text>
+    <g stroke="#00d4ff" stroke-opacity=".6" stroke-width="2" fill="none">
+      <path d="M95,330 h55 l20,-20 h40"/><circle cx="214" cy="310" r="4" fill="#00d4ff"/>
+      <path d="M705,330 h-55 l-20,-20 h-40"/><circle cx="586" cy="310" r="4" fill="#00d4ff"/>
+      <path d="M110,470 h70 l18,18 h30"/><circle cx="232" cy="488" r="4" fill="#00d4ff"/>
+      <path d="M690,470 h-70 l-18,18 h-30"/><circle cx="568" cy="488" r="4" fill="#00d4ff"/>
+    </g>
+  </g>
+
+  <!-- halo de luz atrás da cabeça -->
+  <circle cx="400" cy="330" r="250" fill="url(#halo)"/>
+
+  <!-- ombros / manto -->
+  <path d="M120,800 C130,650 210,560 300,530 L400,600 L500,530 C590,560 670,650 680,800 Z" fill="url(#cloak)" filter="url(#fabric)"/>
+  <path d="M300,530 L400,600 L500,530 L470,800 L330,800 Z" fill="#05182b" filter="url(#fabric)"/>
+  <!-- túnica com circuito -->
+  <g stroke="#00d4ff" stroke-width="2.5" fill="none" opacity=".85" filter="url(#glow)">
+    <path d="M400,620 V800 M400,680 h-30 v40 M400,700 h34 v50"/>
+    <circle cx="370" cy="724" r="5" fill="#00d4ff"/><circle cx="434" cy="754" r="5" fill="#00d4ff"/>
+  </g>
+  <!-- ombreiras -->
+  <path d="M175,640 C200,570 260,535 310,530 L330,580 C280,590 230,615 200,660 Z" fill="#163f5f" filter="url(#fabric)"/>
+  <path d="M625,640 C600,570 540,535 490,530 L470,580 C520,590 570,615 600,660 Z" fill="#0c2a44" filter="url(#fabric)"/>
+  <path d="M190,650 C220,595 270,568 320,560" stroke="url(#gold)" stroke-width="5" fill="none" opacity=".75"/>
+  <path d="M610,650 C580,595 530,568 480,560" stroke="url(#gold)" stroke-width="5" fill="none" opacity=".6"/>
+
+  <!-- capuz -->
+  <path d="M215,560 C200,450 215,330 270,250 C310,190 360,160 400,155 C440,160 490,190 530,250 C585,330 600,450 585,560 C530,520 470,505 400,505 C330,505 270,520 215,560 Z"
+        fill="url(#cloak)" filter="url(#fabric)"/>
+  <!-- luz de contorno -->
+  <path d="M530,250 C585,330 600,450 585,560" stroke="url(#rim)" stroke-width="6" fill="none" opacity=".55"/>
+  <!-- abertura do capuz -->
+  <path d="M275,500 C265,410 290,320 340,265 C365,240 385,232 400,231 C415,232 435,240 460,265 C510,320 535,410 525,500 C485,478 445,470 400,470 C355,470 315,478 275,500 Z"
+        fill="url(#hoodIn)"/>
+  <!-- borda interna dobrada do capuz -->
+  <path d="M275,500 C265,410 290,320 340,265 C365,240 385,232 400,231 C415,232 435,240 460,265 C510,320 535,410 525,500"
+        stroke="#2b7aa8" stroke-width="7" fill="none" opacity=".5" filter="url(#fabric)"/>
+  <!-- sombra do rosto -->
+  <ellipse cx="400" cy="380" rx="105" ry="120" fill="#000" opacity=".55" filter="url(#soft)"/>
+
+  <!-- olhos -->
+  <g filter="url(#glow)">
+    <path d="M345,375 Q365,362 385,372 Q365,384 345,375 Z" fill="#00e1ff"/>
+    <path d="M415,372 Q435,362 455,375 Q435,384 415,372 Z" fill="#00e1ff"/>
+  </g>
+  <circle cx="366" cy="373" r="3" fill="#e8fdff"/><circle cx="434" cy="373" r="3" fill="#e8fdff"/>
+  <!-- broche de cristal -->
+  <g transform="translate(400,560)">
+    <circle r="40" fill="#00d4ff" opacity=".25" filter="url(#soft)"/>
+    <polygon points="0,-38 33,-19 33,19 0,38 -33,19 -33,-19" fill="url(#gold)"/>
+    <polygon points="0,-26 22,-13 22,13 0,26 -22,13 -22,-13" fill="url(#crystal)" filter="url(#glow)"/>
+    <polygon points="0,-26 22,-13 0,0 -22,-13" fill="#ffffff" opacity=".35"/>
+  </g>
+
+  <!-- partículas -->
+  <g fill="#7fe9ff">
+    <circle cx="180" cy="230" r="3" opacity=".8"/><circle cx="640" cy="200" r="2.5" opacity=".7"/>
+    <circle cx="610" cy="420" r="2" opacity=".6"/><circle cx="200" cy="420" r="2" opacity=".6"/>
+    <circle cx="560" cy="130" r="2" opacity=".5"/><circle cx="250" cy="140" r="2.5" opacity=".5"/>
+  </g>
+</svg>

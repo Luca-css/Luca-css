@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="470" height="178" viewBox="0 0 470 178" role="img" aria-label="lang --top">
+<style>
+ text{font-family:ui-monospace,SFMono-Regular,'Cascadia Code',Consolas,'Liberation Mono',monospace;}
+ .t{fill:#00d4ff;font-size:15px;font-weight:700;letter-spacing:.5px}
+ .l{fill:#7ecfff;font-size:12.5px} .v{fill:#e6f7ff;font-size:13px;font-weight:700}
+ .d{fill:#3b6b8c;font-size:10.5px}
+ .cur{animation:blink 1s steps(1) infinite} @keyframes blink{50%{opacity:0}}
+</style>
+<defs><linearGradient id="edge" x1="0" x2="1"><stop offset="0" stop-color="#00d4ff"/><stop offset="1" stop-color="#00d4ff" stop-opacity="0"/></linearGradient></defs>
+<rect x=".5" y=".5" width="469" height="177" rx="10" fill="#020c1b" stroke="#0a2a4a"/>
+<rect x="1" y="1" width="282" height="2" rx="1" fill="url(#edge)"/>
+<text x="20" y="30" class="t">&gt; lang --top<tspan class="cur" fill="#00d4ff">_</tspan></text>
+<clipPath id="bar"><rect x="20" y="46" width="430" height="9" rx="4.5"/></clipPath><g clip-path="url(#bar)">
+<rect x="20.0" y="46" width="152.1" height="9" fill="#3776AB"/>
+<rect x="171.6" y="46" width="66.2" height="9" fill="#3178C6"/>
+<rect x="237.3" y="46" width="60.1" height="9" fill="#00d4ff"/>
+<rect x="296.9" y="46" width="52.1" height="9" fill="#5391FE"/>
+<rect x="348.5" y="46" width="38.1" height="9" fill="#00ADD8"/>
+<rect x="386.1" y="46" width="33.3" height="9" fill="#4EAA25"/>
+<rect x="418.9" y="46" width="17.0" height="9" fill="#A97BFF"/>
+<rect x="435.4" y="46" width="15.1" height="9" fill="#DEA584"/>
+</g>
+<g><circle cx="27" cy="78" r="5" fill="#3776AB"/><text x="40" y="82" class="l">Python</text><text x="222" y="82" class="v" text-anchor="end">35.3%</text></g>
+<g><circle cx="247" cy="78" r="5" fill="#3178C6"/><text x="260" y="82" class="l">TypeScript</text><text x="442" y="82" class="v" text-anchor="end">15.3%</text></g>
+<g><circle cx="27" cy="102" r="5" fill="#00d4ff"/><text x="40" y="106" class="l">PHP</text><text x="222" y="106" class="v" text-anchor="end">13.9%</text></g>
+<g><circle cx="247" cy="102" r="5" fill="#5391FE"/><text x="260" y="106" class="l">PowerShell</text><text x="442" y="106" class="v" text-anchor="end">12.0%</text></g>
+<g><circle cx="27" cy="126" r="5" fill="#00ADD8"/><text x="40" y="130" class="l">Go</text><text x="222" y="130" class="v" text-anchor="end">8.7%</text></g>
+<g><circle cx="247" cy="126" r="5" fill="#4EAA25"/><text x="260" y="130" class="l">Shell</text><text x="442" y="130" class="v" text-anchor="end">7.6%</text></g>
+<g><circle cx="27" cy="150" r="5" fill="#A97BFF"/><text x="40" y="154" class="l">Kotlin</text><text x="222" y="154" class="v" text-anchor="end">3.8%</text></g>
+<g><circle cx="247" cy="150" r="5" fill="#DEA584"/><text x="260" y="154" class="l">Rust</text><text x="442" y="154" class="v" text-anchor="end">3.4%</text></g>
+</svg>

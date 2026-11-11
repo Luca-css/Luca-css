@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="470" height="210" viewBox="0 0 470 210" role="img" aria-label="stats --user Luca-css">
+<style>
+ text{font-family:ui-monospace,SFMono-Regular,'Cascadia Code',Consolas,'Liberation Mono',monospace;}
+ .t{fill:#00d4ff;font-size:15px;font-weight:700;letter-spacing:.5px}
+ .l{fill:#7ecfff;font-size:12.5px} .v{fill:#e6f7ff;font-size:13px;font-weight:700}
+ .d{fill:#3b6b8c;font-size:10.5px}
+ .cur{animation:blink 1s steps(1) infinite} @keyframes blink{50%{opacity:0}}
+</style>
+<defs><linearGradient id="edge" x1="0" x2="1"><stop offset="0" stop-color="#00d4ff"/><stop offset="1" stop-color="#00d4ff" stop-opacity="0"/></linearGradient></defs>
+<rect x=".5" y=".5" width="469" height="209" rx="10" fill="#020c1b" stroke="#0a2a4a"/>
+<rect x="1" y="1" width="282" height="2" rx="1" fill="url(#edge)"/>
+<text x="20" y="30" class="t">&gt; stats --user Luca-css<tspan class="cur" fill="#00d4ff">_</tspan></text>
+<g><text x="22" y="62" fill="#00d4ff" font-size="13">★</text><text x="44" y="62" class="l">Stars recebidas</text><text x="300" y="62" class="v" text-anchor="end">1</text></g>
+<g><text x="22" y="86" fill="#00d4ff" font-size="13">⎇</text><text x="44" y="86" class="l">Commits (12 meses)</text><text x="300" y="86" class="v" text-anchor="end">0</text></g>
+<g><text x="22" y="110" fill="#00d4ff" font-size="13">⇄</text><text x="44" y="110" class="l">Pull requests</text><text x="300" y="110" class="v" text-anchor="end">0</text></g>
+<g><text x="22" y="134" fill="#00d4ff" font-size="13">◎</text><text x="44" y="134" class="l">Issues</text><text x="300" y="134" class="v" text-anchor="end">0</text></g>
+<g><text x="22" y="158" fill="#00d4ff" font-size="13">▣</text><text x="44" y="158" class="l">Repositórios públicos</text><text x="300" y="158" class="v" text-anchor="end">23</text></g>
+<g><text x="22" y="182" fill="#00d4ff" font-size="13">⑂</text><text x="44" y="182" class="l">Forks</text><text x="300" y="182" class="v" text-anchor="end">1</text></g>
+<circle cx="385" cy="112" r="46" fill="none" stroke="#0a2a4a" stroke-width="7"/><circle cx="385" cy="112" r="46" fill="none" stroke="#00d4ff" stroke-width="7" stroke-linecap="round" stroke-dasharray="11.6 289.0" transform="rotate(-90 385 112)"><animate attributeName="stroke-dasharray" from="0 289.0" to="11.6 289.0" dur="1.2s" fill="freeze"/></circle><text x="385" y="114" text-anchor="middle" fill="#e6f7ff" font-size="22" font-weight="700">24</text><text x="385" y="132" text-anchor="middle" class="d">contribuições/ano</text>
+</svg>
