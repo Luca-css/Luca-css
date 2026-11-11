@@ -187,10 +187,7 @@ Scanner de portas em Rust sem crates externas — thread pool manual, banner gra
 
 [![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Luca-css&bg_color=020c1b&color=00d4ff&line=0a4a6a&point=00d4ff&area_color=00d4ff22&area=true&hide_border=true&radius=6)](https://github.com/Luca-css)
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Luca-css/Luca-css/output/github-contribution-grid-snake-dark.svg"/>
-  <img alt="Snake de contribuições" src="https://raw.githubusercontent.com/Luca-css/Luca-css/output/github-contribution-grid-snake.svg" width="100%"/>
-</picture>
+<img src="./arcane-terminal.svg" alt="Mago-hacker canaliza energia por um círculo mágico com um chip no centro até um servidor, enquanto um terminal executa o feitiço" width="100%"/>
 
 </div>
 
